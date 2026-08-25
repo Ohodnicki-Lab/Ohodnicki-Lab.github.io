@@ -2,29 +2,42 @@
 <!--
 =================================================================
   Faculty & Staffs
-  Styling lives in: assets/css/lab.css
+  Styling:    assets/css/lab.css   (all colours and sizes live there)
+  Behaviour:  assets/js/lab.js     (menu, fade-ins, tabs, slideshow)
 
   EDITING GUIDE (no coding experience needed)
   * To change wording, type over the text between the tags.
-  * To add an entry, copy one whole block (from one opening tag to
-    its matching closing tag), paste it below, then change the
-    picture, the text and the name.
+  * To add an entry, copy one whole block (from an opening tag to
+    its matching closing tag), paste it below, and change the
+    picture, text and date.
   * Pictures go in the "images" folder. PDFs go in "files".
-  * The menu below is the same on every page. If you change it,
-    change it on every page.
+  * The menu below is repeated on every page. Change it everywhere.
+  * Blocks marked PLACEHOLDER are suggestions - edit or delete them.
 =================================================================
 -->
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Faculty & Staffs</title>
+	<link rel="icon" href="images/ohodnicki-mark-primary.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
 	<link rel="stylesheet" href="assets/css/lab.css" />
+	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
 
 <nav class="nav">
-	<a class="nav__brand" href="index.html">Ohodnicki Lab</a>
+	<!-- LOGO: the reversed mark, for dark backgrounds.
+	     If your horizontal lockup also reads well on navy, replace the two
+	     lines below with:
+	     <img class="nav__logo" src="images/ohodnicki-lockup-horizontal.svg" alt="Ohodnicki Lab" /> -->
+	<a class="nav__brand" href="index.html">
+		<img class="nav__logo" src="images/ohodnicki-mark-reversed.svg" alt="Ohodnicki Lab" />
+		<span class="nav__word">Ohodnicki Lab</span>
+	</a>
 
 	<input class="nav__check" type="checkbox" id="menu-toggle" />
 	<label class="nav__burger" for="menu-toggle">Menu</label>
@@ -66,114 +79,134 @@
 
 <header class="page-hero">
 	<div class="wrap">
+		<p class="eyebrow">People</p>
 		<h1>Faculty & Staffs</h1>
-		<hr class="page-hero__rule" />
 	</div>
+	<img class="page-hero__mark" src="images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
 
 <section class="band band--light">
 	<div class="wrap">
-		<div class="group">
-			<h2 class="group-title">Research Faculties</h2>
-			<div class="people">
-				<article class="person">
-					<img class="person__photo" src="images/Dolendra.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Dr. Dolendra Karki</h3>
-						<a class="person__mail" href="mailto: dok51@pitt.edu">dok51[at]pitt[dot]edu</a>
-						<p>Dr. Dolendra Karki is a Research Assistant Professor at the MEMS Department, University of Pittsburgh. He received his Ph.D. degree in Physics from Michigan Technological University, Houghton, Michigan. Post-graduation and prior to joining U. Pitt in a senior research associate role, Dr. Karki pursued industry career for 2 years as an R&amp;D scientist for developing magnetic garnet based on-chip devices for heterogeneous integration to silicon-photonics. He has an interdisciplinary research background that spans from fundamental science in experimental physics, materials science to nano-photonics. Currently, his research lead includes single crystal material growth of refractory oxides in optical fiber form and electro-magnetic field sensing for energy grid monitoring applications.</p>
+		<div class="split">
+			<nav class="side">
+				<ul>
+						<li><a href="#research-faculties">Research Faculties</a></li>
+						<li><a href="#adminitrators">Adminitrators</a></li>
+						<li><a href="#research-associates-postdoctoral-researc">Research Associates & Postdoctoral Researchers</a></li>
+				</ul>
+			</nav>
+			<div>
+				<div class="group" id="research-faculties">
+					<h2 class="group-title">Research Faculties</h2>
+					<div class="people">
+						<article class="person reveal">
+							<img class="person__photo" src="images/Dolendra.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Dr. Dolendra Karki</h3>
+								<a class="person__mail" href="mailto: dok51@pitt.edu">dok51[at]pitt[dot]edu</a>
+								<p>Dr. Dolendra Karki is a Research Assistant Professor at the MEMS Department, University of Pittsburgh. He received his Ph.D. degree in Physics from Michigan Technological University, Houghton, Michigan. Post-graduation and prior to joining U. Pitt in a senior research associate role, Dr. Karki pursued industry career for 2 years as an R&amp;D scientist for developing magnetic garnet based on-chip devices for heterogeneous integration to silicon-photonics. He has an interdisciplinary research background that spans from fundamental science in experimental physics, materials science to nano-photonics. Currently, his research lead includes single crystal material growth of refractory oxides in optical fiber form and electro-magnetic field sensing for energy grid monitoring applications.</p>
+							</div>
+						</article>
+						<article class="person reveal">
+							<img class="person__photo" src="images/Khurram.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Dr. Khurram Naeem</h3>
+								<a class="person__mail" href="mailto: khn16@pitt.edu">khn16[at]pitt[dot]edu</a>
+								<p>Dr. Naeem is currently working as a Research Assitant Professor at the Swanson School of Engineering, University of Pittsburgh. He has earned his Master and PhD degrees in Information and Communication, both from the Gwangju Institute of Science and Technology (GIST), South Korea in 2010 and 2016, respectively. Thereafter, he has served in the Korea Research Institute of Standards and Science (KRISS), Daejeon from 2016 to 2018, and Advanced Photonics Research Institute (APRI), Gwangju from 2018 to 2022 as a senior Researcher. He has authored and co-authored several scientific publications in reputed international journals and conferences. His expertise and research interests include the development of specialty optical fibers / photonic crystal fibers, optical fiber devices for sensing and communication, fiber lasers, photonic device simulation using Full-vector FEM and FDTD methods, distributed optical fiber sensors and data analysis using ML and AI techniques.</p>
+							</div>
+						</article>
 					</div>
-				</article>
-				<article class="person">
-					<img class="person__photo" src="images/Khurram.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Dr. Khurram Naeem</h3>
-						<a class="person__mail" href="mailto: khn16@pitt.edu">khn16[at]pitt[dot]edu</a>
-						<p>Dr. Naeem is currently working as a Research Assitant Professor at the Swanson School of Engineering, University of Pittsburgh. He has earned his Master and PhD degrees in Information and Communication, both from the Gwangju Institute of Science and Technology (GIST), South Korea in 2010 and 2016, respectively. Thereafter, he has served in the Korea Research Institute of Standards and Science (KRISS), Daejeon from 2016 to 2018, and Advanced Photonics Research Institute (APRI), Gwangju from 2018 to 2022 as a senior Researcher. He has authored and co-authored several scientific publications in reputed international journals and conferences. His expertise and research interests include the development of specialty optical fibers / photonic crystal fibers, optical fiber devices for sensing and communication, fiber lasers, photonic device simulation using Full-vector FEM and FDTD methods, distributed optical fiber sensors and data analysis using ML and AI techniques.</p>
+				</div>
+				<div class="group" id="adminitrators">
+					<h2 class="group-title">Adminitrators</h2>
+					<div class="people">
+						<article class="person reveal">
+							<img class="person__photo" src="images/Jamie1.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Jamie Krusienski</h3>
+								<a class="person__mail" href="mailto: jak692@pitt.edu">jak692[at]pitt[dot]edu</a>
+								<p>Jamie is an administrative assistant at the University of Pittsburgh, where she provides essential support to ensure smooth and efficient operations within the department. With over 17 years of management experience, Jamie is a seasoned professional who brings a wealth of knowledge and expertise to every role. She has honed her skills in leadership, strategic planning, and team development, driving success across various industries. In addition to her management prowess, Jamie has a strong background in social media, leveraging digital platforms to enhance brand visibility and engagement. Complementing her professional experience, Jamie holds a certification in health and wellness, reflecting her commitment to promoting a balanced and healthy lifestyle in a personal setting. Jamie is dedicated to continuous improvement, leveraging a diverse skill set to inspire teams, optimize operations, and achieve organizational goals.</p>
+							</div>
+						</article>
 					</div>
-				</article>
-			</div>
-		</div>
-		<div class="group">
-			<h2 class="group-title">Adminitrators</h2>
-			<div class="people">
-				<article class="person">
-					<img class="person__photo" src="images/Jamie1.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Jamie Krusienski</h3>
-						<a class="person__mail" href="mailto: jak692@pitt.edu">jak692[at]pitt[dot]edu</a>
-						<p>Jamie is an administrative assistant at the University of Pittsburgh, where she provides essential support to ensure smooth and efficient operations within the department. With over 17 years of management experience, Jamie is a seasoned professional who brings a wealth of knowledge and expertise to every role. She has honed her skills in leadership, strategic planning, and team development, driving success across various industries. In addition to her management prowess, Jamie has a strong background in social media, leveraging digital platforms to enhance brand visibility and engagement. Complementing her professional experience, Jamie holds a certification in health and wellness, reflecting her commitment to promoting a balanced and healthy lifestyle in a personal setting. Jamie is dedicated to continuous improvement, leveraging a diverse skill set to inspire teams, optimize operations, and achieve organizational goals.</p>
+				</div>
+				<div class="group" id="research-associates-postdoctoral-researc">
+					<h2 class="group-title">Research Associates & Postdoctoral Researchers</h2>
+					<div class="people">
+						<article class="person reveal">
+							<img class="person__photo" src="images/Nagesh.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Dr. Nagesh Lalam</h3>
+								<a class="person__mail" href="mailto: NRL42@pitt.edu">NRL42[at]pitt[dot]edu</a>
+								<p>Dr. Lalam is a Visiting Senior Research Associate at the MEMS Department, University of Pittsburgh. Dr. Lalam received his Ph.D degree in Optical Engineering from the Northumbria University, Newcastle, UK in 2018. He obtained MSc degree in Optical Communications Engineering from the University of Greenwich, London, UK in 2012. Before joining University of Pittsburgh, he worked as a Postdoctoral Fellow at National Energy Technology Laboratory, where he was involved in development of both discrete and distributed fiber sensor systems for energy systems monitoring applications. He has authored or co-authored more than 30 articles in journals and international conferences and holds one US patent (pending). His research interests include distributed fiber optic sensors, non-linear fiber optics, radio-over-fiber communications, fiber laser systems, and interferometric fiber sensing.</p>
+							</div>
+						</article>
+						<article class="person reveal">
+							<img class="person__photo" src="images/Mohendro.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Dr. Mohendro Kumar Ghosh</h3>
+								<a class="person__mail" href="mailto: MKG57@pitt.edu">MKG57[at]pitt[dot]edu</a>
+								<p>Dr. Ghosh is a Visiting Research Associate in the Ohodnicki Lab. He received his B.Sc. in Electrical Engineering from Khulna University of Engineering &amp; Technology (KUET), Bangladesh in 2012, M.Sc. and Ph.D. degree in Electrical Engineering from Saga University, Japan in 2016 and 2019, respectively, as a recipient of prestigious Japanese govt. scholarship (MEXT). His research interests include computational electromagnetics, magnetic field analysis and 2D/3D magnetic material modeling using numerical method (FEM), performance analysis of laminated steel plates and iron cores used in inverters, transformers, and motors by loss calculation, stress, noise and vibration analysis, frequency domain and time domain analysis, characteristics analysis of soft magnetic materials (Ferrite Core).</p>
+							</div>
+						</article>
+						<article class="person reveal">
+							<img class="person__photo" src="images/Chris.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Chris Bracken</h3>
+								<a class="person__mail" href="mailto: csb80@pitt.edu">csb80[at]pitt[dot]edu</a>
+								<p>Chris is a Research Associate who received his B.S. in Electrical Engineering in the Circuits and Devices concentration from the University of Pittsburgh in 2015, as well as the Nanoscience and Engineering Certificate. Undergraduate work experience involved a Senior Design Project with Eaton and Undergraduate Research experience with Dr. Brian D’Urso’s Nanomaterials Research Group, being exposed to electronics design of a photodetector amplifier circuit for an optical trap and learning about growth and characterization of Graphene. Before joining the Ohodnicki Lab, Chris worked at Keystone Compliance and performed Electromagnetic Interference (EMI) tests for five years. Research interests include the standardization and characterization of magnetic materials, as well as potentially exploring electromagnetic interference with materials. In his spare time, he enjoys music, running, photography, and reading (particularly philosophy).</p>
+							</div>
+						</article>
+						<article class="person reveal">
+							<img class="person__photo" src="images/Tulika.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Dr. Tulika Khanikar</h3>
+								<a class="person__mail" href="mailto: tuk11@pitt.edu">tuk11[at]pitt[dot]edu</a>
+								<p>Dr. Khanikar is a Visiting Research Associate in the Ohodnicki lab, MEMS Department, University of Pittsburgh. She received her B.Sc. degree in Physics from Dibrugarh University, India in 2014, M.Sc. and Ph.D. degrees from the Department of Physics, Indian Institute of Technology (Indian School of Mines) Dhanbad in the year 2016 and 2022, respectively. Her research expertise and interests include optical fiber sensors functionalized with stimuli responsive materials, fiber optic sensor modelling using FEM, surface plasmon resonance sensing, fiber optic acoustic sensing for pipeline monitoring using NDE methods.</p>
+							</div>
+						</article>
+						<article class="person reveal">
+							<img class="person__photo" src="images/SaiSree11.jpg" alt="" loading="lazy" />
+							<div>
+								<h3 class="person__name">Dr. Sai Sree Varahabhatla</h3>
+								<a class="person__mail" href="mailto: smv78@pitt.edu">smv78[at]pitt[dot]edu</a>
+								<p>Saisree holds a Bachelor’s degree in Metallurgical and Materials Engineering from the National Institute of Technology, Jaipur, and a Doctor of Philosophy from the University of North Texas. Her doctoral research focused on the additive manufacturing of soft magnetic materials. Saisree’s research interests include physical metallurgy, additive manufacturing, and magnetism. In her spare time, she enjoys hiking and exploring the outdoors.</p>
+							</div>
+						</article>
 					</div>
-				</article>
-			</div>
-		</div>
-		<div class="group">
-			<h2 class="group-title">Research Associates & Postdoctoral Researchers</h2>
-			<div class="people">
-				<article class="person">
-					<img class="person__photo" src="images/Nagesh.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Dr. Nagesh Lalam</h3>
-						<a class="person__mail" href="mailto: NRL42@pitt.edu">NRL42[at]pitt[dot]edu</a>
-						<p>Dr. Lalam is a Visiting Senior Research Associate at the MEMS Department, University of Pittsburgh. Dr. Lalam received his Ph.D degree in Optical Engineering from the Northumbria University, Newcastle, UK in 2018. He obtained MSc degree in Optical Communications Engineering from the University of Greenwich, London, UK in 2012. Before joining University of Pittsburgh, he worked as a Postdoctoral Fellow at National Energy Technology Laboratory, where he was involved in development of both discrete and distributed fiber sensor systems for energy systems monitoring applications. He has authored or co-authored more than 30 articles in journals and international conferences and holds one US patent (pending). His research interests include distributed fiber optic sensors, non-linear fiber optics, radio-over-fiber communications, fiber laser systems, and interferometric fiber sensing.</p>
-					</div>
-				</article>
-				<article class="person">
-					<img class="person__photo" src="images/Mohendro.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Dr. Mohendro Kumar Ghosh</h3>
-						<a class="person__mail" href="mailto: MKG57@pitt.edu">MKG57[at]pitt[dot]edu</a>
-						<p>Dr. Ghosh is a Visiting Research Associate in the Ohodnicki Lab. He received his B.Sc. in Electrical Engineering from Khulna University of Engineering &amp; Technology (KUET), Bangladesh in 2012, M.Sc. and Ph.D. degree in Electrical Engineering from Saga University, Japan in 2016 and 2019, respectively, as a recipient of prestigious Japanese govt. scholarship (MEXT). His research interests include computational electromagnetics, magnetic field analysis and 2D/3D magnetic material modeling using numerical method (FEM), performance analysis of laminated steel plates and iron cores used in inverters, transformers, and motors by loss calculation, stress, noise and vibration analysis, frequency domain and time domain analysis, characteristics analysis of soft magnetic materials (Ferrite Core).</p>
-					</div>
-				</article>
-				<article class="person">
-					<img class="person__photo" src="images/Chris.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Chris Bracken</h3>
-						<a class="person__mail" href="mailto: csb80@pitt.edu">csb80[at]pitt[dot]edu</a>
-						<p>Chris is a Research Associate who received his B.S. in Electrical Engineering in the Circuits and Devices concentration from the University of Pittsburgh in 2015, as well as the Nanoscience and Engineering Certificate. Undergraduate work experience involved a Senior Design Project with Eaton and Undergraduate Research experience with Dr. Brian D’Urso’s Nanomaterials Research Group, being exposed to electronics design of a photodetector amplifier circuit for an optical trap and learning about growth and characterization of Graphene. Before joining the Ohodnicki Lab, Chris worked at Keystone Compliance and performed Electromagnetic Interference (EMI) tests for five years. Research interests include the standardization and characterization of magnetic materials, as well as potentially exploring electromagnetic interference with materials. In his spare time, he enjoys music, running, photography, and reading (particularly philosophy).</p>
-					</div>
-				</article>
-				<article class="person">
-					<img class="person__photo" src="images/Tulika.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Dr. Tulika Khanikar</h3>
-						<a class="person__mail" href="mailto: tuk11@pitt.edu">tuk11[at]pitt[dot]edu</a>
-						<p>Dr. Khanikar is a Visiting Research Associate in the Ohodnicki lab, MEMS Department, University of Pittsburgh. She received her B.Sc. degree in Physics from Dibrugarh University, India in 2014, M.Sc. and Ph.D. degrees from the Department of Physics, Indian Institute of Technology (Indian School of Mines) Dhanbad in the year 2016 and 2022, respectively. Her research expertise and interests include optical fiber sensors functionalized with stimuli responsive materials, fiber optic sensor modelling using FEM, surface plasmon resonance sensing, fiber optic acoustic sensing for pipeline monitoring using NDE methods.</p>
-					</div>
-				</article>
-				<article class="person">
-					<img class="person__photo" src="images/SaiSree11.jpg" alt="" />
-					<div>
-						<h3 class="person__name">Dr. Sai Sree Varahabhatla</h3>
-						<a class="person__mail" href="mailto: smv78@pitt.edu">smv78[at]pitt[dot]edu</a>
-						<p>Saisree holds a Bachelor’s degree in Metallurgical and Materials Engineering from the National Institute of Technology, Jaipur, and a Doctor of Philosophy from the University of North Texas. Her doctoral research focused on the additive manufacturing of soft magnetic materials. Saisree’s research interests include physical metallurgy, additive manufacturing, and magnetism. In her spare time, she enjoys hiking and exploring the outdoors.</p>
-					</div>
-				</article>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 <footer class="footer">
-	<ul class="footer__icons">
-		<li>
-			<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
-			</a>
-		</li>
-		<li>
-			<a href="mailto: pro8@pitt.edu" aria-label="Email">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
-			</a>
-		</li>
-	</ul>
-
-	<ul class="footer__legal">
-		<li>&copy; All rights reserved.</li>
-		<li>Design: HTML5 UP and Yang-Duan Su</li>
-	</ul>
+	<div class="wrap">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<img class="footer__logo" src="images/ohodnicki-mark-reversed.svg" alt="" />
+				<span class="footer__word">Ohodnicki Lab</span>
+			</div>
+			<ul class="footer__icons">
+				<li>
+					<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="mailto: pro8@pitt.edu" aria-label="Email">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer__legal">
+			<li>&copy; All rights reserved.</li>
+			<li>Design: HTML5 UP and Yang-Duan Su</li>
+		</ul>
+	</div>
 </footer>
 
+<script src="assets/js/lab.js" defer></script>
 </body>
 </html>

@@ -2,29 +2,42 @@
 <!--
 =================================================================
   Dr. Paul Ohodnicki
-  Styling lives in: assets/css/lab.css
+  Styling:    assets/css/lab.css   (all colours and sizes live there)
+  Behaviour:  assets/js/lab.js     (menu, fade-ins, tabs, slideshow)
 
   EDITING GUIDE (no coding experience needed)
   * To change wording, type over the text between the tags.
-  * To add an entry, copy one whole block (from one opening tag to
-    its matching closing tag), paste it below, then change the
-    picture, the text and the name.
+  * To add an entry, copy one whole block (from an opening tag to
+    its matching closing tag), paste it below, and change the
+    picture, text and date.
   * Pictures go in the "images" folder. PDFs go in "files".
-  * The menu below is the same on every page. If you change it,
-    change it on every page.
+  * The menu below is repeated on every page. Change it everywhere.
+  * Blocks marked PLACEHOLDER are suggestions - edit or delete them.
 =================================================================
 -->
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Dr. Paul Ohodnicki</title>
+	<link rel="icon" href="images/ohodnicki-mark-primary.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
 	<link rel="stylesheet" href="assets/css/lab.css" />
+	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
 
 <nav class="nav">
-	<a class="nav__brand" href="index.html">Ohodnicki Lab</a>
+	<!-- LOGO: the reversed mark, for dark backgrounds.
+	     If your horizontal lockup also reads well on navy, replace the two
+	     lines below with:
+	     <img class="nav__logo" src="images/ohodnicki-lockup-horizontal.svg" alt="Ohodnicki Lab" /> -->
+	<a class="nav__brand" href="index.html">
+		<img class="nav__logo" src="images/ohodnicki-mark-reversed.svg" alt="Ohodnicki Lab" />
+		<span class="nav__word">Ohodnicki Lab</span>
+	</a>
 
 	<input class="nav__check" type="checkbox" id="menu-toggle" />
 	<label class="nav__burger" for="menu-toggle">Menu</label>
@@ -66,15 +79,16 @@
 
 <header class="page-hero">
 	<div class="wrap">
+		<p class="eyebrow">People</p>
 		<h1>Dr. Paul Ohodnicki</h1>
-		<hr class="page-hero__rule" />
 		<p class="page-hero__lede">Associate Professor, Mechanical Engineering and Materials Science; Electrical and Computer Engineering Director, <a href="https://catalog.upp.pitt.edu/preview_program.php?catoid=72&amp;poid=36208">Engineering Science Program</a> Faculty Lead, <a href="https://www.engineering.pitt.edu/AMPED/">Advanced Magnetics for Power &amp; Energy Development (AMPED) Consortium</a></p>
 	</div>
+	<img class="page-hero__mark" src="images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
 
 <section class="band band--light">
 	<div class="wrap">
-		<div class="layout">
+		<div class="split">
 			<aside class="side">
 				<img class="person__photo" src="images/Paul.jpg" alt="" />
 				<h2 class="side__title" style="margin-top:18px">Contact</h2>
@@ -87,81 +101,89 @@
 				</ul>
 			</aside>
 			<div>
-			<section class="section">
-				<h2 class="section__title">Bio</h2>
-				<p>Paul R. Ohodnicki is an associate professor in the Department of Mechanical Engineering and Materials Science at the University of Pittsburgh. He received his Ph.D. in Materials Science and Engineering from Carnegie Mellon University in 2008, after which he joined PPG Industries R&amp;D working on thin-film coating materials and earned the Advanced Manufacturing and Materials Innovation Award from Carnegie Science Center in 2012. Ohodnicki later continued his career at the DOE National Energy Technology Laboratory (NETL), where he eventually served as a technical portfolio lead guiding teams of materials scientists working on the development of optical and microwave sensors as well as magnetic materials and power electronics development for high frequency transformer based solar PV / energy storage inverters. He is the recipient of the 2016 Presidential Early Career Award for Scientists and Engineers, the highest honor the federal government can bestow on early-career scientists or engineers. Before joining the University of Pittsburgh as an Associate Professor, he received the 2019 R&amp;D 100 Award owing to his work on cobalt-rich metal amorphous nanocrystalline alloys for permeability-engineering gapless inductors.</p>
-				<p>Currently, his research group focuses on the exploration of novel processing methods for emerging high frequency magnetic materials using applied electromagnetic fields spanning the frequency range from DC to optical. Successful pursuit of this research with scientific and technical rigor also requires a detailed understanding of the interplay between electromagnetic fields and emerging material systems under investigation, and so the characterization of material electromagnetic properties over a wide frequency range is also a core capability of the laboratory. Integration of novel quantum sensing materials with device platforms is also a core pursuit of the laboratory with applications including optical fiber-based sensors and passive wireless sensors capable of multiple parameters measuring for electrical assets health monitoring. Noble metal nanoparticles embedded thin films has been demonstrated as novel functional materials for enhanced optical response. Potential applications of interest includes transformer temperature sensing and dissolved gas analysis, as well as internal temperature measurement and vent gas detection for battery systems.</p>
-			</section>
-			<section class="section">
-				<h2 class="section__title">Research Interest and Highlights</h2>
-				<ul class="spec">
-					<li>Magnetic materials for large-scale, high frequency inductive components (transformers, inductors and motors); novel photonic and electronic materials for optic fiber-based sensors; applied electromagnetic and microwave materials; thermal energy conversion and management</li>
-					<li>Developed a Cobalt-based metal amorphous nanocrystalline alloys for gapless inductor with tuneable permeability and sensor applications, leading to winning the R&amp;D 100 Award</li>
-					<li>Co-developed a thin film material strategy enabling an award winning, commercialized low-emissivity coating targeted at ~30% of the commercial architectural window market</li>
-				</ul>
-			</section>
-			<section class="section">
-				<h2 class="section__title">Teaching Interest</h2>
-				<ul class="spec">
-					<li>Electromagnetic Properties of Materials (Undergraduate, Fall)</li>
-					<li>Magnetic Properties of Materials (Graduate, Spring)</li>
-				</ul>
-			</section>
-			<section class="section">
-				<h2 class="section__title">Education and Professional Experiences</h2>
-				<ul class="spec">
-					<li>2020 - Present, Associate Professor, Mechanical Engineering and Material Science, University of Pittsburgh</li>
-					<li>2020 - Present, Director, Engineering Science Program</li>
-					<li>2015 – 2019, Technical Portfolio Lead, Functional Materials Team, National Energy Technology Laboratory (NETL)</li>
-					<li>2013 – 2015, Team Leader, Electrochemical and Magnetic Materials Team, National Energy Technology Laboratory (NETL)</li>
-					<li>2010 – 2013, Material Scientist, Chemistry &amp; Surface Science Division, National Energy Technology Laboratory (NETL)</li>
-					<li>2010, Federal Project Manager, Power System Division, National Energy Technology Laboratory (NETL)</li>
-					<li>2008 – 2010, Visiting Scholar/ R&amp;D Engineer, PPG Industries</li>
-				</ul>
-			</section>
-			<section class="section">
-				<h2 class="section__title">Awards and Honors</h2>
-				<ul class="spec">
-					<li>R&amp;D 100 Award, R&amp;D Magazine, 2019</li>
-					<li>Advanced Manufacturing and Materials Category Innovation Award, Carnegie Science Center, 2019</li>
-					<li>Service to America Medal Finalist, U.S. Department of Energy, 2017</li>
-					<li>Presidential Early Career Award in Science and Engineering, U.S. Department of Energy, 2016</li>
-					<li>Outstanding Team, Federal Executive Board Excellence in Federal Service, Department of Energy, 2015</li>
-					<li>Selected for the Pittsburgh Business Times “Fast Tracker Award”, 2013</li>
-					<li>Selected as the TMS Representative to the Emerging Leader Alliance Program, 2012</li>
-					<li>Rookie of the Year, Federal Executive Board Excellence in Federal Service, Department of Energy, 2012</li>
-					<li>Co-recipient of Advanced Manufacturing Category Innovation Award, Carnegie Science Center, 2012</li>
-					<li>TMS Young Leader Professional Development Award, 2009</li>
-					<li>Best Doctoral Thesis Dissertation Award, Materials Science Department, CMU, 2008</li>
-					<li>Class Marshal, Pitt School of Engineering, Awarded Spring 2005</li>
-					<li>Outstanding Senior in Engineering Physics, Pitt School of Engineering, Awarded Spring 2005</li>
-					<li>Outstanding Senior in Economics, Pitt Economics Department, Awarded Fall 2004</li>
-				</ul>
-			</section>
+				<section class="section reveal">
+					<h2 class="section__title">Bio</h2>
+					<p>Paul R. Ohodnicki is an associate professor in the Department of Mechanical Engineering and Materials Science at the University of Pittsburgh. He received his Ph.D. in Materials Science and Engineering from Carnegie Mellon University in 2008, after which he joined PPG Industries R&amp;D working on thin-film coating materials and earned the Advanced Manufacturing and Materials Innovation Award from Carnegie Science Center in 2012. Ohodnicki later continued his career at the DOE National Energy Technology Laboratory (NETL), where he eventually served as a technical portfolio lead guiding teams of materials scientists working on the development of optical and microwave sensors as well as magnetic materials and power electronics development for high frequency transformer based solar PV / energy storage inverters. He is the recipient of the 2016 Presidential Early Career Award for Scientists and Engineers, the highest honor the federal government can bestow on early-career scientists or engineers. Before joining the University of Pittsburgh as an Associate Professor, he received the 2019 R&amp;D 100 Award owing to his work on cobalt-rich metal amorphous nanocrystalline alloys for permeability-engineering gapless inductors.</p>
+					<p>Currently, his research group focuses on the exploration of novel processing methods for emerging high frequency magnetic materials using applied electromagnetic fields spanning the frequency range from DC to optical. Successful pursuit of this research with scientific and technical rigor also requires a detailed understanding of the interplay between electromagnetic fields and emerging material systems under investigation, and so the characterization of material electromagnetic properties over a wide frequency range is also a core capability of the laboratory. Integration of novel quantum sensing materials with device platforms is also a core pursuit of the laboratory with applications including optical fiber-based sensors and passive wireless sensors capable of multiple parameters measuring for electrical assets health monitoring. Noble metal nanoparticles embedded thin films has been demonstrated as novel functional materials for enhanced optical response. Potential applications of interest includes transformer temperature sensing and dissolved gas analysis, as well as internal temperature measurement and vent gas detection for battery systems.</p>
+				</section>
+				<section class="section reveal">
+					<h2 class="section__title">Research Interest and Highlights</h2>
+					<ul class="spec">
+						<li>Magnetic materials for large-scale, high frequency inductive components (transformers, inductors and motors); novel photonic and electronic materials for optic fiber-based sensors; applied electromagnetic and microwave materials; thermal energy conversion and management</li>
+						<li>Developed a Cobalt-based metal amorphous nanocrystalline alloys for gapless inductor with tuneable permeability and sensor applications, leading to winning the R&amp;D 100 Award</li>
+						<li>Co-developed a thin film material strategy enabling an award winning, commercialized low-emissivity coating targeted at ~30% of the commercial architectural window market</li>
+					</ul>
+				</section>
+				<section class="section reveal">
+					<h2 class="section__title">Teaching Interest</h2>
+					<ul class="spec">
+						<li>Electromagnetic Properties of Materials (Undergraduate, Fall)</li>
+						<li>Magnetic Properties of Materials (Graduate, Spring)</li>
+					</ul>
+				</section>
+				<section class="section reveal">
+					<h2 class="section__title">Education and Professional Experiences</h2>
+					<ul class="spec">
+						<li>2020 - Present, Associate Professor, Mechanical Engineering and Material Science, University of Pittsburgh</li>
+						<li>2020 - Present, Director, Engineering Science Program</li>
+						<li>2015 – 2019, Technical Portfolio Lead, Functional Materials Team, National Energy Technology Laboratory (NETL)</li>
+						<li>2013 – 2015, Team Leader, Electrochemical and Magnetic Materials Team, National Energy Technology Laboratory (NETL)</li>
+						<li>2010 – 2013, Material Scientist, Chemistry &amp; Surface Science Division, National Energy Technology Laboratory (NETL)</li>
+						<li>2010, Federal Project Manager, Power System Division, National Energy Technology Laboratory (NETL)</li>
+						<li>2008 – 2010, Visiting Scholar/ R&amp;D Engineer, PPG Industries</li>
+					</ul>
+				</section>
+				<section class="section reveal">
+					<h2 class="section__title">Awards and Honors</h2>
+					<ul class="spec">
+						<li>R&amp;D 100 Award, R&amp;D Magazine, 2019</li>
+						<li>Advanced Manufacturing and Materials Category Innovation Award, Carnegie Science Center, 2019</li>
+						<li>Service to America Medal Finalist, U.S. Department of Energy, 2017</li>
+						<li>Presidential Early Career Award in Science and Engineering, U.S. Department of Energy, 2016</li>
+						<li>Outstanding Team, Federal Executive Board Excellence in Federal Service, Department of Energy, 2015</li>
+						<li>Selected for the Pittsburgh Business Times “Fast Tracker Award”, 2013</li>
+						<li>Selected as the TMS Representative to the Emerging Leader Alliance Program, 2012</li>
+						<li>Rookie of the Year, Federal Executive Board Excellence in Federal Service, Department of Energy, 2012</li>
+						<li>Co-recipient of Advanced Manufacturing Category Innovation Award, Carnegie Science Center, 2012</li>
+						<li>TMS Young Leader Professional Development Award, 2009</li>
+						<li>Best Doctoral Thesis Dissertation Award, Materials Science Department, CMU, 2008</li>
+						<li>Class Marshal, Pitt School of Engineering, Awarded Spring 2005</li>
+						<li>Outstanding Senior in Engineering Physics, Pitt School of Engineering, Awarded Spring 2005</li>
+						<li>Outstanding Senior in Economics, Pitt Economics Department, Awarded Fall 2004</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 	</div>
 </section>
 
 <footer class="footer">
-	<ul class="footer__icons">
-		<li>
-			<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
-			</a>
-		</li>
-		<li>
-			<a href="mailto: pro8@pitt.edu" aria-label="Email">
-				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
-			</a>
-		</li>
-	</ul>
-
-	<ul class="footer__legal">
-		<li>&copy; All rights reserved.</li>
-		<li>Design: HTML5 UP and Yang-Duan Su</li>
-	</ul>
+	<div class="wrap">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<img class="footer__logo" src="images/ohodnicki-mark-reversed.svg" alt="" />
+				<span class="footer__word">Ohodnicki Lab</span>
+			</div>
+			<ul class="footer__icons">
+				<li>
+					<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="mailto: pro8@pitt.edu" aria-label="Email">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer__legal">
+			<li>&copy; All rights reserved.</li>
+			<li>Design: HTML5 UP and Yang-Duan Su</li>
+		</ul>
+	</div>
 </footer>
 
+<script src="assets/js/lab.js" defer></script>
 </body>
 </html>

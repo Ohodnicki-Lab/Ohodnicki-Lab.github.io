@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300"><style>
+ .incoming .wpk{fill:none;stroke:#FFB81C;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+ .incoming{opacity:0;animation:arrive 1.5s ease-out forwards;}
+ .rstroke{fill:none;stroke:#003594;stroke-width:7;stroke-linecap:round;
+   stroke-dasharray:100;stroke-dashoffset:100;animation:draw 1.0s ease-out forwards .35s;}
+ .hex path{fill:none;stroke:#003594;stroke-width:2.5;stroke-linejoin:round;}
+ .hex{opacity:0;animation:fade .9s ease forwards .8s;}
+ .beam{fill:none;stroke:#FFB81C;stroke-linecap:round;stroke-linejoin:round;
+   stroke-dasharray:100;stroke-dashoffset:100;}
+ .beam.thin{stroke-width:4;} .beam.thick{stroke-width:6;} .beam.sine{stroke-width:4;}
+ .beam.mid{animation:draw 1.15s ease-out forwards 1.2s;}
+ .beam.top{animation:draw 1.1s ease-out forwards 1.3s;}
+ .beam.bot{animation:draw 1.1s ease-out forwards 1.35s;}
+ .beam.sine{animation:draw 1.3s ease-out forwards 1.25s;}
+ .nedge{fill:none;stroke:#FFB81C;stroke-width:1.3;stroke-linecap:round;
+   stroke-dasharray:100;stroke-dashoffset:100;opacity:0;}
+ .e1{animation:drawedge .55s ease forwards 3.0s;}
+ .e2{animation:drawedge .55s ease forwards 3.12s;}
+ .e3{animation:drawedge .55s ease forwards 3.24s;}
+ .e4{animation:drawedge .55s ease forwards 3.36s;}
+ .node{fill:#FFB81C;opacity:0;transform-box:fill-box;transform-origin:center;}
+ .n3{animation:pop .5s cubic-bezier(.2,1.5,.4,1) forwards 2.5s, fire 2.4s ease-in-out infinite 3.8s;}
+ .n1{animation:pop .5s cubic-bezier(.2,1.5,.4,1) forwards 2.62s, fire 2.4s ease-in-out infinite 3.9s;}
+ .n2{animation:pop .5s cubic-bezier(.2,1.5,.4,1) forwards 2.72s, fire 2.4s ease-in-out infinite 4.0s;}
+ .n4{animation:pop .5s cubic-bezier(.2,1.5,.4,1) forwards 2.85s, fire 2.4s ease-in-out infinite 4.15s;}
+ .halo{fill:#FFB81C;opacity:0;transform-box:fill-box;transform-origin:center;}
+ .n1h{animation:halo 2.4s ease-out infinite 3.9s;}
+ .n2h{animation:halo 2.4s ease-out infinite 4.0s;}
+ .n3h{animation:halo 2.4s ease-out infinite 3.8s;}
+ .n4h{animation:halo 2.4s ease-out infinite 4.15s;}
+ @keyframes arrive{0%{transform:translateX(-125px);opacity:0;}18%{opacity:1;}
+   78%{transform:translateX(0);opacity:1;}100%{transform:translateX(0);opacity:0;}}
+ @keyframes draw{to{stroke-dashoffset:0;}}
+ @keyframes fade{from{opacity:0;}to{opacity:1;}}
+ @keyframes drawedge{0%{opacity:0;stroke-dashoffset:100;}25%{opacity:.75;}
+   100%{opacity:.75;stroke-dashoffset:0;}}
+ @keyframes pop{0%{opacity:0;transform:scale(0);}70%{opacity:1;transform:scale(1.3);}
+   100%{opacity:1;transform:scale(1);}}
+ @keyframes fire{0%,100%{opacity:1;}50%{opacity:.45;}}
+ @keyframes halo{0%{opacity:.45;transform:scale(.5);}100%{opacity:0;transform:scale(3.2);}}
+</style><defs>
+<clipPath id="band" clip-rule="evenodd"><path d="M95 150 A105 105 0 1 0 305 150 A105 105 0 1 0 95 150 Z M160 150 A64 94 0 1 0 288 150 A64 94 0 1 0 160 150 Z" clip-rule="evenodd"/></clipPath>
+<clipPath id="rt"><rect x="0" y="0" width="224" height="300"/></clipPath>
+<mask id="wall">
+ <rect x="0" y="0" width="380" height="300" fill="white"/>
+ <path d="M95 150 A105 105 0 1 0 305 150 A105 105 0 1 0 95 150 Z M160 150 A64 94 0 1 0 288 150 A64 94 0 1 0 160 150 Z" fill="black" fill-rule="evenodd"/>
+ <rect x="224" y="0" width="156" height="300" fill="white"/>
+</mask>
+</defs>
+<g class="incoming"><path class="wpk" d="M44 142 C47.1 135.5 49.4 135.5 52.5 142.0 C55.6 148.5 57.9 148.5 61.0 142.0 C64.1 135.5 66.4 135.5 69.5 142.0 C72.6 148.5 74.9 148.5 78.0 142.0"/><path class="wpk" d="M44 150 C47.1 143.5 49.4 143.5 52.5 150.0 C55.6 156.5 57.9 156.5 61.0 150.0 C64.1 143.5 66.4 143.5 69.5 150.0 C72.6 156.5 74.9 156.5 78.0 150.0"/><path class="wpk" d="M44 158 C47.1 151.5 49.4 151.5 52.5 158.0 C55.6 164.5 57.9 164.5 61.0 158.0 C64.1 151.5 66.4 151.5 69.5 158.0 C72.6 164.5 74.9 164.5 78.0 158.0"/></g>
+<circle class="rstroke" pathLength="100" cx="200" cy="150" r="105"/>
+<ellipse class="rstroke" pathLength="100" cx="224" cy="150" rx="64" ry="94"/>
+<g class="hex" clip-path="url(#band)"><g clip-path="url(#rt)"><path d="M89.00 25.00 L71.68 35.00 L71.68 55.00 L89.00 65.00 L106.32 55.00 L106.32 35.00 Z"/><path d="M123.64 25.00 L106.32 35.00 L106.32 55.00 L123.64 65.00 L140.96 55.00 L140.96 35.00 Z"/><path d="M158.28 25.00 L140.96 35.00 L140.96 55.00 L158.28 65.00 L175.60 55.00 L175.60 35.00 Z"/><path d="M192.92 25.00 L175.60 35.00 L175.60 55.00 L192.92 65.00 L210.24 55.00 L210.24 35.00 Z"/><path d="M227.56 25.00 L210.24 35.00 L210.24 55.00 L227.56 65.00 L244.88 55.00 L244.88 35.00 Z"/><path d="M106.32 55.00 L89.00 65.00 L89.00 85.00 L106.32 95.00 L123.64 85.00 L123.64 65.00 Z"/><path d="M140.96 55.00 L123.64 65.00 L123.64 85.00 L140.96 95.00 L158.28 85.00 L158.28 65.00 Z"/><path d="M175.60 55.00 L158.28 65.00 L158.28 85.00 L175.60 95.00 L192.92 85.00 L192.92 65.00 Z"/><path d="M210.24 55.00 L192.92 65.00 L192.92 85.00 L210.24 95.00 L227.56 85.00 L227.56 65.00 Z"/><path d="M89.00 85.00 L71.68 95.00 L71.68 115.00 L89.00 125.00 L106.32 115.00 L106.32 95.00 Z"/><path d="M123.64 85.00 L106.32 95.00 L106.32 115.00 L123.64 125.00 L140.96 115.00 L140.96 95.00 Z"/><path d="M158.28 85.00 L140.96 95.00 L140.96 115.00 L158.28 125.00 L175.60 115.00 L175.60 95.00 Z"/><path d="M192.92 85.00 L175.60 95.00 L175.60 115.00 L192.92 125.00 L210.24 115.00 L210.24 95.00 Z"/><path d="M227.56 85.00 L210.24 95.00 L210.24 115.00 L227.56 125.00 L244.88 115.00 L244.88 95.00 Z"/><path d="M106.32 115.00 L89.00 125.00 L89.00 145.00 L106.32 155.00 L123.64 145.00 L123.64 125.00 Z"/><path d="M140.96 115.00 L123.64 125.00 L123.64 145.00 L140.96 155.00 L158.28 145.00 L158.28 125.00 Z"/><path d="M175.60 115.00 L158.28 125.00 L158.28 145.00 L175.60 155.00 L192.92 145.00 L192.92 125.00 Z"/><path d="M210.24 115.00 L192.92 125.00 L192.92 145.00 L210.24 155.00 L227.56 145.00 L227.56 125.00 Z"/><path d="M89.00 145.00 L71.68 155.00 L71.68 175.00 L89.00 185.00 L106.32 175.00 L106.32 155.00 Z"/><path d="M123.64 145.00 L106.32 155.00 L106.32 175.00 L123.64 185.00 L140.96 175.00 L140.96 155.00 Z"/><path d="M158.28 145.00 L140.96 155.00 L140.96 175.00 L158.28 185.00 L175.60 175.00 L175.60 155.00 Z"/><path d="M192.92 145.00 L175.60 155.00 L175.60 175.00 L192.92 185.00 L210.24 175.00 L210.24 155.00 Z"/><path d="M227.56 145.00 L210.24 155.00 L210.24 175.00 L227.56 185.00 L244.88 175.00 L244.88 155.00 Z"/><path d="M106.32 175.00 L89.00 185.00 L89.00 205.00 L106.32 215.00 L123.64 205.00 L123.64 185.00 Z"/><path d="M140.96 175.00 L123.64 185.00 L123.64 205.00 L140.96 215.00 L158.28 205.00 L158.28 185.00 Z"/><path d="M175.60 175.00 L158.28 185.00 L158.28 205.00 L175.60 215.00 L192.92 205.00 L192.92 185.00 Z"/><path d="M210.24 175.00 L192.92 185.00 L192.92 205.00 L210.24 215.00 L227.56 205.00 L227.56 185.00 Z"/><path d="M89.00 205.00 L71.68 215.00 L71.68 235.00 L89.00 245.00 L106.32 235.00 L106.32 215.00 Z"/><path d="M123.64 205.00 L106.32 215.00 L106.32 235.00 L123.64 245.00 L140.96 235.00 L140.96 215.00 Z"/><path d="M158.28 205.00 L140.96 215.00 L140.96 235.00 L158.28 245.00 L175.60 235.00 L175.60 215.00 Z"/><path d="M192.92 205.00 L175.60 215.00 L175.60 235.00 L192.92 245.00 L210.24 235.00 L210.24 215.00 Z"/><path d="M227.56 205.00 L210.24 215.00 L210.24 235.00 L227.56 245.00 L244.88 235.00 L244.88 215.00 Z"/><path d="M106.32 235.00 L89.00 245.00 L89.00 265.00 L106.32 275.00 L123.64 265.00 L123.64 245.00 Z"/><path d="M140.96 235.00 L123.64 245.00 L123.64 265.00 L140.96 275.00 L158.28 265.00 L158.28 245.00 Z"/><path d="M175.60 235.00 L158.28 245.00 L158.28 265.00 L175.60 275.00 L192.92 265.00 L192.92 245.00 Z"/><path d="M210.24 235.00 L192.92 245.00 L192.92 265.00 L210.24 275.00 L227.56 265.00 L227.56 245.00 Z"/></g></g>
+<g mask="url(#wall)">
+  <line class="beam thin top" pathLength="100" x1="78" y1="150" x2="328" y2="108"/>
+  <line class="beam thin bot" pathLength="100" x1="78" y1="150" x2="328" y2="192"/>
+  <line class="beam thick mid" pathLength="100" x1="78" y1="150" x2="340" y2="150"/>
+  <path class="beam sine" pathLength="100" d="M78 150 C91.5 135.7 102.0 135.7 115.4 150.0 C128.9 164.3 139.4 164.3 152.9 150.0 C166.3 135.7 176.8 135.7 190.3 150.0 C203.8 164.3 214.2 164.3 227.7 150.0 C241.2 135.7 251.7 135.7 265.1 150.0 C278.6 164.3 289.1 164.3 302.6 150.0 C316.0 135.7 326.5 135.7 340.0 150.0"/>
+</g>
+<path class="rstroke edge" pathLength="100" d="M200 45 A105 105 0 0 0 200 255"/>
+<path class="rstroke edge" pathLength="100" d="M224 56 A64 94 0 0 0 224 244"/>
+<g class="net">
+  <line class="nedge e1" pathLength="100" x1="328" y1="108" x2="340" y2="150"/>
+  <line class="nedge e2" pathLength="100" x1="328" y1="192" x2="340" y2="150"/>
+  <line class="nedge e3" pathLength="100" x1="340" y1="150" x2="356" y2="139"/>
+  <line class="nedge e4" pathLength="100" x1="328" y1="108" x2="356" y2="139"/>
+  <circle class="halo n1h" cx="328" cy="108" r="4.2"/>
+  <circle class="halo n2h" cx="328" cy="192" r="4.2"/>
+  <circle class="halo n3h" cx="340" cy="150" r="4.6"/>
+  <circle class="halo n4h" cx="356" cy="139" r="3.2"/>
+  <circle class="node n1" cx="328" cy="108" r="4.2"/>
+  <circle class="node n2" cx="328" cy="192" r="4.2"/>
+  <circle class="node n3" cx="340" cy="150" r="4.6"/>
+  <circle class="node n4" cx="356" cy="139" r="3.2"/>
+</g></svg>
