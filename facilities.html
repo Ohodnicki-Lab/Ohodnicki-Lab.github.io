@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--
+=================================================================
+  Facilities
+  Styling lives in: assets/css/lab.css
+
+  EDITING GUIDE (no coding experience needed)
+  * To change wording, type over the text between the tags.
+  * To add an entry, copy one whole block (from one opening tag to
+    its matching closing tag), paste it below, then change the
+    picture, the text and the name.
+  * Pictures go in the "images" folder. PDFs go in "files".
+  * The menu below is the same on every page. If you change it,
+    change it on every page.
+=================================================================
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Facilities</title>
+	<link rel="stylesheet" href="assets/css/lab.css" />
+</head>
+<body>
+
+<nav class="nav">
+	<a class="nav__brand" href="index.html">Ohodnicki Lab</a>
+
+	<input class="nav__check" type="checkbox" id="menu-toggle" />
+	<label class="nav__burger" for="menu-toggle">Menu</label>
+
+	<ul class="nav__list">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html#T1">News</a></li>
+		<li>
+			<a href="#">Research</a>
+			<ul class="nav__sub">
+				<li><a href="magnetics.html">Power Magnetic Materials</a></li>
+				<li><a href="sensors.html">Optical Thin-Films for Fiber Optic Sensors</a></li>
+				<li><a href="#">Applied Electromagnetic &amp; Microwave Materials</a></li>
+				<li><a href="#">Thermal Energy Conversion and Management</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">People</a>
+			<ul class="nav__sub">
+				<li><a href="paul.html">Principal Investigator</a></li>
+				<li><a href="FacultyStaff.html">Faculty &amp; Staffs</a></li>
+				<li><a href="students.html">Students</a></li>
+				<li><a href="alumni.html">Group Alumni</a></li>
+			</ul>
+		</li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a class="is-active" href="facilities.html">Facilities</a></li>
+		<li><a href="https://engineering.pitt.edu/departments/mems/undergraduate/engineering-science/">Engineering Science Program</a></li>
+		<li>
+			<a href="#">Collaborations</a>
+			<ul class="nav__sub">
+				<li><a href="https://www.engineering.pitt.edu/AMPED/">AMPED Consortium</a></li>
+				<li><a href="https://www.engineering.pitt.edu/UPISC/">UPISC Workshop</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<header class="page-hero">
+	<div class="wrap">
+		<h1>Facilities</h1>
+		<hr class="page-hero__rule" />
+	</div>
+</header>
+
+<section class="band band--light">
+	<div class="wrap">
+		<div class="layout">
+			<nav class="side">
+				<ul>
+					<li><a href="#F1">Induction Heating</a></li>
+					<li><a href="#F2">Laser Processing</a></li>
+					<li><a href="#F3">Furnaces</a></li>
+					<li><a href="#F4">Magnetic Characterization</a></li>
+					<li><a href="#F5">Inductance Measurement</a></li>
+					<li><a href="#F6">Bode 10 VNA</a></li>
+					<li><a href="#F7">Core Loss Characterization</a></li>
+					<li><a href="#F8">Melt Spinner</a></li>
+					<li><a href="#F9">Compact Arc Melter</a></li>
+					<li><a href="#F10">Flash Annealing System</a></li>
+					<li><a href="#F11">Microwave Processing System</a></li>
+					<li><a href="#F12">Keysight VNA</a></li>
+					<li><a href="#F13">Powder Processing</a></li>
+					<li><a href="#F14">LHPG system</a></li>
+					<li><a href="#F15">Fiber Optic Temp./Gas Sensing</a></li>
+					<li><a href="#F16">Fiber Optic Magnetic Field Sensing</a></li>
+					<li><a href="#F17">NA Measurement and Magneto-Optics</a></li>
+					<li><a href="#F18">Structural Health Monitoring</a></li>
+					<li><a href="#F19">UV-VIS-NIR Spectrophotometer</a></li>
+					<li><a href="#F20">Li-ion Battery Tester</a></li>
+					<li><a href="http://www.nano.pitt.edu/facilities">Nanofabrication and Characterization</a></li>
+				</ul>
+			</nav>
+			<div>
+			<section class="section" id="F1">
+				<h2 class="section__title">Induction Heating</h2>
+				<figure class="figure">
+					<img src="images/induction.jpg" alt="" />
+				</figure>
+				<p class="section__meta">2.4 kW Ambrell Induction</p>
+				<ul class="spec">
+					<li>Frequency range: 150-400 kHz</li>
+					<li>Set of different capacitors</li>
+					<li>Sef of coil designs: helical coil, split-helical coil, and pancake coil</li>
+				</ul>
+			</section>
+			<section class="section" id="F2">
+				<h2 class="section__title">Laser Processing</h2>
+				<figure class="figure">
+					<img src="images/LaserProcess.jpg" alt="" />
+				</figure>
+				<p class="section__meta">Quantel Q-Smart 450</p>
+				<ul class="spec">
+					<li>Nd-YAG 1064nm, 6ns duration, 10Hz repeat; ≤ 450mJ</li>
+					<li>~10mm beam diameter, claim ~6.5mm</li>
+					<li>Optical demagnification x10</li>
+					<li>Micrometer controlled xy-stage from samples</li>
+					<li>High Vacuum Chamber for samples</li>
+					<li>PL power easily varied from 10-450mJ</li>
+				</ul>
+			</section>
+			<section class="section" id="F3">
+				<h2 class="section__title">Furnaces</h2>
+				<figure class="figure">
+					<img src="images/Furnance.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Left: 815ºC 6x6 High Temp Hot Plate</li>
+					<li>Right: 1100ºC 13L Carbolite-Gero Furnace</li>
+				</ul>
+			</section>
+			<section class="section" id="F4">
+				<h2 class="section__title">Magnetic Characterization</h2>
+				<figure class="figure">
+					<img src="images/magneticchar.jpg" alt="" />
+				</figure>
+				<p class="section__meta">Lake Shore VSM 8604</p>
+				<ul class="spec">
+					<li>Fields 2.6 T</li>
+					<li>10 kOe/s field ramp rate; 10 ms/pt data acquisition rate</li>
+					<li>FORC capabilities</li>
+					<li>Rapid, repeatable temperature option exchange</li>
+					<li>Temperature range 4.2 K to 1273 K</li>
+				</ul>
+			</section>
+			<section class="section" id="F5">
+				<h2 class="section__title">LCR Meter</h2>
+				<figure class="figure">
+					<img src="images/LCRMeter.JPG" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Measures inductance (L), capacitance (C), and resistance (R) for magnetic cores</li>
+				</ul>
+			</section>
+			<section class="section" id="F6">
+				<h2 class="section__title">Bode 100 Vector Network Analyzer</h2>
+				<figure class="figure">
+					<img src="images/Bode100VNA.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Measures frequency response from 1 Hz to 50 MHz</li>
+				</ul>
+			</section>
+			<section class="section" id="F7">
+				<h2 class="section__title">Core Loss Characterization</h2>
+				<figure class="figure">
+					<img src="images/coreloss.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>The left-hand side is a test setup using an amplifier for the tests, and the right-hand side is a setup using a H-Bridge excitation system</li>
+				</ul>
+			</section>
+			<section class="section" id="F8">
+				<h2 class="section__title">Edmund Buhler Melt Spinner MSP 10</h2>
+				<figure class="figure">
+					<img src="images/MSP10.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Used to cast amorphous nanocrystalline ribbons with widths 1-10mm</li>
+					<li>Laboratory scaled system for 5 or 10g per run</li>
+					<li>Uses a copper spinning wheel to cool and produce the ribbon</li>
+				</ul>
+			</section>
+			<section class="section" id="F9">
+				<h2 class="section__title">Edmund Buhler Compact Arc Melter (MAM-1)</h2>
+				<figure class="figure">
+					<img src="images/MAM-1.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Designed to melt samples 5-20g up to 3500°C</li>
+					<li>Small melting chamber allows fast evacuation and low gas consumption</li>
+					<li>Crucible plates with customizable molds to produce uniform ingots</li>
+				</ul>
+			</section>
+			<section class="section" id="F10">
+				<h2 class="section__title">Flash Annealing System</h2>
+				<figure class="figure">
+					<img src="images/Flash.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Student developed annealing system for thin amorphous nanocrystalline ribbons</li>
+					<li>Fire brick housing built around the copper blocks to help reduce heat loss</li>
+					<li>Allows for fast uniform heating during rapid annealing tests</li>
+				</ul>
+			</section>
+			<section class="section" id="F11">
+				<h2 class="section__title">Microwave Processing System</h2>
+				<figure class="figure">
+					<img src="images/MicrowaveProcess.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Operating mode and frequency: Single mode and 2.45 GHz</li>
+					<li>Power: 1.2 kW</li>
+					<li>Maximum Temperature: 2100ºC</li>
+				</ul>
+			</section>
+			<section class="section" id="F12">
+				<h2 class="section__title">Keysight Vector Network Analyzer</h2>
+				<figure class="figure">
+					<img src="images/KeysightVNA.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Vector Network Analyzer (Keysight E5080A, 9 kHz – 9 GHz)</li>
+					<li>Keysight N1500A Materials Measurement Suite</li>
+				</ul>
+			</section>
+			<section class="section" id="F13">
+				<h2 class="section__title">Powder Processing</h2>
+				<figure class="figure">
+					<img src="images/powder.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>CARVER Mini-C Press</li>
+					<li>Retsch 100 PM</li>
+				</ul>
+			</section>
+			<section class="section" id="F14">
+				<h2 class="section__title">LHPG System</h2>
+				<figure class="figure">
+					<img src="images/Laser02.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Laser Heated Pedestal Growth System for single crystal fiber growth</li>
+				</ul>
+			</section>
+			<section class="section" id="F15">
+				<h2 class="section__title">Fiber Optic Temperature and Gas Sensing</h2>
+				<figure class="figure">
+					<img src="images/TempGas.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>1200 C Tube Furnace</li>
+					<li>Air, N2, H2, CO2 Flow-Controlled Gas Distribution System</li>
+					<li>Deuterium, Tungsten-Halogen Broadband Light Sources</li>
+					<li>Flame Series UV-VIS-NIR Spectrometers</li>
+				</ul>
+			</section>
+			<section class="section" id="F16">
+				<h2 class="section__title">Fiber Optic Magnetic Field Sensing</h2>
+				<figure class="figure">
+					<img src="images/FieldSense.jpg" alt="" />
+				</figure>
+			</section>
+			<section class="section" id="F17">
+				<h2 class="section__title">NA Measurement and Magneto-Optics</h2>
+				<figure class="figure">
+					<img src="images/NA-MO.jpg" alt="" />
+				</figure>
+			</section>
+			<section class="section" id="F18">
+				<h2 class="section__title">Structural Health Monitoring</h2>
+				<figure class="figure">
+					<img src="images/Canister.jpg" alt="" />
+				</figure>
+			</section>
+			<section class="section" id="F19">
+				<h2 class="section__title">JASCO UV-VIS-NIR Spectrophotometer</h2>
+				<figure class="figure">
+					<img src="images/JASCO-V-770.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>190 - 2500 nm</li>
+					<li>60 mm integrating sphere</li>
+				</ul>
+			</section>
+			<section class="section" id="F20">
+				<h2 class="section__title">Li-ion Battery Tester</h2>
+				<figure class="figure">
+					<img src="images/NewareBTS.jpg" alt="" />
+				</figure>
+				<ul class="spec">
+					<li>Left: Neware BTS-4000 with 8-channels of 5V and 20A</li>
+					<li>Right: Neware Environmental Chamber</li>
+				</ul>
+			</section>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<ul class="footer__icons">
+		<li>
+			<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
+			</a>
+		</li>
+		<li>
+			<a href="mailto: pro8@pitt.edu" aria-label="Email">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="footer__legal">
+		<li>&copy; All rights reserved.</li>
+		<li>Design: HTML5 UP and Yang-Duan Su</li>
+	</ul>
+</footer>
+
+</body>
+</html>

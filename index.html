@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<!--
+=================================================================
+  OHODNICKI LAB — HOME PAGE
+  Styling lives in: assets/css/lab.css
+
+  EDITING GUIDE (no coding experience needed)
+  -----------------------------------------------------------------
+  * To change wording: type over the text between the tags.
+  * To add a news item, video, or press item: copy one whole
+    <li class="card"> ... </li> block, paste it directly above or
+    below, then change the picture, the text and the date.
+  * Pictures go in the "images" folder. PDFs go in "files".
+  * Newest items go at the TOP of each list.
+  * Grey notes like this one are instructions for you; the website
+    does not display them.
+=================================================================
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ohodnicki Lab</title>
+	<link rel="stylesheet" href="assets/css/lab.css" />
+</head>
+<body>
+
+<!-- =============================================================
+     NAVIGATION  (repeat this same block on every other page)
+     ============================================================= -->
+<nav class="nav">
+	<a class="nav__brand" href="index.html">Ohodnicki Lab</a>
+
+	<input class="nav__check" type="checkbox" id="menu-toggle" />
+	<label class="nav__burger" for="menu-toggle">Menu</label>
+
+	<ul class="nav__list">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html#T1">News</a></li>
+		<li>
+			<a href="#">Research</a>
+			<ul class="nav__sub">
+				<li><a href="magnetics.html">Power Magnetic Materials</a></li>
+				<li><a href="sensors.html">Optical Thin-Films for Fiber Optic Sensors</a></li>
+				<li><a href="#">Applied Electromagnetic &amp; Microwave Materials</a></li>
+				<li><a href="#">Thermal Energy Conversion and Management</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">People</a>
+			<ul class="nav__sub">
+				<li><a href="paul.html">Principal Investigator</a></li>
+				<li><a href="FacultyStaff.html">Faculty &amp; Staffs</a></li>
+				<li><a href="students.html">Students</a></li>
+				<li><a href="alumni.html">Group Alumni</a></li>
+			</ul>
+		</li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="facilities.html">Facilities</a></li>
+		<li><a href="https://engineering.pitt.edu/departments/mems/undergraduate/engineering-science/">Engineering Science Program</a></li>
+		<li>
+			<a href="#">Collaborations</a>
+			<ul class="nav__sub">
+				<li><a href="https://www.engineering.pitt.edu/AMPED/">AMPED Consortium</a></li>
+				<li><a href="https://www.engineering.pitt.edu/UPISC/">UPISC Workshop</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+
+<!-- =============================================================
+     HERO  (the navy title band)
+     ============================================================= -->
+<header class="hero">
+	<div class="wrap">
+		<h1>Ohodnicki Lab</h1>
+		<hr class="hero__rule" />
+		<p class="hero__tagline">Magnetic, Electronic, and Photonic Materials and Devices</p>
+	</div>
+</header>
+
+
+<!-- =============================================================
+     RESEARCH TILES  (four research areas)
+     ============================================================= -->
+<section class="tiles">
+	<a class="tile" href="magnetics.html">
+		<img src="images/pic01.jpg" alt="" />
+		<span class="tile__label">Power Magnetic Materials</span>
+	</a>
+	<a class="tile" href="sensors.html">
+		<img src="images/pic02.jpg" alt="" />
+		<span class="tile__label">Optical Thin-Films for Fiber Optic Sensors</span>
+	</a>
+	<a class="tile" href="#">
+		<img src="images/pic03.jpg" alt="" />
+		<span class="tile__label">Applied Electromagnetic &amp; Microwave Materials</span>
+	</a>
+	<a class="tile" href="#">
+		<img src="images/pic04.jpg" alt="" />
+		<span class="tile__label">Thermal Energy Conversion and Management</span>
+	</a>
+</section>
+
+
+<!-- =============================================================
+     GROUP PHOTO SLIDESHOW
+     To add a slide: copy one <figure class="slide"> block, and add
+     one more <button class="dot"> at the bottom. Then fix the
+     "1 / 6" numbers.
+     ============================================================= -->
+<section class="band band--night">
+	<div class="wrap">
+		<div class="slider">
+
+			<figure class="slide is-active">
+				<span class="slide__num">1 / 6</span>
+				<img src="images/SPIEDCS_2024.jpg" alt="" />
+				<figcaption class="slide__caption">Group dinner with NETL colleagues at SPIE DCS conference.(April, 2024)</figcaption>
+			</figure>
+
+			<figure class="slide">
+				<span class="slide__num">2 / 6</span>
+				<img src="images/picnic2022.jpg" alt="" />
+				<figcaption class="slide__caption">Group summer picnic gathering in Allison Park, PA.(June, 2022)</figcaption>
+			</figure>
+
+			<figure class="slide">
+				<span class="slide__num">3 / 6</span>
+				<img src="images/group2022.JPG" alt="" />
+				<figcaption class="slide__caption">Many thanks to Dr. Ahmed Talaat for his important contributions to Ohodnicki Lab!(April, 2022)</figcaption>
+			</figure>
+
+			<figure class="slide">
+				<span class="slide__num">4 / 6</span>
+				<img src="images/SPIEDCS_2022.JPG" alt="" />
+				<figcaption class="slide__caption">Group members gathered with NETL collaborators during SPIE DCS conference.(April, 2022)</figcaption>
+			</figure>
+
+			<figure class="slide">
+				<span class="slide__num">5 / 6</span>
+				<img src="images/TMS_2022.JPG" alt="" />
+				<figcaption class="slide__caption">Dinner in Anaheim, CA after presenting at TMS conference.(Feb, 2022)</figcaption>
+			</figure>
+
+			<figure class="slide">
+				<span class="slide__num">6 / 6</span>
+				<img src="images/group2020-01.JPG" alt="" />
+				<figcaption class="slide__caption">Group Formation.(Feb, 2020)</figcaption>
+			</figure>
+
+			<button class="slider__nav slider__prev" type="button" aria-label="Previous slide">&#10094;</button>
+			<button class="slider__nav slider__next" type="button" aria-label="Next slide">&#10095;</button>
+		</div>
+
+		<div class="dots">
+			<button class="dot is-active" type="button" aria-label="Slide 1"></button>
+			<button class="dot" type="button" aria-label="Slide 2"></button>
+			<button class="dot" type="button" aria-label="Slide 3"></button>
+			<button class="dot" type="button" aria-label="Slide 4"></button>
+			<button class="dot" type="button" aria-label="Slide 5"></button>
+			<button class="dot" type="button" aria-label="Slide 6"></button>
+		</div>
+	</div>
+</section>
+
+
+<!-- =============================================================
+     WELCOME TEXT
+     ============================================================= -->
+<section class="band band--light">
+	<div class="wrap">
+		<div class="band__head">
+			<h2>Welcome to Ohodnicki Lab !</h2>
+		</div>
+		<div class="prose">
+			<p>
+				Prof. Paul R. Ohodnicki, Jr. leads the Magnetic, Electronic, and Photonic Materials and Device Laboratory
+				under the Mechanical Engineering and Materials Science Department at the University of Pittsburgh with an emphasis on developing
+				an improved understanding of the interconnection between functional material
+				properties, electronic band structure, and nano/microstructure as well as the optimal integration with
+				emerging device platforms. An early focus of our group is targeting exploration of novel processing methods
+				for emerging high frequency magnetic materials using applied electromagnetic fields spanning the frequency
+				range from DC to optical.  Successful pursuit of this research with scientific and technical rigor also
+				requires a detailed understanding of the interplay between electromagnetic fields and emerging material
+				systems under investigation, and so the characterization of material electromagnetic properties over a wide
+				frequency range is also a core capability of the laboratory.  Novel photonic and electronic thin film materials
+				are also of interest, including emerging materials with complex electronic band structures such as correlated
+				electron and multi-phase nanocomposite-based systems.  Integration of novel functional materials with device
+				platforms is also a core pursuit of the laboratory with applications including optical fiber-based sensors,
+				passive wireless sensors, and inductive components for a wide range of power applications.
+				In all research endeavors, fundamental scientific questions that are pursued and explained have a clear linkage
+				with real-world application needs now or in the future. The Ohodnicki lab was recently started in February of 2020
+				and is currently in the process of being equipped with a range of instrumentation including: (1) furnaces and ovens
+				for high temperature thermal processing with controlled heating profiles, (2) electromagnetic field assisted thermal
+				processing, (3) high frequency impedance and vector network analyzers with magnetic and dielectric property test
+				fixtures as well as a probe station, (4) automated sensor testing systems, and (5) portable electronic and optical
+				measurement instrumentation.  A strong interest exists in tying these capabilities and research endeavors with
+				fundamental and even first principle theoretical calculations to both inform and improve future theoretical modeling
+				efforts as well as to pursue initiatives such as computational design of materials and processing approaches.
+				The laboratory also has an interest in applied electromagnetic modeling methods and techniques to understand the
+				requirements for optimal integration of emerging functional materials systems with device applications.
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<!-- =============================================================
+     LATEST NEWS
+     Newest item first. Copy one <li class="card"> block to add one.
+     ============================================================= -->
+<section class="band band--cool" id="T1">
+	<div class="wrap">
+		<div class="band__head">
+			<h2>Latest News</h2>
+		</div>
+
+		<ul class="grid">
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/Yang-Duan_defense.jpg" alt="" /></div>
+				<div class="card__body">
+					Congratulations to Yang-Duan Su on his successful PhD thesis defense today, February 5th, entitled "Optical Sensitization of Functional Thin Films as Fiber Optic Sensors for Gas and Temperature Monitoring in Electrical Assets"!
+					<span class="card__date">Feb. 5th, 2026</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/Suraj_defense.jpg" alt="" /></div>
+				<div class="card__body">
+					Congratulations to Suraj Mullurkara for successfully defending his PhD thesis entitled "Soft magnetic Ferrites and Metal-Ferrite Nanocomposites for Power Electronic Applications" on Wednesday, January14th!
+					<span class="card__date">Jan. 14th, 2026</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/Lauren_proposal.jpg" alt="" /></div>
+				<div class="card__body">
+					Congratulations to Lauren Wewer for successfully presenting and defending her PhD Dissertation Proposal on Tuesday, January 13th, entitled "Processing-Informed Design of Amorphous and Nanocrystalline Soft Magnetic Alloys"!
+					<span class="card__date">Jan. 13th, 2026</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/Tyler_defense.jpg" alt="" /></div>
+				<div class="card__body">
+					Congratulations to Tyler Paplham on his successful PhD thesis defense on Wednesday January 7th, 2026 entitled "Next Generation Soft Magnetic Alloys Through Advanced Electromagnetic and Stress Field Processing"! Tyler's PhD dissertation was an impressive combination of new advanced manufacturing process development, electromagnetic modeling, custom instrumentation design, and advanced experimentation, including materials processing and characterization of nanocrystalline alloys and bulk magnetic alloys.
+					<span class="card__date">Jan. 7th, 2026</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/Pengdi_defense.jpg" alt="" /></div>
+				<div class="card__body">
+					Congratulations to PhD student Pengdi Zhang on his successful PhD thesis defense! His thesis is entitled "An Integrated Framework for Pipeline Corrosion Detection using Guided Waves and Sim-to-Real Deep Learning". In his research, Pengdi combined high fidelity physics-based modeling, reduced order modeling, and artificial intelligence-based framework methods to develop and demonstrate a method for efficient interpretation of distributed optical fiber sensing data for the use case of corrosion detection. His work was rigorous and paves the way for future research and maturation of the technique for generalized structures and applications.
+					<span class="card__date">Oct. 8th, 2025</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/SPIEDCS_2025.gif" alt="" /></div>
+				<div class="card__body">
+					Congratulations to the entire research team from the University of Pittsburgh and the National Energy Technology Laboratory for another successful and productive SPIE Defense and Commercial Sensing 2025 meeting! The Ohodnicki Lab authored / co-authored a total of 8 collaborative presentations with NETL colleagues and celebrated a successful meeting with our annual joint dinner!
+					<span class="card__date">May, 2025</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__thumb"><img src="images/10000citation.jpg" alt="" /></div>
+				<div class="card__body">
+					A career milestone... &gt;10,000 citations on Google Scholar this week (https://lnkd.in/ej83CyHS)! While it's certainly not the only or even the best measure of scientific contribution, it is one to acknowledge and celebrate... particularly from the perspective that impactful science and engineering requires an entire community. Many thanks to the students, postdoctoral researchers, and collaborators over the years for their contributions!
+					<span class="card__date">March, 2025</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Congratulations to PhD student Tyler Paplham for his very first peer-reviewed manuscript published in <a href="https://link.springer.com/article/10.1557/s43578-022-00862-1"><span class="jrnl">Journal of Materials Research! </span></a>
+					<span class="card__date">Dec., 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					A new  Accelerator Study on Additive Manufacturing of Energy-Related Functional Materials chaired by Prof. Ohodnicki has been released at <a href="https://www.tms.org/portal/PUBLICATIONS/Studies/AM_Study/portal/Publications/Studies/AM/amStudy.aspx?hkey=69273b6a-3bee-4935-b151-8dc95a2a081f"><span class="jrnl">The Minerals, Metals &amp; Materials Society (TMS). </span></a>
+					<span class="card__date">Oct., 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki delivered tutorial talk and two invited panel sessions on Advanced Magnetic Designs for Electrification at <a href="https://www.linkedin.com/posts/ecce-ieee_ecce-renewableenergy-electricvehicles-activity-6979113944212779008-h8L3/?utm_source=share&amp;utm_medium=member_desktop/"><span class="jrnl">ECCE 2022</span></a> in Detroit, Michigan.
+					<span class="card__date">Oct. 9, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki delivered an invited talk on FUSION OF DISTRIBUTED FIBER OPTIC SENSING, ACOUSTIC NDE, AND ARTIFICIAL INTELLIGENCE FOR INFRASTRUCTURE MONITORING at <a href="https://ofs27.org/presentations/paul-ohodnicki/"><span class="jrnl">OFS 2022</span></a> in Alexandria, VA.
+					<span class="card__date">Sept. 2, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki delivered an invited talk on Nanocrystalline Soft Magnets at <a href="https://smm25.sciencesconf.org/resource/page/id/13"><span class="jrnl">25th Soft Magnetic Materials Conference</span></a> in Grenoble, France.
+					<span class="card__date">May. 5, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Congradulations to Prof. Ohodnicki for his <a href="https://www.linkedin.com/posts/paul-ohodnicki-366ab115_stem-pitt-materialsscience-activity-6926590155805917185-gjdx?utm_source=linkedin_share&amp;utm_medium=member_desktop_web"><span class="jrnl">Student Choice Instructor  of the Year Award</span></a> at the Swanson School of Engineering!
+					<span class="card__date">May. 1, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Congradulations to Yang-Duan Su, one of our Ph.D. students, on his journal review being named the Editor's Choice Article on MDPI <a href="https://www.mdpi.com/1424-8220/21/4/1397"><span class="jrnl">Sensors</span></a> Journal!
+					<span class="card__date">Mar. 10, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Recently, Prof. Ohodnicki delivered a talk on the topic "Application of Fiber Optic Sensing for Infrastructure Monitoring" at the Society for Analytical Chemists of Pittsburgh &amp; Spectroscopy Society of Pittsburgh.
+					<span class="card__date">Feb. 12, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki has become one of the faculty recipients for the John C. Mascaro Fellowship on the topic "Electric Motor Materials and Designs for a Sustainable Electrified Future." Congratulations!
+					<span class="card__date">Apr. 19, 2021</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Read Dr. Ahmed Talaat, Suraj M.V. and Prof. Ohodnicki's latest review article published in <a href="https://www.sciencedirect.com/science/article/pii/S0925838821009099?dgcid=author"><span class="jrnl">Journal of Alloys and Compounds</span></a> on soft magnetic metal and inorganic oxide nanocomposites for power applications!
+					<span class="card__date">Mar. 20, 2021</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Congratulations to Dr. Bo Liu on his new position as a Principal Investigator at Zhejiang Lab, China. With him being one of the first members of the Ohodnicki Lab, we would like to acknowledge and appreciate his significant contribution to the design and build-up of our LHPG system, and we wish him all the best in his future endeavors. Congrats Bo!
+					<span class="card__date">Feb. 27, 2021</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Yang-Duan Su, Dr. Chenhu Su and Prof. Ohodnicki's review is now published and available in <a href="https://www.mdpi.com/1424-8220/21/4/1397"><span class="jrnl">Sensors</span></a> addressing the fiber optic sensing technologies in battery management systems and energy storage applications.
+					<span class="card__date">Feb. 17, 2021</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					DARPA Project: Prof. Ohodnicki is now the University of Pittsburgh PI for a recently announced Phase I project selection from the Defense Advanced Research Projects Agency (DARPA) entitled &ldquo; Development and Commercialization of Permeability Engineered Soft Magnetic Nanocomposites for MW-Class Power Dense Energy Conversion&rdquo;.  The Ohodnicki Lab will collaborate with colleagues at the University of Pittsburgh, Carnegie Mellon University, and CorePower Magnetics to develop and demonstrate new high frequency magnetic materials and component technologies for advanced Department of Defense applications.
+					<span class="card__date">Nov. 16, 2020</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					ARPA-E Project: Prof. Ohodnicki is now the PI for a $1M award under the ARPA-E REPAIR program, on a project entitled &ldquo; &ldquo;Innervated&rdquo; Pipelines: A New Technology Platform for In-Situ Repair and Embedded Intelligence &rdquo;.  The Ohodnicki Lab will collaborate with Prof. Kevin Chen and Prof. Jung-Kun Lee at the University of Pittsburgh, as well as Drs. Kayte Denslow and Glenn Grant from the Pacific Northwest National Laboratory, in the area of embedded fiber optic sensors and in-situ repair of natural gas pipelines.
+					<span class="card__date">Nov. 16, 2020</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki and Dr. Ahmed Talaat delivered their talks on <a href="http://www.programmaster.org/PM/PM.nsf/ApprovedAbstracts/796BA55C6EA490FB8525852900532E31?OpenDocument"><span class="jrnl">Laser Processing</span></a> and <a href="http://www.programmaster.org/PM/PM.nsf/ApprovedAbstracts/EAA4B75976F980768525852B0009B97B?OpenDocument"><span class="jrnl">Rapid Thermal Processing</span></a> of Amorphous and Nanocrystalline Soft Magnetic Alloys at the MS&amp;T 2020 event on Nov. 4, 2020.
+					<span class="card__date">Nov. 4, 2020</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki's paper on soft magnetic FeNi-based nanocomposites was recently accepted and published in <a href="https://www.cambridge.org/core/journals/journal-of-materials-research/article/nanostructure-and-compositional-segregation-of-soft-magnetic-fenibased-nanocomposites-with-multiple-nanocrystalline-phases/BF103C689B255272D31C9D3633CEDE6D"><span class="jrnl">Journal of Materials Research</span></a>.
+					<span class="card__date">Oct. 29, 2020</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki delivered a seminar for the Pittsburgh Quantum Institute (PQI) seminar series about his research on fiber optic sensors for
+					energy transport and storage applications and passive wireless sensing.
+					<span class="card__date">Sept. 24, 2020</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Prof. Ohodnicki spoke at the ECE graduate seminar on his recent advanced works on
+					functional nanostructured materials and devices for emerging applications in the energy and defense sector.
+					<span class="card__date">Sept. 23, 2020</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__body">
+					Dr. Ahmed Talaat, Ph.D. student Suraj Venkateshwaran and Prof. Ohodnicki published a review in <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925838820328449"><span class="jrnl">Journal of Alloys and Compounds</span></a> on electromagnetic assisted thermal processing of soft magnetic alloys.
+					<span class="card__date">Aug. 11, 2020</span>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</section>
+
+
+<!-- =============================================================
+     FEATURED VIDEOS
+     ============================================================= -->
+<section class="band band--night">
+	<div class="wrap">
+		<div class="band__head">
+			<h2>Featured Videos</h2>
+		</div>
+
+		<ul class="grid">
+
+			<li class="card">
+				<div class="card__media">
+					<video controls>
+						<source src="images/SNL-compressed.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="card__body">
+					Prof. Ohodnicki's invited talk on soft magnetics for WBG and UWBG power electronics at the Sandia National Lab Power Electronics &amp; Energy Conversion virtual workshop.
+					<span class="card__date">Aug. 24, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__media">
+					<video controls>
+						<source src="images/FunNanoMat_LM.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="card__body">
+					Prof. Ohodnicki delivered a seminar to Lockheed Martin Corporation on functional nanostructured materials and device for energy applications.
+					<span class="card__date">Mar. 29, 2021</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__media">
+					<video controls>
+						<source src="images/LHPGGrow.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="card__body">
+					Dr. Bo Liu and Dr. Dolendra Karki demonstrated new capability in single crystal spphire fiber growth.
+					<span class="card__date">Feb. 1, 2021</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<div class="card__media">
+					<iframe src="https://www.youtube.com/embed/vZIihcFifKY" title="PQI seminar" allowfullscreen></iframe>
+				</div>
+				<div class="card__body">
+					Prof. Ohodnicki at the PQI seminar on emerging applications and materials for fiber optics sensors.
+					<span class="card__date">Sept. 24, 2020</span>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</section>
+
+
+<!-- =============================================================
+     PRESS & MEDIA
+     ============================================================= -->
+<section class="band band--light">
+	<div class="wrap">
+		<div class="band__head">
+			<h2>Press &amp; Media</h2>
+		</div>
+
+		<ul class="grid">
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.linkedin.com/posts/paul-ohodnicki-366ab115_magnetics-electrification-powermagnetics-activity-7369330194668478466-Xz_M?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAFWf1ugBDyfn0KhRJMXjtXUKX0b7Tv5lWxk"><img src="images/AMPED-2025.jpg" alt="" /></a>
+				<div class="card__body">
+					Advanced Magnetics for Power and Energy Development Consortium held another successful industry workshop on August 13th &amp; 14th at Energy Innovation Center!
+					<span class="card__date">Aug. 14th, 2025</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.linkedin.com/posts/paul-ohodnicki-366ab115_infrastructure-stem-energy-activity-7263972446553227264-C5Wp?utm_source=share&amp;utm_medium=member_desktop"><img src="images/UPISC-2024.jpg" alt="" /></a>
+				<div class="card__body">
+					The University of Pittsburgh Infrastructure Sensing Collaboration (UPISC) Workshop organized by Prof. Ohodnicki ended fruitfully with collaboration from National Labs and industry partners.The 2024 University of Pittsburgh Infrastructure Sensing Collaboration workshop (https://lnkd.in/g6rM67fU) was a great success with 120 registered attendees and an incredibly impressive lineup of invited speakers and panelists!
+					<span class="card__date">Nov., 2024</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.rdworldonline.com/rd-100-winners-for-2024-are-announced/"><img src="images/RD100award2024.jpg" alt="" /></a>
+				<div class="card__body">
+					"Our Research Group has won the 2024 R&amp;D100 award for "Nanocrystalline Axial Flux Electric Motor &amp; UltraSonic Photonics"
+					<span class="card__date">Aug. 24, 2024</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.rdworldonline.com/rd-100-winners-for-2024-are-announced/"><img src="images/Media_RD100_24.jpg" alt="" /></a>
+				<div class="card__body">
+					Our Fiber Optic Sensing Group has won the 2024 R&amp;D100 award for "UltraSonic Photonics"!
+					<span class="card__date">Aug. 24, 2024</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.linkedin.com/posts/paul-ohodnicki-366ab115_infrastructuresensing-artificialintelligence-activity-7128535126749155328-ne6D?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAFWf1ugBDyfn0KhRJMXjtXUKX0b7Tv5lWxk"><img src="images/UPISC-2023.jpg" alt="" /></a>
+				<div class="card__body">
+					Many thanks to the attendees of the 2023 Annual University of Pittsburgh Infrastructure Collaboration Workshop at the Energy Innovation Center! We had more than 80 registered attendees and the agenda was full of exceptionally impressive speakers and panelists from local and federal government, industry, and academia.
+					<span class="card__date">Dec., 2023</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.rdworldonline.com/rd-100-winners-for-2023-are-announced-2/"><img src="images/Media_RD100_23.jpg" alt="" /></a>
+				<div class="card__body">
+					In collaboration with NETL, the Fiber Optic Sensing Group at Ohodnicki Lab has won the 2023 R&amp;D100 award for real-time multi-parametric fiber optic sensors towards power transformer resilience!
+					<span class="card__date">Aug. 29, 2023</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://ieeexplore.ieee.org/iel7/9594898/9594919/09594967.pdf"><img src="images/Media_ECCE.jpg" alt="" /></a>
+				<div class="card__body">
+					Prof. Ohodnicki and colleagues received Best Paper Award from 2022 Industry Applications Society (IAS) Electric Machines Committee (EMC) for the paper &ldquo;Permeability Engineered Soft Magnetics for Power Dense Energy Conversion&rdquo; on ECCE.
+					<span class="card__date">Oct. 14, 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.linkedin.com/posts/paul-ohodnicki-366ab115_electrification-softmagnetics-powerelectronics-activity-6985031174511288320-IX6k/?utm_source=share&amp;utm_medium=member_desktop"><img src="images/Media_AMPED2022.jpg" alt="" /></a>
+				<div class="card__body">
+					Led by Prof. Ohodnicki, we successfully wrapped up our annual in-person Advanced Magnetics for Power and Energy Development (AMPED) consortium with NSF at the Energy Innovation Center, Pittsburgh.
+					<span class="card__date">Oct., 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.linkedin.com/posts/paul-ohodnicki-366ab115_infrastructure-sensing-fiberoptics-activity-6968975691019169792-ZB6B/?utm_source=share&amp;utm_medium=member_desktop"><img src="images/Media_UPISC2022.jpg" alt="" /></a>
+				<div class="card__body">
+					The first University of Pittsburgh Infrastructure Sensing Collaboration (UPISC) Workshop organized by Prof. Ohodnicki ended fruitfully with collaboration from National Labs and industry partners.
+					<span class="card__date">Sept., 2022</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://news.engineering.pitt.edu/pitt-ece-mems-researchers-win-2022-rd-100-award/"><img src="images/Media_RD.jpg" alt="" /></a>
+				<div class="card__body">
+					Prof. Ohodnicki was one of the recipients of 2022 R&amp;D 100 Award from R&amp;D Magazine for his previous research on High Spatial Resolution Optical Sensors for Harsh Environments led by Prof. Kevin Chen at University of Pittsburgh.
+					<span class="card__date">Sept. 07, 2022 (Source: Virtual Newsroom, Pitt Swanson School of Engineering, Retrieved from: https://news.engineering.pitt.edu/pitt-ece-mems-researchers-win-2022-rd-100-award/)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.bizjournals.com/pittsburgh/news/2022/08/17/20-people-to-know-energy-paul-ohodnicki.html?b=1660715771%5E22125518"><img src="images/Media09.jpg" alt="" /></a>
+				<div class="card__body">
+					Prof. Ohodnicki was mentioned as "20 People to Know in Energy" by Pittsburgh Business Times in recognition of his numerous works on power magnetics for energy applications spanning from academics to industry sectors.
+					<span class="card__date">Aug. 17, 2022 (Source: Pittsburgh Business Times, Retrieved from: https://www.bizjournals.com/pittsburgh/news/2022/08/17/20-people-to-know-energy-paul-ohodnicki.html?b=1660715771%5E22125518)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://news.engineering.pitt.edu/amped-consortium-receives-nsf-iucrc-planning-grant/"><img src="images/Media08.JPG" alt="" /></a>
+				<div class="card__body">
+					Our collaboration with the AMPED Consortium has been granted $60,000 for planning from the National Science Foundation (NSF). Read full article above!
+					<span class="card__date">Feb. 08, 2022 (Source: Virtual Newsroom, Pitt Swanson School of Engineering, Retrieved from: https://news.engineering.pitt.edu/amped-consortium-receives-nsf-iucrc-planning-grant/)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://news.engineering.pitt.edu/shedding-light-on-the-value-of-solar-power/"><img src="images/Media07.JPG" alt="" /></a>
+				<div class="card__body">
+					Our group receives $ 3 million from DOE Solar Energy Technologies Office to leverage our expertise in low-cost fiber optics in improving energy monitoring of solar power utilities. Read full article above!
+					<span class="card__date">Oct. 17, 2021 (Source: Virtual Newsroom, Pitt Swanson School of Engineering, Retrieved from: https://news.engineering.pitt.edu/shedding-light-on-the-value-of-solar-power/)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://news.engineering.pitt.edu/designing-a-more-sustainable-electric-vehicle/"><img src="images/Media06.JPG" alt="" /></a>
+				<div class="card__body">
+					We are excited about our recent partnership with Powdermet Inc. in a 200K DOE project to advance EV motor drive with novel nanomaterials! Read full article above!
+					<span class="card__date">Aug. 12, 2021 (Source: Virtual Newsroom, Pitt Swanson School of Engineering, Retrieved from: https://news.engineering.pitt.edu/designing-a-more-sustainable-electric-vehicle/)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://news.engineering.pitt.edu/pitt-nuclear-engineering-awarded-16-million-in-research-funding-from-us-doe/"><img src="images/Media05.JPG" alt="" /></a>
+				<div class="card__body">
+					We appreciate our funder from DOE Office of Nuclear Energy and collaborators from PNNL and Fluor Corporation for the opportunity to advance fiber optic-based nuclear waste storage monitoring enabled by physics-based AI! Read full article above!
+					<span class="card__date">Jun. 25, 2021 (Source: Virtual Newsroom, Pitt Swanson School of Engineering, Retrieved from: https://news.engineering.pitt.edu/pitt-nuclear-engineering-awarded-16-million-in-research-funding-from-us-doe/)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.eurekalert.org/pub_releases/2021-06/coec-cma060121.php"><img src="images/Media04.JPG" alt="" /></a>
+				<div class="card__body">
+					Our collaborator CorePower Magnetics, co-founded by Prof. Ohodnicki, has recently finalized exclusive intellectual property licenses with CMU and NETL. Read full article above!
+					<span class="card__date">Jun. 01, 2021 (Source: EurekAlert!, American Association for the Advancement of Science., Retrieved from: https://www.eurekalert.org/pub_releases/2021-06/coec-cma060121.php)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.eurekalert.org/pub_releases/2021-05/uop-baf051421.php"><img src="images/Media03.JPG" alt="" /></a>
+				<div class="card__body">
+					Prof. Ohodnicki receives $820K from Office of Naval Research for work on ultra-high frequency soft magnet to advance power electronics. Read full article above!
+					<span class="card__date">May. 14, 2021 (Source: EurekAlert!, American Association for the Advancement of Science., Retrieved from: https://www.eurekalert.org/pub_releases/2021-05/uop-baf051421.php)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.utilitydive.com/news/pennsylvania-regulators-take-first-key-step-to-identify-storage-boosting/598744/"><img src="images/Media02.JPG" alt="" /></a>
+				<div class="card__body">
+					Prof. Ohodnicki gave suggestions on energy storage and "solar plus storage" deployment in Pennsylvania on Utility Dive. Read full article above!
+					<span class="card__date">Apr. 21, 2021 (Source: Jason Plautz, Utility Dive, "Pennsylvania regulators take 'first key step' to identify storage boosting strategies. 2021" Retrieved from: https://www.utilitydive.com/news/pennsylvania-regulators-take-first-key-step-to-identify-storage-boosting/598744/)</span>
+				</div>
+			</li>
+
+			<li class="card">
+				<a class="card__thumb" href="https://www.eurekalert.org/pub_releases/2021-01/uop-prr012721.php"><img src="images/Media01.JPG" alt="" /></a>
+				<div class="card__body">
+					Congratulations to Prof. Ohodnicki on receiving the $ 1 million ARPA-E funding and award for fiber optic sensing innovations. Read full article above!
+					<span class="card__date">Jan. 27, 2021 (Source: EurekAlert!, American Association for the Advancement of Science. Retrieved from: https://www.eurekalert.org/pub_releases/2021-01/uop-prr012721.php)</span>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</section>
+
+
+<!-- =============================================================
+     FOOTER
+     ============================================================= -->
+<footer class="footer">
+	<ul class="footer__icons">
+		<li>
+			<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
+			</a>
+		</li>
+		<li>
+			<a href="mailto: pro8@pitt.edu" aria-label="Email">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="footer__legal">
+		<li>&copy; All rights reserved.</li>
+		<li>Design: HTML5 UP and Yang-Duan Su</li>
+	</ul>
+</footer>
+
+
+<!-- =============================================================
+     SLIDESHOW SCRIPT
+     The only JavaScript on the page. It moves the group photos
+     forward and back. You should not need to edit it.
+     ============================================================= -->
+<script>
+(function () {
+	var slides = document.querySelectorAll('.slide');
+	var dots   = document.querySelectorAll('.dot');
+	if (!slides.length) return;
+
+	var current = 0;
+
+	function show(n) {
+		current = (n + slides.length) % slides.length;
+		slides.forEach(function (slide, i) {
+			slide.classList.toggle('is-active', i === current);
+		});
+		dots.forEach(function (dot, i) {
+			dot.classList.toggle('is-active', i === current);
+		});
+	}
+
+	var prev = document.querySelector('.slider__prev');
+	var next = document.querySelector('.slider__next');
+	if (prev) prev.addEventListener('click', function () { show(current - 1); });
+	if (next) next.addEventListener('click', function () { show(current + 1); });
+
+	dots.forEach(function (dot, i) {
+		dot.addEventListener('click', function () { show(i); });
+	});
+
+	show(0);
+})();
+</script>
+
+</body>
+</html>
