@@ -1,5 +1,5 @@
-/* VERSION: v4 — hero photo slideshow. If you cannot find the text
-   `hero__media` in this file, it is the wrong copy. */
+/* VERSION: v5 — contact icons + positions. If you cannot find the text
+   `contact-list__icon` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
    Built to the Web Brand Brief.
@@ -151,6 +151,9 @@ h3 { font-size: var(--size-h3);   line-height: 1.3; font-weight: 600; }
    their strong vertical alignment. */
 .split { display: grid; grid-template-columns: var(--rail) 1fr; gap: var(--huge); align-items: start; }
 .split__label { position: sticky; top: calc(var(--nav-h) + var(--lg)); }
+/* Wider left column, for when it holds real content such as postal
+   addresses rather than just a heading */
+.split--wide { grid-template-columns: 300px 1fr; }
 /* Gold rule under a section heading */
 .rule-gold { display: block; width: 100%; max-width: 190px; height: 4px; background: var(--accent); margin: var(--md) 0 0; }
 
@@ -669,6 +672,9 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 .page-hero h1 { max-width: 26ch; }
 .page-hero__lede { margin: var(--lg) 0 0; max-width: var(--measure); color: var(--on-blue-mute); font-size: 18px; }
 .page-hero__lede a { color: var(--accent); }
+/* The call-to-action sits outside the lede on purpose: the rule above
+   would paint gold text onto a gold button and make it vanish. */
+.page-hero__cta { margin-top: var(--lg); }
 .page-hero .eyebrow { color: var(--accent); }
 /* The mark, watermarked into the right edge */
 .page-hero__mark {
@@ -684,8 +690,10 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 .side { position: sticky; top: calc(var(--nav-h) + var(--lg)); }
 .side__title { font-family: var(--display); font-size: 15px; font-weight: 700; margin: 0 0 var(--sm); }
 .side__lockup { width: 150px; margin-bottom: var(--lg); }
-.side ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--hairline); }
-.side a {
+/* Jump lists only. Scoped to nav.side so that aside.side (the contact
+   details and Paul's page) keeps normal inline links. */
+nav.side ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--hairline); }
+nav.side a {
   display: block;
   padding: 9px var(--md);
   margin-left: -1px;
@@ -695,12 +703,13 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
   font-size: 14px;
   line-height: 1.35;
 }
-.side a:hover { color: var(--blue); border-left-color: var(--accent); background: var(--mist); }
+nav.side a:hover { color: var(--blue); border-left-color: var(--accent); background: var(--mist); }
 
 /* Fact list */
-.facts { list-style: none; margin: 0; padding: 0; font-size: 15px; }
-.facts li { padding: var(--sm) 0; border-bottom: 1px solid var(--hairline); }
-.facts li:first-child { padding-top: 0; }
+.facts { list-style: none; margin: 0; padding: 0; font-size: 15px; border-left: 2px solid var(--hairline); }
+.facts li { padding: var(--sm) 0 var(--sm) var(--lg); border-bottom: 1px solid var(--hairline); }
+.facts li:last-child { border-bottom: 0; }
+.facts a { font-weight: 600; }
 
 /* Content section */
 .section + .section { margin-top: var(--huge); padding-top: var(--huge); border-top: 1px solid var(--hairline); }
@@ -739,6 +748,69 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 /* Embeds */
 .embed { aspect-ratio: 16 / 10; border: 1px solid var(--hairline); border-radius: var(--r-md); overflow: hidden; margin-bottom: var(--lg); }
 .embed iframe { width: 100%; height: 100%; border: 0; }
+
+/* Contact details with icons */
+.contact-list {
+  list-style: none;
+  margin: var(--lg) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--md);
+  border-left: 2px solid var(--hairline);
+}
+.contact-list > li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: var(--sm);
+  align-items: start;
+  padding-left: var(--lg);      /* keeps the icons clear of the rail */
+  padding-bottom: var(--md);
+  border-bottom: 1px solid var(--hairline);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.contact-list > li:last-child { border-bottom: 0; padding-bottom: 0; }
+/* Icons stand in for bullet points, so they sit at text size and line up
+   with the first line rather than sitting in a badge */
+.contact-list__icon { display: block; color: var(--blue); margin-top: .22em; }
+.contact-list__icon svg { width: 15px; height: 15px; fill: currentColor; }
+.contact-list strong { font-family: var(--display); font-weight: 700; letter-spacing: -0.01em; }
+.contact-list a { font-weight: 600; }
+
+/* Open positions - the loudest thing on the contact page */
+.positions__intro { max-width: var(--measure); font-size: 18px; margin: 0 0 var(--xl); }
+.postings { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--md); }
+.posting a {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--md);
+  align-items: center;
+  padding: var(--lg);
+  border: 1px solid var(--hair-on-blue);
+  border-radius: var(--r-md);
+  background: rgba(255,255,255,.07);
+  color: var(--on-blue);
+  transition: transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+}
+.posting a:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: rgba(255,255,255,.13);
+  color: var(--on-blue);
+}
+.posting__tag {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 1.5px;
+  padding: 5px 9px;
+  border-radius: var(--r-sm);
+  background: var(--accent);
+  color: #0A1633;
+  align-self: start;
+}
+.posting__title { font-size: 16px; line-height: 1.45; }
+.posting__go { font-size: 22px; color: var(--accent); transition: transform .25s var(--ease); }
+.posting a:hover .posting__go { transform: translateX(5px); }
 
 /* Position adverts */
 .docs { list-style: none; margin: var(--lg) 0 0; padding: 0; }
@@ -792,7 +864,7 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 }
 
 @media (max-width: 860px) {
-  .split { grid-template-columns: 1fr; gap: var(--xl); }
+  .split, .split--wide { grid-template-columns: 1fr; gap: var(--xl); }
   /* Both column types must stop sticking here. In one column the side
      column sits above the content, and a sticky element paints over its
      in-flow siblings - which is what made the text run underneath
@@ -808,6 +880,8 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
   .person { grid-template-columns: 1fr; }
   .person__photo { max-width: 200px; }
   .pub { grid-template-columns: 60px 1fr; gap: var(--md); }
+  .posting a { grid-template-columns: auto 1fr; row-gap: var(--xs); }
+  .posting__go { display: none; }
   .page-hero__mark { display: none; }
   .footer__top { flex-direction: column; align-items: flex-start; }
 }
