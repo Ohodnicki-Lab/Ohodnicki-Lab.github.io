@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="assets/css/lab.css" />
+	<link rel="stylesheet" href="assets/css/lab.css?v=4" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -78,8 +78,30 @@
 </nav>
 
 <header class="hero">
+
+	<!-- BACKGROUND IMAGES. Each image here has a matching description in the
+	     list further down, IN THE SAME ORDER. If you add, remove or reorder an
+	     image, do the same to the descriptions and to the dots. -->
+	<div class="hero__media">
+		<img class="hero__img is-active" src="images/fiber-optics.jpg" alt="" loading="eager" />
+		<img class="hero__img" src="images/interrogator.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/power-magnetics.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/magnetics.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/pipes.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/nuclear-cooling-towers.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/quantum-sensing.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/transformers.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/batteries.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/bridge.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/urban.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/edge-computing.jpg" alt="" loading="lazy" />
+		<img class="hero__img" src="images/ai.jpg" alt="" loading="lazy" />
+		<div class="hero__mask"></div>
+	</div>
+
 	<div class="wrap">
 		<div class="hero__grid">
+
 			<div>
 				<!-- PLACEHOLDER: this small line above the title is new. Edit or delete it. -->
 				<p class="eyebrow hero__eyebrow">University of Pittsburgh</p>
@@ -90,40 +112,110 @@
 					<a class="btn btn--outline" href="contact.html">Contact</a>
 				</div>
 			</div>
-			<!-- THE MARK. When you have ohodnicki-logo-animated.svg, swap the
-			     filename below for it; the gentle float is done in the stylesheet. -->
-			<div class="hero__mark">
-				<img src="images/ohodnicki-mark-reversed.svg" alt="Ohodnicki Lab monogram" />
+
+			<!-- DESCRIPTIONS of the images above, in the same order. -->
+			<div class="hero__caption">
+				<p class="hero__count"><span data-hero-num>01</span> / 13</p>
+				<div class="hero__descs">
+					<div class="hero__desc is-active">
+						<h2 class="hero__desc-title">Fiber Optic Sensing</h2>
+						<p class="hero__desc-text">Material fabrication and characterization, sensor calibration</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Interrogator Development</h2>
+						<p class="hero__desc-text">Fiber optic acoustic and temperature sensing, distributed sensing, signal processing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Power Magnetics</h2>
+						<p class="hero__desc-text">Magnetic material development for power applications</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Magnetic Characterization</h2>
+						<p class="hero__desc-text">Magnetic property characterization, magneto-optical-based sensing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Pipeline Monitoring</h2>
+						<p class="hero__desc-text">Infrastructure health monitoring using Ultrasonic-NDE and fiber-optic-based sensing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Nuclear Asset Monitoring</h2>
+						<p class="hero__desc-text">Nuclear plant and dry cask storage canisters, using Ultrasonic-NDE and fiber-optic-based sensing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Quantum Sensing</h2>
+						<p class="hero__desc-text">Optically Detected Magnetic Resonance</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Transformer Sensing</h2>
+						<p class="hero__desc-text">Energy grid asset health monitoring using fiber-optic-based acoustic, temperature, and gas sensing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Battery Sensing</h2>
+						<p class="hero__desc-text">Energy grid asset health monitoring integrated with Battery Management Systems, using fiber-optic-based acoustic, temperature, and gas sensing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Bridge Monitoring</h2>
+						<p class="hero__desc-text">Infrastructure health monitoring using passive acoustic sensing with fiber optics</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Urban Monitoring</h2>
+						<p class="hero__desc-text">Distributed sensing using existing dark fibers</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Edge Computing</h2>
+						<p class="hero__desc-text">Edge ML deployment and edge sensing</p>
+					</div>
+					<div class="hero__desc">
+						<h2 class="hero__desc-title">Artificial Intelligence</h2>
+						<p class="hero__desc-text">AI analytics, Sci-ML, computer vision, agentic AI</p>
+					</div>
+				</div>
+				<div class="hero__controls">
+					<ul class="hero__dots">
+							<li><button class="hero__dot is-active" type="button" aria-label="Image 1"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 2"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 3"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 4"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 5"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 6"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 7"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 8"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 9"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 10"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 11"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 12"></button></li>
+							<li><button class="hero__dot" type="button" aria-label="Image 13"></button></li>
+					</ul>
+					<button class="hero__pause" type="button" data-hero-pause aria-label="Pause the slideshow">&#10074;&#10074;</button>
+				</div>
 			</div>
+
 		</div>
 	</div>
-	<span class="hero__hint"></span>
 </header>
 
 <!-- PLACEHOLDER SECTION: these four figures are drawn from facts already
      on the site (citation count, R&D 100 awards, instrument list, founding
      year). Change the numbers and labels, or delete the whole section. -->
-<section class="band band--blue band--tight">
-	<div class="wrap">
-		<ul class="stats">
-			<li class="stat">
-				<span class="stat__num" data-count="12000" data-prefix="&gt;" data-suffix="+">&gt;12,000+</span>
-				<span class="stat__label">Citations</span>
-			</li>
-			<li class="stat">
-				<span class="stat__num" data-count="8">8</span>
-				<span class="stat__label">R&amp;D 100 Awards</span>
-			</li>
-			<li class="stat">
-				<span class="stat__num" data-count="20" data-suffix="+">20+</span>
-				<span class="stat__label">Major Instruments</span>
-			</li>
-			<li class="stat">
-				<span class="stat__num">2020</span>
-				<span class="stat__label">Founded</span>
-			</li>
-		</ul>
-	</div>
+<section class="statbar">
+	<ul class="stats">
+		<li class="stat">
+			<span class="stat__num" data-count="10000" data-prefix="&gt;" data-suffix="+">&gt;10,000+</span>
+			<span class="stat__label">Citations</span>
+		</li>
+		<li class="stat">
+			<span class="stat__num" data-count="3">3</span>
+			<span class="stat__label">R&amp;D 100 Awards</span>
+		</li>
+		<li class="stat">
+			<span class="stat__num" data-count="20" data-suffix="+">20+</span>
+			<span class="stat__label">Major Instruments</span>
+		</li>
+		<li class="stat">
+			<span class="stat__num">2020</span>
+			<span class="stat__label">Founded</span>
+		</li>
+	</ul>
 </section>
 
 <!-- RESEARCH AREAS. Each tile is one link. -->
@@ -164,72 +256,92 @@
 		<div class="split">
 			<div class="split__label reveal">
 				<h2>Welcome to Ohodnicki Lab !</h2>
+				<span class="rule-gold"></span>
+				<!-- Motifs from the lab mark: hexagonal lattice, the gold wave,
+				     and the sensor-node network. Decorative only. -->
+				<svg class="motif" viewBox="0 0 190 230" aria-hidden="true" focusable="false">
+		<polygon class="hex" points="34.0,60.0 11.5,47.0 11.5,21.0 34.0,8.0 56.5,21.0 56.5,47.0" />
+		<polygon class="hex" points="79.0,60.0 56.5,47.0 56.5,21.0 79.0,8.0 101.5,21.0 101.5,47.0" />
+		<polygon class="hex" points="56.5,99.0 34.0,86.0 34.0,60.0 56.5,47.0 79.0,60.0 79.0,86.0" />
+		<polygon class="hex" points="101.5,99.0 79.0,86.0 79.0,60.0 101.5,47.0 124.1,60.0 124.1,86.0" />
+		<polygon class="hex" points="34.0,138.0 11.5,125.0 11.5,99.0 34.0,86.0 56.5,99.0 56.5,125.0" />
+		<path class="wave" d="M 0,132.0 L 4,134.3 L 8,136.6 L 12,138.7 L 16,140.6 L 20,142.2 L 24,143.5 L 28,144.4 L 32,144.9 L 36,145.0 L 40,144.6 L 44,143.8 L 48,142.7 L 52,141.2 L 56,139.3 L 60,137.3 L 64,135.1 L 68,132.7 L 72,130.4 L 76,128.1 L 80,125.9 L 84,123.9 L 88,122.2 L 92,120.8 L 96,119.8 L 100,119.2 L 104,119.0 L 108,119.2 L 112,119.9 L 116,120.9 L 120,122.3 L 124,124.1 L 128,126.1 L 132,128.2 L 136,130.6 L 140,132.9 L 144,135.2 L 148,137.5 L 152,139.5 L 156,141.3 L 160,142.8 L 164,143.9 L 168,144.7 L 172,145.0 L 176,144.9 L 180,144.4" />
+		<line class="link" x1="24" y1="196" x2="72" y2="214" />
+		<line class="link" x1="72" y1="214" x2="126" y2="190" />
+		<line class="link" x1="126" y1="190" x2="168" y2="208" />
+		<circle class="node" cx="24" cy="196" r="4.5" />
+		<circle class="node" cx="72" cy="214" r="4.5" />
+		<circle class="node" cx="126" cy="190" r="4.5" />
+		<circle class="node" cx="168" cy="208" r="4.5" />
+	</svg>
 			</div>
 			<div class="reveal">
 				<div class="prose prose--lead">
-					<p style="text-align: justify;">Prof. Paul R. Ohodnicki, Jr. leads the Magnetic, Electronic, and Photonic Materials and Device Laboratory under the Mechanical Engineering and Materials Science Department at the University of Pittsburgh with an emphasis on developing an improved understanding of the interconnection between functional material properties, electronic band structure, and nano/microstructure as well as the optimal integration with emerging device platforms. An early focus of our group is targeting exploration of novel processing methods for emerging high frequency magnetic materials using applied electromagnetic fields spanning the frequency range from DC to optical. Successful pursuit of this research with scientific and technical rigor also requires a detailed understanding of the interplay between electromagnetic fields and emerging material systems under investigation, and so the characterization of material electromagnetic properties over a wide frequency range is also a core capability of the laboratory. Novel photonic and electronic thin film materials are also of interest, including emerging materials with complex electronic band structures such as correlated electron and multi-phase nanocomposite-based systems. Integration of novel functional materials with device platforms is also a core pursuit of the laboratory with applications including optical fiber-based sensors, passive wireless sensors, and inductive components for a wide range of power applications. In all research endeavors, fundamental scientific questions that are pursued and explained have a clear linkage with real-world application needs now or in the future. The Ohodnicki lab was recently started in February of 2020 and is currently in the process of being equipped with a range of instrumentation including: (1) furnaces and ovens for high temperature thermal processing with controlled heating profiles, (2) electromagnetic field assisted thermal processing, (3) high frequency impedance and vector network analyzers with magnetic and dielectric property test fixtures as well as a probe station, (4) automated sensor testing systems, and (5) portable electronic and optical measurement instrumentation. A strong interest exists in tying these capabilities and research endeavors with fundamental and even first principle theoretical calculations to both inform and improve future theoretical modeling efforts as well as to pursue initiatives such as computational design of materials and processing approaches. The laboratory also has an interest in applied electromagnetic modeling methods and techniques to understand the requirements for optimal integration of emerging functional materials systems with device applications.</p>
+					<p>Prof. Paul R. Ohodnicki, Jr. leads the Magnetic, Electronic, and Photonic Materials and Device Laboratory under the Mechanical Engineering and Materials Science Department at the University of Pittsburgh with an emphasis on developing an improved understanding of the interconnection between functional material properties, electronic band structure, and nano/microstructure as well as the optimal integration with emerging device platforms. An early focus of our group is targeting exploration of novel processing methods for emerging high frequency magnetic materials using applied electromagnetic fields spanning the frequency range from DC to optical. Successful pursuit of this research with scientific and technical rigor also requires a detailed understanding of the interplay between electromagnetic fields and emerging material systems under investigation, and so the characterization of material electromagnetic properties over a wide frequency range is also a core capability of the laboratory. Novel photonic and electronic thin film materials are also of interest, including emerging materials with complex electronic band structures such as correlated electron and multi-phase nanocomposite-based systems. Integration of novel functional materials with device platforms is also a core pursuit of the laboratory with applications including optical fiber-based sensors, passive wireless sensors, and inductive components for a wide range of power applications. In all research endeavors, fundamental scientific questions that are pursued and explained have a clear linkage with real-world application needs now or in the future. The Ohodnicki lab was recently started in February of 2020 and is currently in the process of being equipped with a range of instrumentation including: (1) furnaces and ovens for high temperature thermal processing with controlled heating profiles, (2) electromagnetic field assisted thermal processing, (3) high frequency impedance and vector network analyzers with magnetic and dielectric property test fixtures as well as a probe station, (4) automated sensor testing systems, and (5) portable electronic and optical measurement instrumentation. A strong interest exists in tying these capabilities and research endeavors with fundamental and even first principle theoretical calculations to both inform and improve future theoretical modeling efforts as well as to pursue initiatives such as computational design of materials and processing approaches. The laboratory also has an interest in applied electromagnetic modeling methods and techniques to understand the requirements for optimal integration of emerging functional materials systems with device applications.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- GROUP PHOTOS. To add one, copy a <figure class="slide"> block and add
-     one more <button class="dot"> below, then fix the "1 / 6" numbers. -->
-<section class="band band--blue">
+<!-- GROUP PHOTOS, full width and rotating on their own.
+     To add one: add an <img class="gal__img">, a matching
+     <div class="gal__cap"> block IN THE SAME ORDER, and one more
+     <button class="gal__dot">. Then fix the "1 / 6" numbers. -->
+<section class="gallery">
+
+	<div class="gallery__media">
+		<img class="gal__img is-active" src="images/SPIEDCS_2024.jpg" alt="" loading="lazy" />
+		<img class="gal__img" src="images/picnic2022.jpg" alt="" loading="lazy" />
+		<img class="gal__img" src="images/group2022.JPG" alt="" loading="lazy" />
+		<img class="gal__img" src="images/SPIEDCS_2022.JPG" alt="" loading="lazy" />
+		<img class="gal__img" src="images/TMS_2022.JPG" alt="" loading="lazy" />
+		<img class="gal__img" src="images/group2020-01.JPG" alt="" loading="lazy" />
+		<div class="gallery__mask"></div>
+	</div>
+
 	<div class="wrap">
-		<div class="split">
-			<div class="split__label">
-				<!-- PLACEHOLDER heading for the photo strip -->
-				<h2>In the Lab</h2>
-				<p class="split__note">6 photographs</p>
-			</div>
-			<div class="reveal">
-				<div class="slider">
-					<figure class="slide is-active">
-						<span class="slide__num">1 / 6</span>
-						<img src="images/SPIEDCS_2024.jpg" alt="" loading="lazy" />
-						<figcaption class="slide__caption">Group dinner with NETL colleagues at SPIE DCS conference.(April, 2024)</figcaption>
-					</figure>
-					<figure class="slide">
-						<span class="slide__num">2 / 6</span>
-						<img src="images/picnic2022.jpg" alt="" loading="lazy" />
-						<figcaption class="slide__caption">Group summer picnic gathering in Allison Park, PA.(June, 2022)</figcaption>
-					</figure>
-					<figure class="slide">
-						<span class="slide__num">3 / 6</span>
-						<img src="images/group2022.JPG" alt="" loading="lazy" />
-						<figcaption class="slide__caption">Many thanks to Dr. Ahmed Talaat for his important contributions to Ohodnicki Lab!(April, 2022)</figcaption>
-					</figure>
-					<figure class="slide">
-						<span class="slide__num">4 / 6</span>
-						<img src="images/SPIEDCS_2022.JPG" alt="" loading="lazy" />
-						<figcaption class="slide__caption">Group members gathered with NETL collaborators during SPIE DCS conference.(April, 2022)</figcaption>
-					</figure>
-					<figure class="slide">
-						<span class="slide__num">5 / 6</span>
-						<img src="images/TMS_2022.JPG" alt="" loading="lazy" />
-						<figcaption class="slide__caption">Dinner in Anaheim, CA after presenting at TMS conference.(Feb, 2022)</figcaption>
-					</figure>
-					<figure class="slide">
-						<span class="slide__num">6 / 6</span>
-						<img src="images/group2020-01.JPG" alt="" loading="lazy" />
-						<figcaption class="slide__caption">Group Formation.(Feb, 2020)</figcaption>
-					</figure>
-					<div class="slider__btns">
-						<button class="slider__nav slider__prev" type="button" aria-label="Previous photo">&#10094;</button>
-						<button class="slider__nav slider__next" type="button" aria-label="Next photo">&#10095;</button>
-					</div>
+		<!-- PLACEHOLDER heading for the photo strip -->
+		<h2 class="gallery__title">In the Lab</h2>
+		<span class="rule-gold"></span>
+
+		<div class="gal__caps">
+				<div class="gal__cap is-active">
+					<span class="gal__num">1 / 6</span>
+					<p>Group dinner with NETL colleagues at SPIE DCS conference.(April, 2024)</p>
 				</div>
-				<ul class="dots">
-					<li><button class="dot is-active" type="button" aria-label="Photo 1"></button></li>
-					<li><button class="dot" type="button" aria-label="Photo 2"></button></li>
-					<li><button class="dot" type="button" aria-label="Photo 3"></button></li>
-					<li><button class="dot" type="button" aria-label="Photo 4"></button></li>
-					<li><button class="dot" type="button" aria-label="Photo 5"></button></li>
-					<li><button class="dot" type="button" aria-label="Photo 6"></button></li>
-				</ul>
-			</div>
+				<div class="gal__cap">
+					<span class="gal__num">2 / 6</span>
+					<p>Group summer picnic gathering in Allison Park, PA.(June, 2022)</p>
+				</div>
+				<div class="gal__cap">
+					<span class="gal__num">3 / 6</span>
+					<p>Many thanks to Dr. Ahmed Talaat for his important contributions to Ohodnicki Lab!(April, 2022)</p>
+				</div>
+				<div class="gal__cap">
+					<span class="gal__num">4 / 6</span>
+					<p>Group members gathered with NETL collaborators during SPIE DCS conference.(April, 2022)</p>
+				</div>
+				<div class="gal__cap">
+					<span class="gal__num">5 / 6</span>
+					<p>Dinner in Anaheim, CA after presenting at TMS conference.(Feb, 2022)</p>
+				</div>
+				<div class="gal__cap">
+					<span class="gal__num">6 / 6</span>
+					<p>Group Formation.(Feb, 2020)</p>
+				</div>
+		</div>
+
+		<div class="gallery__controls">
+			<ul class="gal__dots">
+					<li><button class="gal__dot is-active" type="button" aria-label="Photo 1"></button></li>
+					<li><button class="gal__dot" type="button" aria-label="Photo 2"></button></li>
+					<li><button class="gal__dot" type="button" aria-label="Photo 3"></button></li>
+					<li><button class="gal__dot" type="button" aria-label="Photo 4"></button></li>
+					<li><button class="gal__dot" type="button" aria-label="Photo 5"></button></li>
+					<li><button class="gal__dot" type="button" aria-label="Photo 6"></button></li>
+			</ul>
+			<button class="hero__pause" type="button" data-gal-pause aria-label="Pause the slideshow">&#10074;&#10074;</button>
 		</div>
 	</div>
 </section>
@@ -577,6 +689,6 @@
 	</div>
 </footer>
 
-<script src="assets/js/lab.js" defer></script>
+<script src="assets/js/lab.js?v=4" defer></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
    3. REVEAL     fades sections in as they scroll into view
    4. COUNTERS   counts the homepage numbers up
    5. TABS       switches News / Videos / Press, and "Show all"
-   6. SLIDESHOW  the group photos
+   6. SLIDESHOWS the landing-page hero and the "In the Lab" gallery
 
    Everything is optional: if a page does not contain a piece,
    that piece is skipped. You should not need to edit this file.
@@ -132,26 +132,68 @@
     });
   });
 
-  /* ---------- 6. SLIDESHOW ---------- */
-  var slides = document.querySelectorAll('.slide');
-  if (slides.length) {
-    var dots = document.querySelectorAll('.dot');
-    var i = 0;
+  /* ---------- 6. SLIDESHOWS ----------
+     One function drives both the landing-page hero and the "In the Lab"
+     gallery. Photographs cross-fade in place and captions swap to match;
+     nothing is ever hidden with display:none, which is what caused the
+     old gallery to flicker. Everything rotates on its own, and each has
+     a pause button. */
+  function carousel(opt) {
+    var imgs = document.querySelectorAll(opt.img);
+    if (!imgs.length) return;
+
+    var caps = document.querySelectorAll(opt.cap);
+    var dots = document.querySelectorAll(opt.dot);
+    var num = opt.num ? document.querySelector(opt.num) : null;
+    var btn = document.querySelector(opt.pause);
+    var i = 0, timer = null;
 
     function show(n) {
-      i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
-      dots.forEach(function (d, k) {
-        d.classList.toggle('is-active', k === i);
-        d.setAttribute('aria-current', k === i ? 'true' : 'false');
+      i = (n + imgs.length) % imgs.length;
+      imgs.forEach(function (el, k) { el.classList.toggle('is-active', k === i); });
+      caps.forEach(function (el, k) { el.classList.toggle('is-active', k === i); });
+      dots.forEach(function (el, k) {
+        el.classList.toggle('is-active', k === i);
+        el.setAttribute('aria-current', k === i ? 'true' : 'false');
       });
+      if (num) num.textContent = ('0' + (i + 1)).slice(-2);
     }
 
-    var prev = document.querySelector('.slider__prev');
-    var next = document.querySelector('.slider__next');
-    if (prev) prev.addEventListener('click', function () { show(i - 1); });
-    if (next) next.addEventListener('click', function () { show(i + 1); });
-    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); }); });
+    function play() {
+      if (timer) return;
+      timer = setInterval(function () { show(i + 1); }, opt.hold);
+      if (btn) { btn.setAttribute('aria-label', 'Pause the slideshow'); btn.textContent = '\u275A\u275A'; }
+    }
+    function pause() {
+      clearInterval(timer);
+      timer = null;
+      if (btn) { btn.setAttribute('aria-label', 'Play the slideshow'); btn.textContent = '\u25B6'; }
+    }
+
+    dots.forEach(function (dot, k) {
+      dot.addEventListener('click', function () { show(k); pause(); play(); });
+    });
+    if (btn) {
+      btn.addEventListener('click', function () { if (timer) { pause(); } else { play(); } });
+    }
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { pause(); } else { play(); }
+    });
+
     show(0);
+    play();
   }
+
+  // HOW FAST EACH ONE RUNS: "hold" is how long a photograph stays on
+  // screen, in milliseconds (1000 = one second). Lower is faster.
+  carousel({
+    img: '.hero__img', cap: '.hero__desc', dot: '.hero__dot',
+    num: '[data-hero-num]', pause: '[data-hero-pause]', hold: 3500
+  });
+
+  carousel({
+    img: '.gal__img', cap: '.gal__cap', dot: '.gal__dot',
+    num: null, pause: '[data-gal-pause]', hold: 4500
+  });
+
 })();

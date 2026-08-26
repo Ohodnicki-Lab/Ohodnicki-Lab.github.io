@@ -1,3 +1,5 @@
+/* VERSION: v4 — hero photo slideshow. If you cannot find the text
+   `hero__media` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
    Built to the Web Brand Brief.
@@ -149,6 +151,20 @@ h3 { font-size: var(--size-h3);   line-height: 1.3; font-weight: 600; }
    their strong vertical alignment. */
 .split { display: grid; grid-template-columns: var(--rail) 1fr; gap: var(--huge); align-items: start; }
 .split__label { position: sticky; top: calc(var(--nav-h) + var(--lg)); }
+/* Gold rule under a section heading */
+.rule-gold { display: block; width: 100%; max-width: 190px; height: 4px; background: var(--accent); margin: var(--md) 0 0; }
+
+/* Decorative motifs taken from the lab mark: hexagonal lattice (the
+   materials), a gold wave (the signal) and a sensor-node network. Kept
+   quiet, as the brand brief asks. */
+.motif { width: 100%; max-width: 190px; margin-top: var(--xxl); overflow: visible; }
+.motif .hex  { fill: none; stroke: var(--blue); stroke-opacity: .20; stroke-width: 1.2; }
+.motif .wave { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round;
+               stroke-dasharray: 60 320; animation: travel 9s linear infinite; }
+.motif .link { stroke: var(--blue); stroke-opacity: .28; stroke-width: 1; }
+.motif .node { fill: var(--blue); fill-opacity: .5; }
+@keyframes travel { from { stroke-dashoffset: 380; } to { stroke-dashoffset: 0; } }
+
 .split__note { font-family: var(--mono); font-size: 12.5px; color: var(--slate); margin: var(--sm) 0 0; }
 .band--blue .split__note { color: var(--on-blue-mute); }
 
@@ -290,99 +306,159 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 
 /* ============================================================
    7. HERO
+   A fixed-height band of rotating photographs under a transparent
+   black mask. Left column: title and subtitle. Right column: the
+   description of whichever photograph is showing.
    ============================================================ */
 .hero {
   position: relative;
+  height: 640px;                 /* fixed height - photographs are cropped to fit */
   display: flex;
   align-items: center;
-  min-height: min(90vh, 820px);
-  padding: calc(var(--nav-h) + var(--huge)) 0 var(--huge);
-  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-bright) 55%, var(--blue) 100%);
-  background-size: 200% 200%;
-  animation: drift 24s ease-in-out infinite;
+  padding: var(--nav-h) 0 0;
+  background: var(--blue-deep);
   color: var(--on-blue);
   overflow: hidden;
 }
-@keyframes drift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
 
-/* Light bloom behind the mark - the "light" in the monogram */
-.hero::before {
-  content: "";
+/* --- the photographs --- */
+.hero__media { position: absolute; inset: 0; }
+.hero__img {
   position: absolute;
-  top: -20%; right: -8%;
-  width: 62vw; height: 62vw;
-  background: radial-gradient(circle, rgba(30,99,232,.8) 0%, rgba(30,99,232,0) 62%);
-  pointer-events: none;
+  will-change: opacity;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  /* First number = how long the cross-fade takes. Second = the slow
+     zoom while a photo is on screen. Lower numbers are faster. */
+  transition: opacity .55s var(--ease), transform 5s linear;
 }
-/* Hex lattice motif from the mark, kept quiet */
-.hero::after {
-  content: "";
+.hero__img.is-active { opacity: 1; transform: scale(1); }
+
+/* --- the transparent black mask ---
+   Three layers, so text stays readable over a photograph of any
+   brightness: heaviest behind the title on the left, eased in the middle
+   so the picture reads, lifted again under the caption on the right, plus
+   a darker strip at the top for the menu bar. --- */
+.hero__mask {
   position: absolute;
   inset: 0;
-  opacity: .22;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='96' viewBox='0 0 56 96'%3E%3Cpath d='M28 0l24 14v28L28 56 4 42V14z' fill='none' stroke='%23ffffff' stroke-opacity='0.3' stroke-width='1'/%3E%3Cpath d='M28 56l24 14v28L28 112 4 98V70z' fill='none' stroke='%23ffffff' stroke-opacity='0.3' stroke-width='1'/%3E%3C/svg%3E");
-  pointer-events: none;
+  background:
+    linear-gradient(100deg, rgba(3,8,20,.92) 0%, rgba(3,8,20,.68) 44%, rgba(3,8,20,.88) 100%),
+    linear-gradient(rgba(3,8,20,.72) 0%, rgba(3,8,20,0) 20%),
+    linear-gradient(rgba(3,8,20,.18), rgba(3,8,20,.42));
 }
+
 .hero .wrap { position: relative; z-index: 1; width: 100%; }
+/* Belt and braces: a soft shadow keeps every glyph legible even if a
+   photograph turns out to be very bright behind it. */
+.hero__eyebrow, .hero__title, .hero__lede,
+.hero__count, .hero__desc-title, .hero__desc-text { text-shadow: 0 2px 18px rgba(2,6,16,.6); }
+.hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: var(--huge); align-items: center; }
 
-.hero__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--huge); align-items: center; }
-
-.hero__eyebrow { color: var(--accent); }
+/* --- left column --- */
+.hero__eyebrow { color: var(--accent-soft); }   /* lighter gold: 12px text needs the extra contrast */
 .hero__title { font-size: var(--size-hero); line-height: 1.02; letter-spacing: -0.03em; max-width: 20ch; }
 .hero__title span { display: block; }
 .hero__title span:nth-child(2) { color: var(--accent); }
-
-/* Load sequence */
-.hero__title span, .hero__lede, .hero__cta, .hero__mark { animation: rise .9s var(--ease) both; }
-.hero__title span:nth-child(1) { animation-delay: .05s; }
-.hero__title span:nth-child(2) { animation-delay: .16s; }
-.hero__lede { animation-delay: .3s; }
-.hero__cta  { animation-delay: .42s; }
-.hero__mark { animation-delay: .2s; animation-duration: 1.4s; }
-@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
-
 .hero__lede {
   margin: var(--lg) 0 0;
   font-size: clamp(18px, 1.9vw, 22px);
   line-height: 1.5;
   max-width: 42ch;
-  color: var(--on-blue-mute);
+  color: #e8eefc;              /* lighter than the usual muted blue, for
+                                  contrast over an unpredictable photo */
 }
 .hero__cta { margin-top: var(--xl); display: flex; flex-wrap: wrap; gap: var(--sm); }
 
-/* The animated mark, breathing gently */
-.hero__mark { justify-self: center; width: 100%; max-width: 380px; }
-.hero__mark img { width: 100%; animation: breathe 9s ease-in-out infinite; }
-@keyframes breathe {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50%      { transform: translateY(-12px) scale(1.015); }
+/* Load sequence for the left column */
+.hero__title span, .hero__lede, .hero__cta { animation: rise .9s var(--ease) both; }
+.hero__title span:nth-child(1) { animation-delay: .05s; }
+.hero__title span:nth-child(2) { animation-delay: .16s; }
+.hero__lede { animation-delay: .3s; }
+.hero__cta  { animation-delay: .42s; }
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+/* --- right column: caption for the current photograph --- */
+.hero__caption { border-left: 2px solid var(--accent); padding-left: var(--lg); }
+.hero__count {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0 0 var(--sm);
+}
+/* All captions sit in the same place; only the active one shows, so the
+   layout never jumps when a longer description comes round */
+.hero__descs { position: relative; min-height: 10em; }
+.hero__desc {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .6s var(--ease), transform .6s var(--ease);
+  pointer-events: none;
+}
+.hero__desc.is-active { opacity: 1; transform: none; }
+.hero__desc-title {
+  font-family: var(--display);
+  font-size: clamp(21px, 2.2vw, 28px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--on-blue);
+  margin: 0 0 var(--xs);
+}
+.hero__desc-text {
+  margin: 0;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.5;
+  color: #e8eefc;
+  max-width: 46ch;
 }
 
-.hero__hint {
-  position: absolute;
-  left: 50%; bottom: var(--lg);
-  transform: translateX(-50%);
-  width: 1px; height: 44px;
-  background: linear-gradient(var(--accent), transparent);
-  animation: pulse 2.4s ease-in-out infinite;
+.hero__controls { display: flex; align-items: center; gap: var(--md); margin: var(--lg) 0 0; }
+.hero__dots { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; }
+.hero__pause {
+  flex: none;
+  width: 34px; height: 34px;
+  display: grid; place-items: center;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 50%;
+  background: rgba(3,8,20,.4);
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .25s var(--ease), border-color .25s var(--ease);
 }
-@keyframes pulse { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+.hero__pause:hover { background: rgba(3,8,20,.7); border-color: var(--accent); }
+.hero__dot {
+  width: 20px; height: 3px;
+  border: 0; padding: 0;
+  background: rgba(255,255,255,.35);
+  cursor: pointer;
+  transition: background .25s var(--ease);
+}
+.hero__dot:hover { background: var(--on-blue); }
+.hero__dot.is-active { background: var(--accent); }
 
 
 /* ============================================================
    8. STATS   (numbers count up - see lab.js)
    ============================================================ */
+.statbar { background: var(--blue-deep); }   /* edge to edge, no margins */
 .stats {
   list-style: none; margin: 0; padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1px;                                  /* the gap shows as a hairline */
   background: var(--hair-on-blue);
-  border: 1px solid var(--hair-on-blue);
-  border-radius: var(--r-md);
-  overflow: hidden;
 }
-.stat { padding: var(--lg) var(--xl); background: var(--blue-deep); }
+.stat { padding: var(--xl) var(--lg); background: var(--blue-deep); }
 .stat__num { display: block; font-family: var(--display); font-weight: 700; font-size: clamp(30px, 3.8vw, 48px); line-height: 1; letter-spacing: -0.03em; color: var(--accent); }
 .stat__label { display: block; margin-top: var(--xs); font-family: var(--mono); font-size: 11.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--on-blue-mute); }
 
@@ -421,33 +497,76 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 
 
 /* ============================================================
-   10. SLIDESHOW
+   10. GALLERY  ("In the Lab")
+   Same mechanism as the hero: full-width photographs that cross-fade
+   in place. Nothing is ever set to display:none, which is what used
+   to make the old version flicker on each change.
    ============================================================ */
-.slider { position: relative; }
-.slide { display: none; }
-.slide.is-active { display: block; animation: fade .6s var(--ease); }
-@keyframes fade { from { opacity: 0; transform: scale(.995); } to { opacity: 1; transform: none; } }
-
-.slide img { width: 100%; border-radius: var(--r-md); border: 1px solid var(--hair-on-blue); }
-.slide__num { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: 2px; color: var(--on-blue-mute); margin-bottom: var(--sm); }
-.slide__caption { margin: var(--md) 0 0; font-size: 15px; color: var(--on-blue-mute); max-width: var(--measure); }
-
-.slider__btns { display: flex; gap: var(--xs); margin-top: var(--lg); }
-.slider__nav {
-  width: 44px; height: 44px;
-  display: grid; place-items: center;
-  border: 1px solid var(--hair-on-blue);
-  border-radius: 50%;
-  background: transparent;
+.gallery {
+  position: relative;
+  height: 560px;                /* fixed height - photographs are cropped to fit */
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: var(--xl);
+  background: var(--blue-deep);
   color: var(--on-blue);
-  cursor: pointer;
-  transition: background .25s var(--ease), border-color .25s var(--ease);
+  overflow: hidden;
 }
-.slider__nav:hover { background: rgba(255,255,255,.12); border-color: var(--accent); }
+.gallery__media { position: absolute; inset: 0; }
+.gal__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity .6s var(--ease);
+}
+.gal__img.is-active { opacity: 1; }
 
-.dots { list-style: none; display: flex; gap: var(--xs); margin: var(--lg) 0 0; padding: 0; }
-.dot { width: 26px; height: 3px; border: 0; padding: 0; background: var(--hair-on-blue); cursor: pointer; transition: background .25s var(--ease); }
-.dot.is-active { background: var(--accent); }
+/* Dark at the foot, where the caption sits; clear at the top so the
+   photograph reads */
+.gallery__mask {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(3,8,20,.30) 0%, rgba(3,8,20,.20) 35%, rgba(3,8,20,.92) 100%);
+}
+.gallery .wrap { position: relative; z-index: 1; }
+.gallery__title { text-shadow: 0 2px 18px rgba(2,6,16,.6); }
+
+/* Captions stack in one place and cross-fade, so the layout never jumps */
+.gal__caps { position: relative; min-height: 5.4em; margin-top: var(--lg); }
+.gal__cap {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .6s var(--ease), transform .6s var(--ease);
+  pointer-events: none;
+}
+.gal__cap.is-active { opacity: 1; transform: none; }
+.gal__num { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: 2px; color: #fff; margin-bottom: var(--xs); }
+.gal__cap p {
+  margin: 0;
+  max-width: 62ch;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.5;
+  color: #e8eefc;
+  text-shadow: 0 2px 18px rgba(2,6,16,.6);
+}
+
+.gallery__controls { display: flex; align-items: center; gap: var(--md); margin-top: var(--md); }
+.gal__dots { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; }
+.gal__dot {
+  width: 26px; height: 3px;
+  border: 0; padding: 0;
+  background: rgba(255,255,255,.4);
+  cursor: pointer;
+  transition: background .25s var(--ease);
+}
+.gal__dot:hover { background: #fff; }
+.gal__dot.is-active { background: var(--accent); }
 
 
 /* ============================================================
@@ -653,7 +772,18 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
   .nav.is-scrolled { padding: var(--xs) var(--md); }
   .nav__burger { display: block; }
   .nav__list { display: none; width: 100%; margin: 0; padding: var(--xs) 0 var(--sm); border-top: 1px solid var(--hair-on-blue); }
-  .nav__check:checked ~ .nav__list { display: block; }
+  /* The full menu is 19 rows once the sub-menus are showing, which is
+     taller than a phone screen. The bar is position:fixed, so without a
+     height limit the last few items sit off-screen with no way to reach
+     them. Cap it to the viewport and let it scroll. */
+  .nav__check:checked ~ .nav__list {
+    display: block;
+    max-height: calc(100vh - 4rem);
+    max-height: calc(100dvh - 4rem);   /* dvh copes with phone toolbars */
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
   .nav__list > li { width: 100%; }
   .nav__list a { padding: 11px 0; }
   .nav__sub { position: static; opacity: 1; visibility: visible; transform: none; min-width: 0; padding: 0 0 var(--xs) var(--md); background: transparent; border: 0; }
@@ -663,10 +793,18 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; gap: var(--xl); }
-  .split__label { position: static; }
-  .hero { min-height: auto; }
+  /* Both column types must stop sticking here. In one column the side
+     column sits above the content, and a sticky element paints over its
+     in-flow siblings - which is what made the text run underneath
+     Paul's photograph and the jump lists. */
+  .split__label,
+  .side { position: static; }
+  .motif { display: none; }        /* no spare space to fill on a phone */
+  .hero { height: auto; min-height: 620px; padding: calc(var(--nav-h) + var(--xxl)) 0 var(--xxl); align-items: flex-start; }
   .hero__grid { grid-template-columns: 1fr; gap: var(--xl); }
-  .hero__mark { order: -1; justify-self: start; max-width: 150px; }
+  .hero__descs { min-height: 9em; }
+  .gallery { height: auto; min-height: 520px; padding-top: var(--xxl); }
+  .gal__caps { min-height: 7em; }
   .person { grid-template-columns: 1fr; }
   .person__photo { max-width: 200px; }
   .pub { grid-template-columns: 60px 1fr; gap: var(--md); }
@@ -678,4 +816,9 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001s !important; animation-iteration-count: 1 !important; transition-duration: .001s !important; }
   .reveal { opacity: 1; transform: none; }
+  /* The photographs still rotate, but swap instantly instead of
+     cross-fading and drifting. */
+  .hero__img { transition: none; transform: none; }
+  .hero__img.is-active { transform: none; }
+  .gal__img { transition: none; }
 }
