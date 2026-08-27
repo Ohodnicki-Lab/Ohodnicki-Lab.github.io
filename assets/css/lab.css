@@ -627,6 +627,18 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 .card__thumb { display: block; border: 0; overflow: hidden; background: var(--cloud); }
 .card__thumb:hover { border: 0; }
 .card__thumb img { width: 100%; height: auto; transition: transform .6s var(--ease); }
+
+/* Stand-in for items with no photograph: the lab mark on a tinted strip,
+   short enough to read as a divider rather than a picture */
+.card__thumb--logo {
+  display: grid;
+  place-items: center;
+  height: 118px;
+  background: var(--mist);
+  border-bottom: 1px solid var(--hairline);
+}
+.card__thumb--logo img { width: auto; height: 54px; opacity: .45; transition: opacity .4s var(--ease); }
+.card:hover .card__thumb--logo img { transform: none; opacity: .7; }
 .card:hover .card__thumb img { transform: scale(1.04); }
 
 .card__media { display: block; aspect-ratio: 16 / 9; background: var(--blue-deep); }
@@ -809,7 +821,8 @@ nav.side a:hover { color: var(--blue); border-left-color: var(--accent); backgro
   color: #0A1633;
   align-self: start;
 }
-.posting__title { font-size: 16px; line-height: 1.45; }
+.posting__title { display: block; font-size: 16px; line-height: 1.45; font-weight: 600; }
+.posting__summary { display: block; margin-top: var(--xs); font-size: 14px; line-height: 1.5; color: var(--on-blue-mute); }
 .posting__go { font-size: 22px; color: var(--accent); transition: transform .25s var(--ease); }
 .posting a:hover .posting__go { transform: translateX(5px); }
 
