@@ -6,7 +6,7 @@
    2. MENU       opens/closes the phone menu
    3. REVEAL     fades sections in as they scroll into view
    4. COUNTERS   counts the homepage numbers up
-   5. TABS       switches News / Videos / Press, and "Show all"
+   5. TABS       switches Latest News / Featured Videos\n   5b. NEWSROOM  filters the feed by tag, and "Show all"
    6. SLIDESHOWS the landing-page hero and the "In the Lab" gallery
 
    Everything is optional: if a page does not contain a piece,
@@ -122,14 +122,49 @@
     select(0);
   });
 
-  // "Show all" buttons reveal the rest of a long list
-  document.querySelectorAll('[data-show-all]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var list = document.getElementById(btn.getAttribute('data-show-all'));
-      if (!list) return;
-      list.querySelectorAll('.is-hidden').forEach(function (el) { el.classList.remove('is-hidden'); });
-      btn.parentNode.removeChild(btn);
+  /* ---------- 5b. NEWSROOM: tag filter + show all ----------
+     One list of cards, each carrying data-tags. The buttons narrow the list;
+     eight items show until the reader asks for the rest. */
+  document.querySelectorAll('[data-filter]').forEach(function (bar) {
+    var list = document.getElementById(bar.getAttribute('data-filter'));
+    if (!list) return;
+
+    var cards = Array.prototype.slice.call(list.querySelectorAll('.card'));
+    var chips = bar.querySelectorAll('.chip');
+    var more = document.querySelector('[data-show-all="' + bar.getAttribute('data-filter') + '"]');
+    var STEP = 8;
+    var tag = 'all', expanded = false;
+
+    function draw() {
+      var shown = 0;
+      cards.forEach(function (card) {
+        var tags = (card.getAttribute('data-tags') || '').split(' ');
+        var match = tag === 'all' || tags.indexOf(tag) > -1;
+        card.classList.toggle('is-filtered', !match);
+        if (match) {
+          shown++;
+          card.classList.toggle('is-hidden', !expanded && shown > STEP);
+        }
+      });
+      if (more) {
+        var hiddenCount = shown - STEP;
+        more.parentNode.hidden = expanded || hiddenCount <= 0;
+        more.textContent = 'Show all ' + shown;
+      }
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('is-on'); });
+        chip.classList.add('is-on');
+        tag = chip.getAttribute('data-tag');
+        expanded = false;                 // a new filter starts collapsed again
+        draw();
+      });
     });
+    if (more) more.addEventListener('click', function () { expanded = true; draw(); });
+
+    draw();
   });
 
   /* ---------- 6. SLIDESHOWS ----------

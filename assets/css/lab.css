@@ -1,5 +1,5 @@
-/* VERSION: v6 — bigger logo, display-face menu, INSITES. If you cannot find the text
-   `height: 56px` in this file, it is the wrong copy. */
+/* VERSION: v7 — tagged newsroom. If you cannot find the text
+   `chip__n` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
    Built to the Web Brand Brief.
@@ -605,6 +605,47 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 
 .panel[hidden] { display: none; }
 .more { margin-top: var(--xl); text-align: center; }
+
+
+/* --- Newsroom filter buttons --- */
+.chips { display: flex; flex-wrap: wrap; gap: var(--xs); margin: 0 0 var(--lg); }
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 8px var(--md);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-pill);
+  background: var(--white);
+  color: var(--slate);
+  font-family: var(--body);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color .2s var(--ease), color .2s var(--ease), background .2s var(--ease);
+}
+.chip:hover { color: var(--ink); border-color: var(--slate); }
+.chip.is-on { background: var(--blue); border-color: var(--blue); color: #fff; }
+.chip__n { font-family: var(--mono); font-size: 11px; opacity: .75; }
+
+/* --- Tag labels on a card --- */
+.card__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--sm); }
+.tag {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--r-sm);
+  background: var(--cloud);
+  color: var(--blue);
+  white-space: nowrap;
+}
+.tag--awards { background: #fff3d6; color: #7a5300; }   /* gold family */
+.tag--press  { background: #e6e9f0; color: var(--slate); }
+
+/* Hidden by the filter, as opposed to hidden until "Show all" */
+.card.is-filtered { display: none; }
 
 
 /* ============================================================
