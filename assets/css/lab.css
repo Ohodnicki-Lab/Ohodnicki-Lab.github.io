@@ -1,5 +1,5 @@
-/* VERSION: v7 — tagged newsroom. If you cannot find the text
-   `chip__n` in this file, it is the wrong copy. */
+/* VERSION: v12 — PI appointments. If you cannot find the text
+   `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
    Built to the Web Brand Brief.
@@ -201,6 +201,11 @@ h3 { font-size: var(--size-h3);   line-height: 1.3; font-weight: 600; }
 /* On dark: gold pill with navy text */
 .btn--gold { background: var(--accent); color: #0A1633; }
 .btn--gold:hover { background: var(--accent-soft); color: #0A1633; }
+/* On blue bands and heroes, `a { color: accent }` would otherwise paint gold
+   text onto the gold fill and make the label vanish. */
+.band--blue a.btn--gold, .hero a.btn--gold, .page-hero a.btn--gold,
+.band--blue a.btn--gold:hover, .hero a.btn--gold:hover { color: #0A1633; }
+.band--blue a.btn--outline, .hero a.btn--outline { color: var(--on-blue); }
 
 /* Secondary: navy outline on light, white outline on dark */
 .btn--outline { background: transparent; border-color: var(--blue); color: var(--blue); }
@@ -726,6 +731,10 @@ li:hover > .nav__sub, li:focus-within > .nav__sub { opacity: 1; visibility: visi
 .page-hero h1 { max-width: 26ch; }
 .page-hero__lede { margin: var(--lg) 0 0; max-width: var(--measure); color: var(--on-blue-mute); font-size: 18px; }
 .page-hero__lede a { color: var(--accent); }
+/* One appointment per line */
+.page-hero__roles { list-style: none; margin: 0; padding: 0; }
+.page-hero__roles li { padding: 4px 0; line-height: 1.45; }
+.page-hero__roles li + li { border-top: 1px solid var(--hair-on-blue); }
 /* The call-to-action sits outside the lede on purpose: the rule above
    would paint gold text onto a gold button and make it vanish. */
 .page-hero__cta { margin-top: var(--lg); }
@@ -771,6 +780,111 @@ nav.side a:hover { color: var(--blue); border-left-color: var(--accent); backgro
 .section__title::after { content: ""; display: block; width: 48px; height: 3px; background: var(--accent); margin-top: var(--md); }
 .section__meta { font-family: var(--mono); color: var(--slate); font-size: 13.5px; margin: 0 0 var(--lg); }
 .section p { max-width: var(--measure); }
+
+/* --- Principal investigator, featured --- */
+.pi { display: grid; grid-template-columns: 320px 1fr; gap: var(--huge); align-items: center; }
+.pi__photo { width: 100%; border-radius: var(--r-md); border: 1px solid var(--hair-on-blue); }
+.pi .eyebrow { color: var(--accent); }
+.pi__name { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -0.02em; margin: 0; }
+.pi__role { margin: var(--sm) 0 0; font-size: 17px; color: #e8eefc; }
+.pi__role a { color: var(--accent); }
+.pi__bio { margin: var(--lg) 0 var(--xl); color: var(--on-blue-mute); max-width: 62ch; }
+/* Labelled link under the feature. A bare chevron read as "more about the
+   PI"; the words make it clear it leads to the rest of the group. */
+.pi__more {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--xs);
+  margin: var(--xl) auto 0;
+  padding: 10px var(--md) 10px var(--lg);
+  border: 1px solid var(--hair-on-blue);
+  border-radius: var(--r-pill);
+  color: var(--on-blue);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.pi__more svg { color: var(--accent); animation: nudge 2.2s ease-in-out infinite; }
+.pi__more:hover { background: rgba(255,255,255,.10); border-color: var(--accent); color: var(--on-blue); }
+.pi__wrap-more { text-align: center; }
+@keyframes nudge { 0%,100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+
+/* --- Two levels of heading inside a group --- */
+.group-title--major {
+  font-size: clamp(28px, 3.6vw, 44px);
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: var(--xs);
+}
+.group-note {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin: 0 0 var(--xl);
+  padding-bottom: var(--md);
+  border-bottom: 3px solid var(--accent);
+}
+.subgroup + .subgroup { margin-top: var(--huge); }
+.subgroup-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 var(--lg);
+  padding-bottom: var(--xs);
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* Nested jump links. Scoped with nav.side so they beat the `nav.side ul`
+   rule above, which would otherwise give the nested list its own rail and
+   make the sub-items look like a separate list at the same level. */
+nav.side .side__sub { list-style: none; margin: 0; padding: 0 0 var(--xs); border-left: 0; }
+nav.side .side__sub a {
+  padding: 5px var(--md) 5px var(--xl);
+  font-size: 13px;
+  color: var(--slate);
+  border-left: 0;
+  position: relative;
+}
+nav.side .side__sub a::before {
+  content: "";
+  position: absolute;
+  left: var(--md); top: 1.05em;
+  width: 8px; height: 1px;
+  background: var(--hairline);
+}
+nav.side .side__sub a:hover { background: var(--mist); color: var(--blue); }
+nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; left: var(--sm); }
+
+
+/* --- Roster of photo cards --- */
+.roster { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--lg); grid-template-columns: repeat(auto-fill, minmax(178px, 1fr)); }
+.roster__card { display: block; border: 0; color: inherit; }
+.roster__card:hover { border: 0; }
+.roster__photo {
+  display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--r-md);
+  border: 1px solid var(--hairline);
+  background: var(--mist);
+  margin-bottom: var(--sm);
+}
+.roster__photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+.roster__card:hover .roster__photo img { transform: scale(1.04); }
+/* the mark stands in where there is no portrait */
+.roster__photo .roster__mark { object-fit: contain; padding: 22%; opacity: .35; }
+.roster__name { display: block; font-family: var(--display); font-weight: 700; font-size: 16px; line-height: 1.25; letter-spacing: -0.01em; color: var(--ink); }
+.roster__card:hover .roster__name { color: var(--blue); }
+.roster__role { display: block; margin-top: 2px; font-family: var(--mono); font-size: 11px; letter-spacing: .6px; text-transform: uppercase; color: var(--slate); }
+
+/* --- A single person's page --- */
+.person-page__mail { margin: var(--md) 0 0; font-family: var(--mono); font-size: 13.5px; }
+.person-page__back { margin: var(--lg) 0 0; font-size: 14px; }
 
 /* People */
 .group + .group { margin-top: var(--mega); }
@@ -935,6 +1049,9 @@ nav.side a:hover { color: var(--blue); border-left-color: var(--accent); backgro
   .person { grid-template-columns: 1fr; }
   .person__photo { max-width: 200px; }
   .pub { grid-template-columns: 60px 1fr; gap: var(--md); }
+  .pi { grid-template-columns: 1fr; gap: var(--xl); }
+  .pi__photo { max-width: 240px; }
+  .roster { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--md); }
   .posting a { grid-template-columns: auto 1fr; row-gap: var(--xs); }
   .posting__go { display: none; }
   .page-hero__mark { display: none; }

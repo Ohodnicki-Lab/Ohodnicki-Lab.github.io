@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!--
+=================================================================
+  People
+  Styling:    assets/css/lab.css   (all colours and sizes live there)
+  Behaviour:  assets/js/lab.js     (menu, fade-ins, tabs, slideshow)
+
+  EDITING GUIDE (no coding experience needed)
+  * To change wording, type over the text between the tags.
+  * To add an entry, copy one whole block (from an opening tag to
+    its matching closing tag), paste it below, and change the
+    picture, text and date.
+  * Pictures go in the "images" folder. PDFs go in "files".
+  * The menu below is repeated on every page. Change it everywhere.
+  * Blocks marked PLACEHOLDER are suggestions - edit or delete them.
+=================================================================
+-->
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>People</title>
+	<link rel="icon" href="images/ohodnicki-mark-primary.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
+	<link rel="stylesheet" href="assets/css/lab.css?v=12" />
+	<script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+
+<nav class="nav">
+	<!-- LOGO: the reversed mark, for dark backgrounds.
+	     If your horizontal lockup also reads well on navy, replace the two
+	     lines below with:
+	     <img class="nav__logo" src="images/ohodnicki-lockup-horizontal.svg" alt="Ohodnicki Lab" /> -->
+	<a class="nav__brand" href="index.html">
+		<img class="nav__logo" src="images/ohodnicki-mark-reversed.svg" alt="Ohodnicki Lab" />
+		<span class="nav__word">Ohodnicki Lab</span>
+	</a>
+
+	<input class="nav__check" type="checkbox" id="menu-toggle" />
+	<label class="nav__burger" for="menu-toggle">Menu</label>
+
+	<ul class="nav__list">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html#T1">News</a></li>
+		<li>
+			<a href="#">Research</a>
+			<ul class="nav__sub">
+				<li><a href="magnetics.html">Power Magnetic Materials</a></li>
+				<li><a href="sensors.html">Optical Thin-Films for Fiber Optic Sensors</a></li>
+				<li><a href="#">Applied Electromagnetic &amp; Microwave Materials</a></li>
+				<li><a href="#">Thermal Energy Conversion and Management</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="is-active" href="people.html">People</a>
+			<ul class="nav__sub">
+				<li><a href="people/paul-ohodnicki.html">Principal Investigator</a></li>
+				<li><a href="people.html#faculty">Faculty &amp; Staff</a></li>
+				<li><a href="people.html#students">Students</a></li>
+				<li><a href="people.html#alumni">Group Alumni</a></li>
+			</ul>
+		</li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="facilities.html">Facilities</a></li>
+		<li><a href="https://engineering.pitt.edu/departments/mems/undergraduate/engineering-science/" target="_blank" rel="noopener">Engineering Science Program</a></li>
+		<li>
+			<a href="#">Collaborations</a>
+			<ul class="nav__sub">
+				<li><a href="https://www.engineering.pitt.edu/AMPED/" target="_blank" rel="noopener">AMPED Consortium</a></li>
+				<li><a href="https://www.engineering.pitt.edu/subsites/consortiums/insites/" target="_blank" rel="noopener">INSITES Consortium</a></li>
+				<li><a href="https://www.engineering.pitt.edu/UPISC/" target="_blank" rel="noopener">UPISC Workshop</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<header class="page-hero">
+	<div class="wrap">
+		<p class="eyebrow">People</p>
+		<h1>People</h1>
+	</div>
+	<img class="page-hero__mark" src="images/ohodnicki-mark-reversed.svg" alt="" />
+</header>
+
+<!-- PRINCIPAL INVESTIGATOR, given the whole width. -->
+<section class="band band--blue" id="pi">
+	<div class="wrap">
+		<div class="pi">
+			<img class="pi__photo" src="images/Paul.jpg" alt="" />
+			<div>
+				<p class="eyebrow">Principal Investigator</p>
+				<h2 class="pi__name">Dr. Paul Ohodnicki</h2>
+				<p class="pi__role">Associate Professor, Mechanical Engineering and Materials Science; Electrical and Computer Engineering Director, <a href="https://catalog.upp.pitt.edu/preview_program.php?catoid=72&amp;poid=36208" target="_blank" rel="noopener">Engineering Science Program</a> Faculty Lead, <a href="https://www.engineering.pitt.edu/AMPED/" target="_blank" rel="noopener">Advanced Magnetics for Power &amp; Energy Development (AMPED) Consortium</a></p>
+				<p class="pi__bio">Paul R. Ohodnicki is an associate professor in the Department of Mechanical Engineering and Materials Science at the University of Pittsburgh. He received his Ph.D. in Materials Science and Engineering from Carnegie Mellon University in 2008, after which he joined PPG Industries R&amp;D working on thin-film coating materials and earned the Advanced Manufacturing and Materials Innovation Award from Carnegie Science Ce&hellip;</p>
+				<a class="btn btn--gold" href="people/paul-ohodnicki.html">Full profile</a>
+			</div>
+		</div>
+		<a class="pi__more" href="#faculty">
+			<span>The rest of the group</span>
+			<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+		</a>
+	</div>
+</section>
+
+<!-- EVERYONE ELSE. Each card links to that person's own page in the
+     people folder. To add somebody: copy one <li class="roster__item">
+     block, change the picture, name and title, and create a matching page
+     inside people/. -->
+<section class="band band--light">
+	<div class="wrap">
+		<div class="split">
+			<nav class="side">
+				<ul>
+						<li><a href="#pi">Principal Investigator</a></li>
+						<li><a href="#faculty">Research Faculties</a></li>
+						<li><a href="#associates">Research Associates & Postdoctoral Researchers</a></li>
+						<li><a href="#students">Ph.D. Students</a></li>
+						<li><a href="#masters">Master's Students</a></li>
+						<li><a href="#undergraduates">Undergraduate Researchers</a></li>
+						<li><a href="#alumni">Group Alumni</a>
+							<ul class="side__sub">
+								<li><a href="#alumni-senior-researchers-and-faculties">Senior Researchers and Faculties</a></li>
+								<li><a href="#alumni-administrators">Administrators</a></li>
+								<li><a href="#alumni-graduate-students">Graduate Students</a></li>
+								<li><a href="#alumni-undergraduate-researchers">Undergraduate Researchers</a></li>
+							</ul>
+						</li>
+				</ul>
+			</nav>
+			<div>
+				<div class="group" id="faculty">
+					<h2 class="group-title">Research Faculties</h2>
+					<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/khurram-naeem.html">
+								<span class="roster__photo"><img src="images/Khurram.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Khurram Naeem</span>
+								<span class="roster__role">Research Assistant Professor</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="group" id="associates">
+					<h2 class="group-title">Research Associates & Postdoctoral Researchers</h2>
+					<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/chris-bracken.html">
+								<span class="roster__photo"><img src="images/Chris.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Chris Bracken</span>
+								<span class="roster__role">Research Associate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/yang-duan-su.html">
+								<span class="roster__photo"><img src="images/Yang.JPG" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Yang-Duan Su</span>
+								<span class="roster__role">Postdoctoral Research Associate</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="group" id="students">
+					<h2 class="group-title">Ph.D. Students</h2>
+					<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/yuankang-wang.html">
+								<span class="roster__photo"><img src="images/kang.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Yuankang Wang</span>
+								<span class="roster__role">Ph.D. Candidate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/lauren-wewer.html">
+								<span class="roster__photo"><img src="images/Lauren.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Lauren Wewer</span>
+								<span class="roster__role">Ph.D. Candidate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/enrico-sarcinelli.html">
+								<span class="roster__photo"><img src="images/Enrico.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Enrico Sarcinelli</span>
+								<span class="roster__role">Ph.D. Candidate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/bishal-bhandari.html">
+								<span class="roster__photo"><img src="images/Bishal.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Bishal Bhandari</span>
+								<span class="roster__role">Ph.D. Candidate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/rory-blunt.html">
+								<span class="roster__photo"><img src="images/Rory.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Rory Blunt</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/jun-young-hong.html">
+								<span class="roster__photo"><img src="images/JYH.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Jun Young Hong</span>
+								<span class="roster__role">Ph.D. Candidate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/zisong-wang.html">
+								<span class="roster__photo"><img src="images/Song.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Zisong Wang</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/todd-marzec.html">
+								<span class="roster__photo"><img src="images/ToddM.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Todd Marzec</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/devika-mohan.html">
+								<span class="roster__photo"><img src="images/Devika.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Devika Mohan</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/azhagu-devathai.html">
+								<span class="roster__photo"><img src="images/Deva16.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Azhagu Devathai</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/prince-panta.html">
+								<span class="roster__photo"><img src="images/prince.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Prince Panta</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/hauwa-adedo.html">
+								<span class="roster__photo"><img src="images/Hauwa.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Hauwa Adedo</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/bipin-shrestha.html">
+								<span class="roster__photo"><img src="images/Bipin.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Bipin Shrestha</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/mohan-ruttala.html">
+								<span class="roster__photo"><img src="images/Mohan.jpeg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Mohan Ruttala</span>
+								<span class="roster__role">Ph.D. Student</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="group" id="masters">
+					<h2 class="group-title">Master's Students</h2>
+					<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/jacob-stephen-jones.html">
+								<span class="roster__photo"><img src="images/Jacob.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Jacob Stephen Jones</span>
+								<span class="roster__role">M.S. Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/shovan-raj-shrestha.html">
+								<span class="roster__photo"><img src="images/Shovan.jpeg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Shovan Raj Shrestha</span>
+								<span class="roster__role">M.S. Student</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="group" id="undergraduates">
+					<h2 class="group-title">Undergraduate Researchers</h2>
+					<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/joaquin-esteban-tristan.html">
+								<span class="roster__photo"><img src="images/Joaquin.png" alt="" loading="lazy" /></span>
+								<span class="roster__name">Joaquin Esteban Tristan</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/fangchun-li.html">
+								<span class="roster__photo"><img src="images/Fangchun.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Fangchun Li</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="group group--major" id="alumni">
+					<h2 class="group-title group-title--major">Group Alumni</h2>
+					<p class="group-note">24 former members of the laboratory</p>
+					<div class="subgroup" id="alumni-senior-researchers-and-faculties">
+						<h3 class="subgroup-title">Senior Researchers and Faculties</h3>
+						<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/ahmed-talaat.html">
+								<span class="roster__photo"><img src="images/Ahmed.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Ahmed Talaat</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/bo-liu.html">
+								<span class="roster__photo"><img src="images/Bo.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Bo Liu</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/chuyuan-zheng.html">
+								<span class="roster__photo"><img src="images/Chuyuan.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Chuyuan Zheng</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/dipika-mandal.html">
+								<span class="roster__photo"><img src="images/Dipika.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Dipika Mandal</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/jangho-yun.html">
+								<span class="roster__photo"><img src="images/Jangho.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Jangho Yun</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/dolendra-karki.html">
+								<span class="roster__photo"><img src="images/Dolendra.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Dolendra Karki</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/nagesh-lalam.html">
+								<span class="roster__photo"><img src="images/Nagesh.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Nagesh Lalam</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/mohendro-kumar-ghosh.html">
+								<span class="roster__photo"><img src="images/Mohendro.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Mohendro Kumar Ghosh</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/tulika-khanikar.html">
+								<span class="roster__photo"><img src="images/Tulika.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Tulika Khanikar</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/sai-sree-varahabhatla.html">
+								<span class="roster__photo"><img src="images/SaiSree11.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Sai Sree Varahabhatla</span>
+								<span class="roster__role">Former Senior Researcher / Faculty</span>
+							</a>
+						</li>
+						</ul>
+					</div>
+					<div class="subgroup" id="alumni-administrators">
+						<h3 class="subgroup-title">Administrators</h3>
+						<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/jamie-krusienski.html">
+								<span class="roster__photo"><img src="images/Jamie1.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Jamie Krusienski</span>
+								<span class="roster__role">Former Administrator</span>
+							</a>
+						</li>
+						</ul>
+					</div>
+					<div class="subgroup" id="alumni-graduate-students">
+						<h3 class="subgroup-title">Graduate Students</h3>
+						<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/pengdi-zhang.html">
+								<span class="roster__photo"><img src="images/Pengdi.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Pengdi Zhang</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/suraj-mullurkara.html">
+								<span class="roster__photo"><img src="images/Suraj.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Suraj Mullurkara</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/yang-duan-su.html">
+								<span class="roster__photo"><img src="images/Yang.JPG" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Yang-Duan Su</span>
+								<span class="roster__role">Postdoctoral Research Associate</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/tyler-paplham.html">
+								<span class="roster__photo"><img src="images/Tyler.JPG" alt="" loading="lazy" /></span>
+								<span class="roster__name">Dr. Tyler Paplham</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/edward-hoffman.html">
+								<span class="roster__photo"><img src="images/Edward.JPG" alt="" loading="lazy" /></span>
+								<span class="roster__name">Edward Hoffman</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/maurice-sturdivant.html">
+								<span class="roster__photo"><img src="images/Maurice.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Maurice Sturdivant</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/jonah-mcanulty-de-cortie.html">
+								<span class="roster__photo"><img src="images/Jonah.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Jonah McAnulty de Cortie</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/jahid-inam-chowdhury.html">
+								<span class="roster__photo"><img src="images/Inam15.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Jahid Inam Chowdhury</span>
+								<span class="roster__role">Former Graduate Student</span>
+							</a>
+						</li>
+						</ul>
+					</div>
+					<div class="subgroup" id="alumni-undergraduate-researchers">
+						<h3 class="subgroup-title">Undergraduate Researchers</h3>
+						<ul class="roster">
+						<li class="roster__item">
+							<a class="roster__card" href="people/bruce-zhuang-jia.html">
+								<span class="roster__photo"><img src="images/Bruce.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Bruce Zhuang Jia</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/victoria-schmotzer.html">
+								<span class="roster__photo"><img src="images/Victoria.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Victoria Schmotzer</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/jordan-athas.html">
+								<span class="roster__photo"><img src="images/JordanA.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Jordan Athas</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/carter-leatherman.html">
+								<span class="roster__photo"><img src="images/Carter.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Carter Leatherman</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+						<li class="roster__item">
+							<a class="roster__card" href="people/heather-phillips.html">
+								<span class="roster__photo"><img src="images/HMP.jpg" alt="" loading="lazy" /></span>
+								<span class="roster__name">Heather Phillips</span>
+								<span class="roster__role">Undergraduate Researcher</span>
+							</a>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="wrap">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<img class="footer__logo" src="images/ohodnicki-mark-reversed.svg" alt="" />
+				<span class="footer__word">Ohodnicki Lab</span>
+			</div>
+			<ul class="footer__icons">
+				<li>
+					<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin" target="_blank" rel="noopener">
+						<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Ohodnicki-Lab" aria-label="GitHub" target="_blank" rel="noopener">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.55v-1.95c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.09 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0023.5 12A11.5 11.5 0 0012 .5z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:pro8@pitt.edu" aria-label="Email">
+						<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer__legal">
+			<li>&copy; All rights reserved.</li>
+		</ul>
+	</div>
+</footer>
+
+<script src="assets/js/lab.js?v=12" defer></script>
+</body>
+</html>

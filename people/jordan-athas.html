@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+=================================================================
+  Jordan Athas — Ohodnicki Lab
+  Styling:    assets/css/lab.css   (all colours and sizes live there)
+  Behaviour:  assets/js/lab.js     (menu, fade-ins, tabs, slideshow)
+
+  EDITING GUIDE (no coding experience needed)
+  * To change wording, type over the text between the tags.
+  * To add an entry, copy one whole block (from an opening tag to
+    its matching closing tag), paste it below, and change the
+    picture, text and date.
+  * Pictures go in the "images" folder. PDFs go in "files".
+  * The menu below is repeated on every page. Change it everywhere.
+  * Blocks marked PLACEHOLDER are suggestions - edit or delete them.
+=================================================================
+-->
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Jordan Athas — Ohodnicki Lab</title>
+	<link rel="icon" href="../images/ohodnicki-mark-primary.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
+	<link rel="stylesheet" href="../assets/css/lab.css?v=12" />
+	<script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+
+<nav class="nav">
+	<!-- LOGO: the reversed mark, for dark backgrounds.
+	     If your horizontal lockup also reads well on navy, replace the two
+	     lines below with:
+	     <img class="nav__logo" src="images/ohodnicki-lockup-horizontal.svg" alt="Ohodnicki Lab" /> -->
+	<a class="nav__brand" href="../index.html">
+		<img class="nav__logo" src="../images/ohodnicki-mark-reversed.svg" alt="Ohodnicki Lab" />
+		<span class="nav__word">Ohodnicki Lab</span>
+	</a>
+
+	<input class="nav__check" type="checkbox" id="menu-toggle" />
+	<label class="nav__burger" for="menu-toggle">Menu</label>
+
+	<ul class="nav__list">
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../index.html#T1">News</a></li>
+		<li>
+			<a href="#">Research</a>
+			<ul class="nav__sub">
+				<li><a href="../magnetics.html">Power Magnetic Materials</a></li>
+				<li><a href="../sensors.html">Optical Thin-Films for Fiber Optic Sensors</a></li>
+				<li><a href="#">Applied Electromagnetic &amp; Microwave Materials</a></li>
+				<li><a href="#">Thermal Energy Conversion and Management</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="is-active" href="../people.html">People</a>
+			<ul class="nav__sub">
+				<li><a href="../people/paul-ohodnicki.html">Principal Investigator</a></li>
+				<li><a href="../people.html#faculty">Faculty &amp; Staff</a></li>
+				<li><a href="../people.html#students">Students</a></li>
+				<li><a href="../people.html#alumni">Group Alumni</a></li>
+			</ul>
+		</li>
+		<li><a href="../publications.html">Publications</a></li>
+		<li><a href="../facilities.html">Facilities</a></li>
+		<li><a href="https://engineering.pitt.edu/departments/mems/undergraduate/engineering-science/" target="_blank" rel="noopener">Engineering Science Program</a></li>
+		<li>
+			<a href="#">Collaborations</a>
+			<ul class="nav__sub">
+				<li><a href="https://www.engineering.pitt.edu/AMPED/" target="_blank" rel="noopener">AMPED Consortium</a></li>
+				<li><a href="https://www.engineering.pitt.edu/subsites/consortiums/insites/" target="_blank" rel="noopener">INSITES Consortium</a></li>
+				<li><a href="https://www.engineering.pitt.edu/UPISC/" target="_blank" rel="noopener">UPISC Workshop</a></li>
+			</ul>
+		</li>
+		<li><a href="../contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<header class="page-hero">
+	<div class="wrap">
+		<p class="eyebrow">Undergraduate Researcher</p>
+		<h1>Jordan Athas</h1>
+	</div>
+	<img class="page-hero__mark" src="../images/ohodnicki-mark-reversed.svg" alt="" />
+</header>
+
+<section class="band band--light">
+	<div class="wrap">
+		<div class="split split--wide">
+			<aside class="side">
+				<img class="person__photo" src="../images/JordanA.jpg" alt="" />
+				<p class="person-page__back"><a href="../people.html">All people</a></p>
+			</aside>
+			<div class="prose reveal">
+				<p>Jordan is an electrical engineer who graduated with his B.S. from the University of Pittsburgh in 2022. He worked with Ohodnicki Labs throughout his senior year, designing a device that utilized a transimpedance amplifier and ATmega328 to convert the light intensity into a corresponding voltage. His interest in photonic devices led him to pursue a PhD at Northwestern University. His other interests include nano-electronic fabrication, PCB design, and rock climbing.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="wrap">
+		<div class="footer__top">
+			<div class="footer__brand">
+				<img class="footer__logo" src="../images/ohodnicki-mark-reversed.svg" alt="" />
+				<span class="footer__word">Ohodnicki Lab</span>
+			</div>
+			<ul class="footer__icons">
+				<li>
+					<a href="https://www.linkedin.com/in/paul-ohodnicki-366ab115/" aria-label="Linkedin" target="_blank" rel="noopener">
+						<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4.3z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Ohodnicki-Lab" aria-label="GitHub" target="_blank" rel="noopener">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.55v-1.95c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.09 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0023.5 12A11.5 11.5 0 0012 .5z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:pro8@pitt.edu" aria-label="Email">
+						<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.24l-8 4.8-8-4.8V6l8 4.8L20 6v2.24z"/></svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer__legal">
+			<li>&copy; All rights reserved.</li>
+		</ul>
+	</div>
+</footer>
+
+<script src="../assets/js/lab.js?v=12" defer></script>
+</body>
+</html>
