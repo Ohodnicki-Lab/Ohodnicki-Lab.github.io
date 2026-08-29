@@ -1,4 +1,4 @@
-/* VERSION: v12 — PI appointments. If you cannot find the text
+/* VERSION: v13 — PI appointments shared. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -786,8 +786,10 @@ nav.side a:hover { color: var(--blue); border-left-color: var(--accent); backgro
 .pi__photo { width: 100%; border-radius: var(--r-md); border: 1px solid var(--hair-on-blue); }
 .pi .eyebrow { color: var(--accent); }
 .pi__name { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -0.02em; margin: 0; }
-.pi__role { margin: var(--sm) 0 0; font-size: 17px; color: #e8eefc; }
-.pi__role a { color: var(--accent); }
+.pi__roles { list-style: none; margin: var(--md) 0 0; padding: 0; max-width: 66ch; }
+.pi__roles li { padding: 5px 0; font-size: 15.5px; line-height: 1.45; color: #e8eefc; }
+.pi__roles li + li { border-top: 1px solid var(--hair-on-blue); }
+.pi__roles a { color: var(--accent); }
 .pi__bio { margin: var(--lg) 0 var(--xl); color: var(--on-blue-mute); max-width: 62ch; }
 /* Labelled link under the feature. A bare chevron read as "more about the
    PI"; the words make it clear it leads to the rest of the group. */
