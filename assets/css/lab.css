@@ -1,4 +1,4 @@
-/* VERSION: v13 — PI appointments shared. If you cannot find the text
+/* VERSION: v14 — research tree. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -863,6 +863,53 @@ nav.side .side__sub a:hover { background: var(--mist); color: var(--blue); }
 nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; left: var(--sm); }
 
 
+/* --- Research hub: the two branches --- */
+.branches { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--lg); }
+.branch {
+  display: block;
+  padding: var(--xl);
+  border: 1px solid var(--hair-on-blue);
+  border-radius: var(--r-md);
+  background: rgba(255,255,255,.07);
+  color: var(--on-blue);
+  transition: transform .3s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
+}
+.branch:hover { transform: translateY(-4px); border-color: var(--accent); background: rgba(255,255,255,.13); color: var(--on-blue); }
+.branch__name { display: block; font-family: var(--display); font-weight: 700; font-size: clamp(20px, 2.2vw, 27px); line-height: 1.2; letter-spacing: -0.02em; }
+.branch__sum { display: block; margin-top: var(--sm); font-size: 15.5px; line-height: 1.5; color: #e8eefc; }
+.branch__n { display: block; margin-top: var(--md); font-family: var(--mono); font-size: 11.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); }
+
+/* --- Research hub: materials-to-applications map --- */
+.matrix { width: 100%; border-collapse: collapse; font-size: 15px; }
+.matrix th, .matrix td { text-align: left; vertical-align: top; padding: var(--md) var(--lg); border-top: 1px solid var(--hairline); }
+.matrix thead th { font-family: var(--display); font-size: 17px; color: var(--blue); border-top: 0; border-bottom: 3px solid var(--accent); }
+.matrix th[scope="row"] { font-family: var(--mono); font-size: 11.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); white-space: nowrap; width: 130px; }
+.matrix ul { list-style: none; margin: 0; padding: 0; }
+.matrix li + li { margin-top: 6px; }
+
+/* --- Branch page: the topic cards --- */
+.topics { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: var(--lg); }
+.topic a {
+  display: block;
+  height: 100%;
+  padding: var(--lg);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  background: var(--white);
+  color: inherit;
+  transition: transform .3s var(--ease), border-color .3s var(--ease);
+}
+.topic a:hover { transform: translateY(-4px); border-color: var(--blue); }
+.topic__axis { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); }
+.topic__name { display: block; margin-top: var(--xs); font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.25; letter-spacing: -0.01em; }
+.topic a:hover .topic__name { color: var(--blue); }
+.topic__sum { display: block; margin-top: var(--xs); font-size: 14.5px; line-height: 1.5; color: var(--slate); }
+
+/* --- A topic page with nothing written up yet --- */
+.pending { background: var(--mist); border: 1px dashed var(--hairline); border-radius: var(--r-md); padding: var(--xl); }
+.pending .section__title { font-size: 21px; }
+.pending .section__title::after { background: var(--hairline); }
+
 /* --- Roster of photo cards --- */
 .roster { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--lg); grid-template-columns: repeat(auto-fill, minmax(178px, 1fr)); }
 .roster__card { display: block; border: 0; color: inherit; }
@@ -1054,6 +1101,8 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
   .pi { grid-template-columns: 1fr; gap: var(--xl); }
   .pi__photo { max-width: 240px; }
   .roster { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--md); }
+  .matrix th, .matrix td { padding: var(--sm) var(--xs); font-size: 14px; }
+  .matrix th[scope="row"] { width: auto; white-space: normal; }
   .posting a { grid-template-columns: auto 1fr; row-gap: var(--xs); }
   .posting__go { display: none; }
   .page-hero__mark { display: none; }
