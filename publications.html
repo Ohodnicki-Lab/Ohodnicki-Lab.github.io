@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="assets/css/lab.css?v=20" />
+	<link rel="stylesheet" href="assets/css/lab.css?v=21" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -176,6 +176,13 @@
 						<span>Type</span>
 						<select data-pub-type><option value="all">All types</option></select>
 					</label>
+					<div class="pub-field">
+						<span>View</span>
+						<div class="pub-views">
+							<button type="button" class="pub-view is-on" data-pub-view="list" aria-pressed="true">List</button>
+							<button type="button" class="pub-view" data-pub-view="map" aria-pressed="false">Map</button>
+						</div>
+					</div>
 					<label class="pub-field">
 						<span>Sort by</span>
 						<select data-pub-sort>
@@ -186,8 +193,15 @@
 					</label>
 				</div>
 
-				<ul class="pubitems" data-pub-list></ul>
-				<p class="more"><button class="btn btn--outline" type="button" data-pub-more hidden></button></p>
+				<div data-pub-listwrap>
+					<ul class="pubitems" data-pub-list></ul>
+					<p class="more"><button class="btn btn--outline" type="button" data-pub-more hidden></button></p>
+				</div>
+
+				<!-- BUBBLE MAP. Grouped by research area, colour by year, size by
+				     citations. Everything is drawn by assets/js/pubs.js. -->
+				<div class="pubmap" data-pub-map hidden></div>
+				<div class="pubmap__tip" data-pub-tip hidden></div>
 			</div>
 		</div>
 	</div>
@@ -225,6 +239,6 @@
 </footer>
 
 <script src="assets/js/lab.js?v=19" defer></script>
-<script src="assets/js/pubs.js?v=2" defer></script>
+<script src="assets/js/pubs.js?v=3" defer></script>
 </body>
 </html>

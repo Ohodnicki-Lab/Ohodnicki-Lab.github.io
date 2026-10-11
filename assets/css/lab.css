@@ -1,4 +1,4 @@
-/* VERSION: v20 — hidden attribute fix. If you cannot find the text
+/* VERSION: v21 — publication bubble map. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -944,6 +944,61 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
 .pubitem__meta { margin: 6px 0 0; font-family: var(--mono); font-size: 11.5px; letter-spacing: .5px; color: var(--slate); }
 .pubitem__venue { font-style: italic; }
 .pubitem__tags { display: flex; flex-wrap: wrap; gap: 5px; margin: var(--sm) 0 0; }
+
+/* ---------- Publication bubble map ---------- */
+.pub-views { display: flex; gap: 2px; }
+.pub-view {
+  padding: 10px var(--md);
+  border: 1px solid var(--hairline);
+  background: var(--white);
+  color: var(--slate);
+  font-family: var(--body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pub-view:first-child { border-radius: var(--r-md) 0 0 var(--r-md); }
+.pub-view:last-child { border-radius: 0 var(--r-md) var(--r-md) 0; }
+.pub-view.is-on { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+.pubmap { position: relative; background: var(--blue-deep); border-radius: var(--r-md); padding: var(--md); overflow: hidden; }
+.pubmap__svg { width: 100%; height: auto; display: block; }
+.pubmap .bub circle { stroke: rgba(0,0,0,.35); stroke-width: .6; transition: opacity .2s var(--ease); }
+.pubmap .bub { cursor: pointer; }
+.pubmap .bub:hover circle, .pubmap .bub:focus circle { stroke: #fff; stroke-width: 2; }
+.pubmap .bub.is-dim circle { opacity: .12; }
+.pubmap .bublabel {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 700;
+  fill: #fff;
+  paint-order: stroke;
+  stroke: rgba(0,20,60,.85);
+  stroke-width: 5px;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.pubmap__legend { display: flex; flex-wrap: wrap; gap: var(--xl); margin-bottom: var(--sm); }
+.pubmap__key { display: flex; align-items: center; gap: var(--xs); font-family: var(--mono); font-size: 10.5px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--on-blue-mute); }
+.pubmap__key circle { fill: none; stroke: var(--on-blue-mute); }
+.pubmap__ends { display: inline-flex; align-items: center; gap: 4px; }
+.pubmap__ends i { display: inline-block; width: 14px; height: 1px; background: var(--hair-on-blue); }
+
+.pubmap__tip {
+  position: sticky;
+  bottom: var(--md);
+  margin-top: var(--sm);
+  padding: var(--md);
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-md);
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+.pubmap__tip strong { display: block; font-weight: 600; }
+.pubmap__tip span { display: block; color: var(--slate); font-size: 13px; }
 
 /* --- Status badge in a project's title band --- */
 .page-hero__status { margin: var(--md) 0 0; }
