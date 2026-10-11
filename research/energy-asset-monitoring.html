@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="../assets/css/lab.css?v=15" />
+	<link rel="stylesheet" href="../assets/css/lab.css?v=18" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="../index.html#T1">News</a></li>
 		<li>
-			<a href="../research.html">Research</a>
+			<a class="is-active" href="../research.html">Research</a>
 			<ul class="nav__sub">
 				<li><a href="../research.html">Research Overview</a></li>
 				<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a></li>
@@ -81,7 +81,7 @@
 	<div class="wrap">
 		<p class="eyebrow">Applications</p>
 		<h1>Energy Asset Monitoring</h1>
-		<p class="page-hero__lede">Transformer and battery monitoring through fiber-optic acoustic, temperature and gas sensing.</p>
+		<p class="page-hero__lede">Transformer and battery monitoring through fiber-optic acoustic, temperature, gas and field sensing.</p>
 	</div>
 	<img class="page-hero__mark" src="../images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
@@ -94,13 +94,19 @@
 					<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a>
 						<ul class="side__sub">
 							<li><a href="ferrites-nanocomposites.html">Ferrite &amp; Metal-Ferrite Nanocomposites</a></li>
+							<li><a href="amorphous-nanocrystalline.html">Amorphous &amp; Nanocrystalline Alloys</a></li>
+							<li><a href="permanent-magnets.html">Permanent Magnets</a></li>
 							<li><a href="processing.html">Processing: Field, Strain &amp; Additive</a></li>
+							<li><a href="magnetic-characterization.html">Magnetic Characterization</a></li>
+							<li><a href="power-components.html">Transformers, Inductors &amp; Motors</a></li>
 							<li><a href="magnetics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
 						</ul>
 					</li>
 					<li><a href="../research.html#photonics">Photonic Materials &amp; Fiber Optic Sensing</a>
 						<ul class="side__sub">
+							<li><a href="optical-thin-films.html">Optical Thin Films for Fiber Sensors</a></li>
 							<li><a href="single-crystal-fibers.html">Single Crystal Fibers &amp; LHPG Growth</a></li>
+							<li><a href="quantum-sensing.html">Quantum Sensing</a></li>
 							<li><a class="is-here" href="energy-asset-monitoring.html">Energy Asset Monitoring</a></li>
 							<li><a href="infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
 							<li><a href="photonics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
@@ -110,17 +116,32 @@
 				<p class="person-page__back"><a href="../research.html">All research</a></p>
 			</nav>
 			<div>
-				<section class="section reveal">
-					<h2 class="section__title">Embedded Fiber Optic Sensors for Real Time Monitoring of Battery Systems and Other Electrical Assets</h2>
-					<p class="section__meta">Primary Researcher: Yang-Duan Su, Dr. Chenhu Sun</p>
-					<figure class="figure">
-						<img src="../images/FBG01.jpg" alt="" loading="lazy" />
-						<figcaption>Source (right figure): P. Lu et al., "Real-Time Monitoring of Temperature Rises of Energized Transformer Cores With Distributed Optical Fiber Sensors," in IEEE Transactions on Power Delivery, vol. 34, no. 4, pp. 1588-1598, Aug. 2019, doi: 10.1109/TPWRD.2019.2912866.</figcaption>
-					</figure>
-					<p>Monitoring the internal states of batteries ranging from cell to pack and stack level to extend lifetime and prevent thermal runaway due to cell degradation has been an essential task for Battery Management Systems (BMS). Our study aims to embed both existing and newly developed low-cost fiber optic sensors internal to Li-ion pouch cells for extraction of critical operational information about the cell state-of-health (SOH) and performance. This is done either by attaching them onto the cell surface with epoxy or by embedding them in between two separators central to cell internal structure, the latter expected to be the most informative area to measure from. Potential parameters of interest include internal temperature, strain, acoustic emission and CO2/ O2 concentration.</p>
-					<p>Given that the state-of-charge (SOC) of a battery is a function of cell temperature, the locally-measured temperature serves as input to the SOC estimation algorithm for general cell operation, while the temperature gradient measured by Raman-based distributed FO sensors indicates the temperature hot spots for incipient thermal runaway detection. And the strain variation is correlated with electrode intercalation stages and charge/discharge capacity fade, which can then be used to estimate both SOC and SOH of the battery. Rather than relying on estimation methods, the cell SOC can also be directly measured by sensing the acoustic emissions resulting from the electrode density change during the Li-ion intercalation when discharging. The density of active material on the electrode is proportional to the acoustic impedance being measured. On the other hand, CO2/ O2 concentration, an indication to electrolyte decomposition and capacity fade, and is another parameter that can be measured via fiber optic evanescent field sensors or fiber Bragg grating sensors.</p>
-					<p>Other EV-related electrical components of interest includes the temperature monitoring of power transformer and inductor cores. Our group has extensive capabilities for optical fiber sensor fabrication, design, and testing, and is currently partnered with Ampcera and Sandia National Laboratory to understand how fiber optic sensors can be optimally integrated within existing and upcoming battery technologies for electric vehicle and grid-scale energy storage applications.</p>
-				</section>
+				<div class="head">
+					<p class="prose">Transformer and battery monitoring through fiber-optic acoustic, temperature, gas and field sensing.</p>
+				</div>
+				<ul class="topics">
+				<li class="topic">
+					<a href="projects/magnetic-nanoparticle-coated-optical-fibers-for-magnetic-fie.html">
+						<span class="topic__axis">Ongoing</span>
+						<span class="topic__name">Magnetic Nanoparticle Coated Optical Fibers for Magnetic Field Sensing</span>
+						<span class="topic__sum">We coat optical fibers with polymer films containing magnetic nanoparticles to measure alternating magnetic fields for power grid monitoring.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/enabling-technology-and-grid-tied-testbed-for-efficient-flex.html">
+						<span class="topic__axis">Just starting</span>
+						<span class="topic__name">Enabling Technology and Grid-Tied Testbed for Efficient, Flexible Distribution Transformers</span>
+						<span class="topic__sum">Developing better transformer materials, sensors, and testing infrastructure to improve US grid efficiency and supply chains</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/embedded-fiber-optic-sensors-for-real-time-monitoring-of-bat.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">Embedded Fiber Optic Sensors for Real Time Monitoring of Battery Systems and Other Electrical Assets</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -157,6 +178,6 @@
 	</div>
 </footer>
 
-<script src="../assets/js/lab.js?v=15" defer></script>
+<script src="../assets/js/lab.js?v=18" defer></script>
 </body>
 </html>

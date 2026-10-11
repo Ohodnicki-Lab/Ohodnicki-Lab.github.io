@@ -1,4 +1,4 @@
-/* VERSION: v14 — research tree. If you cannot find the text
+/* VERSION: v18 — side column overflow fix. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -150,6 +150,11 @@ h3 { font-size: var(--size-h3);   line-height: 1.3; font-weight: 600; }
    Both columns start on the same line, which is what gives the pages
    their strong vertical alignment. */
 .split { display: grid; grid-template-columns: var(--rail) 1fr; gap: var(--huge); align-items: start; }
+/* Grid items default to min-width:auto, so one long unbroken URL in the side
+   column forces that column past its track width and spills over the text
+   beside it. This lets the columns actually hold their width. */
+.split > * { min-width: 0; }
+.split a, .side a, .facts a { overflow-wrap: anywhere; }
 .split__label { position: sticky; top: calc(var(--nav-h) + var(--lg)); }
 /* Wider left column, for when it holds real content such as postal
    addresses rather than just a heading */
@@ -860,6 +865,8 @@ nav.side .side__sub a::before {
   background: var(--hairline);
 }
 nav.side .side__sub a:hover { background: var(--mist); color: var(--blue); }
+nav.side .side__sub a.is-here { color: var(--blue); font-weight: 600; }
+nav.side .side__sub a.is-here::before { background: var(--accent); width: 12px; left: var(--sm); }
 nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; left: var(--sm); }
 
 
@@ -904,6 +911,54 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
 .topic__name { display: block; margin-top: var(--xs); font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.25; letter-spacing: -0.01em; }
 .topic a:hover .topic__name { color: var(--blue); }
 .topic__sum { display: block; margin-top: var(--xs); font-size: 14.5px; line-height: 1.5; color: var(--slate); }
+
+/* --- Status badge in a project's title band --- */
+.page-hero__status { margin: var(--md) 0 0; }
+.status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: var(--r-pill);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.14);
+  border: 1px solid var(--hair-on-blue);
+  color: #fff;
+}
+.status--ongoing { background: var(--accent); border-color: var(--accent); color: #0A1633; }
+.status--completed { background: rgba(255,255,255,.2); }
+
+/* --- Topic tags on a project page --- */
+.chips--sm { gap: 6px; margin-bottom: var(--lg); }
+.tag--topic { background: var(--cloud); color: var(--blue); text-transform: none; letter-spacing: 0; font-family: var(--body); font-size: 12.5px; padding: 5px 10px; border: 0; }
+.tag--topic:hover { background: var(--blue); color: #fff; }
+
+/* --- Project count on a topic card --- */
+.topic__n { display: block; margin-top: var(--sm); font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); }
+
+/* --- People, collaborators and facilities in a project side column --- */
+.side__title { margin-top: var(--lg); }
+.facts--people li { display: flex; flex-direction: column; }
+.facts--people span { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); margin-top: 2px; }
+
+/* --- Funding acknowledgement --- */
+.ack {
+  margin-top: var(--huge);
+  padding: var(--lg);
+  background: var(--mist);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-md);
+  font-size: 14.5px;
+  color: var(--slate);
+  max-width: var(--measure);
+}
+
+/* --- Figure source credit --- */
+.figure__src { display: block; margin-top: 2px; font-style: normal; font-family: var(--mono); font-size: 11.5px; color: var(--slate); }
+
+/* --- The opening paragraph of a project overview --- */
+.section p.lead { font-size: 18.5px; line-height: 1.6; }
 
 /* --- A topic page with nothing written up yet --- */
 .pending { background: var(--mist); border: 1px dashed var(--hairline); border-radius: var(--r-md); padding: var(--xl); }

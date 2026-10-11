@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="../assets/css/lab.css?v=15" />
+	<link rel="stylesheet" href="../assets/css/lab.css?v=18" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="../index.html#T1">News</a></li>
 		<li>
-			<a href="../research.html">Research</a>
+			<a class="is-active" href="../research.html">Research</a>
 			<ul class="nav__sub">
 				<li><a href="../research.html">Research Overview</a></li>
 				<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a></li>
@@ -81,7 +81,7 @@
 	<div class="wrap">
 		<p class="eyebrow">Materials</p>
 		<h1>Ferrite &amp; Metal-Ferrite Nanocomposites</h1>
-		<p class="page-hero__lede">Mn-Zn and Ni-Zn ferrites and ferrite/metal nanocomposites for higher saturation flux density.</p>
+		<p class="page-hero__lede">Mn-Zn and Ni-Zn ferrites and ferrite/metal nanocomposites for higher saturation flux density and lower loss.</p>
 	</div>
 	<img class="page-hero__mark" src="../images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
@@ -94,13 +94,19 @@
 					<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a>
 						<ul class="side__sub">
 							<li><a class="is-here" href="ferrites-nanocomposites.html">Ferrite &amp; Metal-Ferrite Nanocomposites</a></li>
+							<li><a href="amorphous-nanocrystalline.html">Amorphous &amp; Nanocrystalline Alloys</a></li>
+							<li><a href="permanent-magnets.html">Permanent Magnets</a></li>
 							<li><a href="processing.html">Processing: Field, Strain &amp; Additive</a></li>
+							<li><a href="magnetic-characterization.html">Magnetic Characterization</a></li>
+							<li><a href="power-components.html">Transformers, Inductors &amp; Motors</a></li>
 							<li><a href="magnetics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
 						</ul>
 					</li>
 					<li><a href="../research.html#photonics">Photonic Materials &amp; Fiber Optic Sensing</a>
 						<ul class="side__sub">
+							<li><a href="optical-thin-films.html">Optical Thin Films for Fiber Sensors</a></li>
 							<li><a href="single-crystal-fibers.html">Single Crystal Fibers &amp; LHPG Growth</a></li>
+							<li><a href="quantum-sensing.html">Quantum Sensing</a></li>
 							<li><a href="energy-asset-monitoring.html">Energy Asset Monitoring</a></li>
 							<li><a href="infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
 							<li><a href="photonics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
@@ -110,16 +116,25 @@
 				<p class="person-page__back"><a href="../research.html">All research</a></p>
 			</nav>
 			<div>
-				<section class="section reveal">
-					<h2 class="section__title">Soft Magnetic Ferrites for Next-Generation Power Electronic Applications</h2>
-					<p class="section__meta">Primary Researcher: Suraj M.V.</p>
-					<figure class="figure">
-						<img src="../images/Ferrites01.jpg" alt="" loading="lazy" />
-						<figcaption>Source: Left: T. M. C. Dinh, A. Barnabé, M. A. Bui, C. Josse, T. Hungria, C. Bonningue, L. Presmanes and P. Tailhades, "FIB plan view lift-out sample preparation for TEM characterization of periodic nanostructures obtained by spinodal decomposition in Co1.7Fe1.3O4 thin films," CrystEngComm, 2018,20, 6146-6155. Right: Parisa Andalib, Vincent G. Harris, "Grain boundary engineering of power inductor cores for MHz applications," Journal of Alloys and Compounds, Volume 832, 2020, 153131.</figcaption>
-					</figure>
-					<p>The next generation of power electronics is heading towards operating frequencies in the GhZ range. This will require engineering of materials better than the current state of art having enhanced magnetic and electrical properties, consequently attaining lower losses and enhanced performance. The current state of the art technology involves grain boundary engineering of Mn-Zn/Ni-Zn ferrites using magnetic/non-magnetic insulating oxides for property enhancements.</p>
-					<p>We aim at achieving further enhancements by nano-structuring the Mn-Zn and Ni-Zn ferrites to create nanocomposites. Nano-structuring of these ferrites will be induced either via a self-assembly processes or by the application of external stimuli during processing. Thermodynamic modelling using Thermo-Calc is carried out to identify model systems which are suitable for this approach. Effect of external fields i.e. magnetic, isotropic stress etc. during processing on the microstructure are being investigated and will be compared to thermodynamic and kinetic modelling results. Leveraging self-assembly/nano-structuring of these ferrites will help us develop materials with lower losses and operating capabilities at Ghz frequencies.</p>
-				</section>
+				<div class="head">
+					<p class="prose">Mn-Zn and Ni-Zn ferrites and ferrite/metal nanocomposites for higher saturation flux density and lower loss.</p>
+				</div>
+				<ul class="topics">
+				<li class="topic">
+					<a href="projects/innovative-magnetic-material-solutions-for-navy-high-frequen.html">
+						<span class="topic__axis">Ongoing</span>
+						<span class="topic__name">Innovative Magnetic Material Solutions For Navy High-frequency Power Systems</span>
+						<span class="topic__sum">Soft magnetic ferrite and nanocomposites for power applications</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/soft-magnetic-ferrites-for-next-generation-power-electronic-.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">Soft Magnetic Ferrites for Next-Generation Power Electronic Applications</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -156,6 +171,6 @@
 	</div>
 </footer>
 
-<script src="../assets/js/lab.js?v=15" defer></script>
+<script src="../assets/js/lab.js?v=18" defer></script>
 </body>
 </html>

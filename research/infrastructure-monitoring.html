@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="../assets/css/lab.css?v=15" />
+	<link rel="stylesheet" href="../assets/css/lab.css?v=18" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="../index.html#T1">News</a></li>
 		<li>
-			<a href="../research.html">Research</a>
+			<a class="is-active" href="../research.html">Research</a>
 			<ul class="nav__sub">
 				<li><a href="../research.html">Research Overview</a></li>
 				<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a></li>
@@ -94,13 +94,19 @@
 					<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a>
 						<ul class="side__sub">
 							<li><a href="ferrites-nanocomposites.html">Ferrite &amp; Metal-Ferrite Nanocomposites</a></li>
+							<li><a href="amorphous-nanocrystalline.html">Amorphous &amp; Nanocrystalline Alloys</a></li>
+							<li><a href="permanent-magnets.html">Permanent Magnets</a></li>
 							<li><a href="processing.html">Processing: Field, Strain &amp; Additive</a></li>
+							<li><a href="magnetic-characterization.html">Magnetic Characterization</a></li>
+							<li><a href="power-components.html">Transformers, Inductors &amp; Motors</a></li>
 							<li><a href="magnetics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
 						</ul>
 					</li>
 					<li><a href="../research.html#photonics">Photonic Materials &amp; Fiber Optic Sensing</a>
 						<ul class="side__sub">
+							<li><a href="optical-thin-films.html">Optical Thin Films for Fiber Sensors</a></li>
 							<li><a href="single-crystal-fibers.html">Single Crystal Fibers &amp; LHPG Growth</a></li>
+							<li><a href="quantum-sensing.html">Quantum Sensing</a></li>
 							<li><a href="energy-asset-monitoring.html">Energy Asset Monitoring</a></li>
 							<li><a class="is-here" href="infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
 							<li><a href="photonics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
@@ -110,34 +116,32 @@
 				<p class="person-page__back"><a href="../research.html">All research</a></p>
 			</nav>
 			<div>
-				<section class="section reveal">
-					<h2 class="section__title">AI-Enhanced Distributed Optical Fiber Sensing Technology for Real-Time Monitoring of Dry Cask Storage Systems</h2>
-					<p class="section__meta">PI: Paul Ohodnicki, Student Participant: Enrico Sarcinelli, Faculty/Research Participant: Khurram Naeem, PhD</p>
-					<figure class="figure">
-						<img src="../images/nuclear_storage.jpg" alt="" loading="lazy" />
-						<figcaption>Real-Time Monitoring of Dry Cask Storage Systems</figcaption>
-					</figure>
-					<p>Acoustic nondestructive evaluation (NDE) will be combined with distributed fiber optic sensing enhanced by artificial intelligence (AI) frameworks to quantitatively characterize the internal state of dry cask storage systems (DCSS). Physics-based simulations and reduced order modeling will be coupled with targeted experiments to train and apply AI-classification to distributed acoustic data acquired with fiber optics. The project covers aspects of design, fabrication, and testing of optical fiber sensors for DCSS monitoring, demonstrating new concepts in acoustic fiber optic sensing and data interpretation with AI.</p>
-				</section>
-				<section class="section reveal">
-					<h2 class="section__title">Hybrid Distributed pH, CO2, Temperature, and Acoustic Sensing for Monitoring and Verification of Marine Carbon Dioxide Removal Applications</h2>
-					<p class="section__meta">PI: Paul Ohodnicki, Co-PI: Khurram Naeem (University of Pittsburgh), Co-PI: Ruishu Wright (NETL), Co-PI: Evan Shapiro (Sofar Ocean), Student Participants: Devika Mohan and Jahid Inam Chowdhury, Faculty/Research Participants: Khurram Naeem and Tulika Khanikar, Collaborators: National Energy Technology Laboratory - Pittsburgh, Sofar Ocean, and Lightera (formerly OFS)</p>
-					<figure class="figure">
-						<img src="../images/FiberCO2.jpg" alt="" loading="lazy" />
-						<figcaption>Overall technology and proposed project demonstrations of marine buoy based multiparameter (pH,CO2, T, acoustics) distributed fiber sensing at km-range.</figcaption>
-					</figure>
-					<p>A marine deployed optical fiber distributed chemical sensing (DCS) and distributed physical parameter (temperature - DTS) sensing system for measurement, reporting, and verification (MRV) of marine carbon dioxide removal (mCDR) is being pursued under this project, funded by ARPA E underSEA CO2 program.</p>
-					<p>Using chemically selective and optically sensitive coatings for DCS, the proposed project seeks to integrate a fiber optic sensing technology into low-cost commercial fibers used for buoy-based marine sensor systems. DTS customization will also be pursued for integration with marine sensor systems, having a specific focus on deployable marine buoy systems including system weight and power (SWAP), data, and communications requirements.</p>
-				</section>
-				<section class="section reveal">
-					<h2 class="section__title">Monitoring of Molten Salt and Other Nuclear Reactor Application Environments with Optical Fiber Sensors</h2>
-					<p class="section__meta">PI: Paul Ohodnicki, PI: Zack Harris, Student Participants: Ian Hendricks and Isabelle Heintz, Faculty/Research Participant: Khurram Naeem</p>
-					<figure class="figure">
-						<img src="../images/Nuclear Reactor Fiber Optic.jpg" alt="" loading="lazy" />
-						<figcaption>Nuclear Reactor</figcaption>
-					</figure>
-					<p>The scope of this project is to use fiber optic sensors in nuclear generation application environments for both structural health monitoring and operational optimization, including high temperature molten salts.</p>
-				</section>
+				<div class="head">
+					<p class="prose">Pipelines, nuclear assets, marine carbon removal and urban dark fiber networks.</p>
+				</div>
+				<ul class="topics">
+				<li class="topic">
+					<a href="projects/ai-enhanced-distributed-optical-fiber-sensing-technology-for.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">AI-Enhanced Distributed Optical Fiber Sensing Technology for Real-Time Monitoring of Dry Cask Storage Systems</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/hybrid-distributed-ph-co2-temperature-and-acoustic-sensing-f.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">Hybrid Distributed pH, CO2, Temperature, and Acoustic Sensing for Monitoring and Verification of Marine Carbon Dioxide Removal Applications</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/monitoring-of-molten-salt-and-other-nuclear-reactor-applicat.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">Monitoring of Molten Salt and Other Nuclear Reactor Application Environments with Optical Fiber Sensors</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -174,6 +178,6 @@
 	</div>
 </footer>
 
-<script src="../assets/js/lab.js?v=15" defer></script>
+<script src="../assets/js/lab.js?v=18" defer></script>
 </body>
 </html>

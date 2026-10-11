@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="../assets/css/lab.css?v=15" />
+	<link rel="stylesheet" href="../assets/css/lab.css?v=18" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="../index.html#T1">News</a></li>
 		<li>
-			<a href="../research.html">Research</a>
+			<a class="is-active" href="../research.html">Research</a>
 			<ul class="nav__sub">
 				<li><a href="../research.html">Research Overview</a></li>
 				<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a></li>
@@ -81,7 +81,7 @@
 	<div class="wrap">
 		<p class="eyebrow">Materials</p>
 		<h1>Single Crystal Fibers &amp; LHPG Growth</h1>
-		<p class="page-hero__lede">Laser heated pedestal growth of sapphire and garnet fibers for harsh environment and magneto-optical use.</p>
+		<p class="page-hero__lede">Laser heated pedestal growth of sapphire and garnet fibers for harsh environment and magneto-optic use.</p>
 	</div>
 	<img class="page-hero__mark" src="../images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
@@ -94,13 +94,19 @@
 					<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a>
 						<ul class="side__sub">
 							<li><a href="ferrites-nanocomposites.html">Ferrite &amp; Metal-Ferrite Nanocomposites</a></li>
+							<li><a href="amorphous-nanocrystalline.html">Amorphous &amp; Nanocrystalline Alloys</a></li>
+							<li><a href="permanent-magnets.html">Permanent Magnets</a></li>
 							<li><a href="processing.html">Processing: Field, Strain &amp; Additive</a></li>
+							<li><a href="magnetic-characterization.html">Magnetic Characterization</a></li>
+							<li><a href="power-components.html">Transformers, Inductors &amp; Motors</a></li>
 							<li><a href="magnetics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
 						</ul>
 					</li>
 					<li><a href="../research.html#photonics">Photonic Materials &amp; Fiber Optic Sensing</a>
 						<ul class="side__sub">
+							<li><a href="optical-thin-films.html">Optical Thin Films for Fiber Sensors</a></li>
 							<li><a class="is-here" href="single-crystal-fibers.html">Single Crystal Fibers &amp; LHPG Growth</a></li>
+							<li><a href="quantum-sensing.html">Quantum Sensing</a></li>
 							<li><a href="energy-asset-monitoring.html">Energy Asset Monitoring</a></li>
 							<li><a href="infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
 							<li><a href="photonics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
@@ -110,15 +116,25 @@
 				<p class="person-page__back"><a href="../research.html">All research</a></p>
 			</nav>
 			<div>
-				<section class="section reveal">
-					<h2 class="section__title">Fiber Optics and Laser Heated Pedestal Growth System</h2>
-					<p class="section__meta">Primary Researcher: Dr. Dolendra Karki</p>
-					<figure class="figure">
-						<img src="../images/Laser01.jpg" alt="" loading="lazy" />
-					</figure>
-					<p>Single crystal fiber and single crystal derived fiber are promising candidates for next generation high power laser and telecommunication. Particular interests have rising in which single crystal fiber materials are being leveraged for high-value sensing elements in harsh-environment applications, particularly in energy sectors.</p>
-					<p>We have established an effort to grow customized optical fibers include single crystal fiber, glass fiber, and plastic fiber, using Laser Heated Pedestal Growth (LHPG) system. It will also be utilized to grow custom fibers with different diameter range (50 µm-1mm) and different dopants and concentrations that are not commercially available. We also explore various cladding technique for the single crystal fiber.</p>
-				</section>
+				<div class="head">
+					<p class="prose">Laser heated pedestal growth of sapphire and garnet fibers for harsh environment and magneto-optic use.</p>
+				</div>
+				<ul class="topics">
+				<li class="topic">
+					<a href="projects/laser-heated-pedestal-growth-of-single-crystal-fibers-for-ma.html">
+						<span class="topic__axis">Ongoing</span>
+						<span class="topic__name">Laser-Heated Pedestal Growth of Single-Crystal Fibers for Magnetic Field Sensing</span>
+						<span class="topic__sum">We grow magneto-optic yttrium iron garnet single-crystal fibers and develop them into compact fiber-optic magnetic field sensors.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/fiber-optics-and-laser-heated-pedestal-growth-system.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">Fiber Optics and Laser Heated Pedestal Growth System</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -155,6 +171,6 @@
 	</div>
 </footer>
 
-<script src="../assets/js/lab.js?v=15" defer></script>
+<script src="../assets/js/lab.js?v=18" defer></script>
 </body>
 </html>

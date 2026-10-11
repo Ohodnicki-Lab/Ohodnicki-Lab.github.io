@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="assets/css/lab.css?v=15" />
+	<link rel="stylesheet" href="assets/css/lab.css?v=17" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<li><a href="index.html">Home</a></li>
 		<li><a href="index.html#T1">News</a></li>
 		<li>
-			<a href="research.html">Research</a>
+			<a class="is-active" href="research.html">Research</a>
 			<ul class="nav__sub">
 				<li><a href="research.html">Research Overview</a></li>
 				<li><a href="research.html#magnetics">Magnetic Materials &amp; Power Conversion</a></li>
@@ -223,30 +223,52 @@
 					<a href="research/ferrites-nanocomposites.html">
 						<span class="topic__axis">Materials</span>
 						<span class="topic__name">Ferrite &amp; Metal-Ferrite Nanocomposites</span>
-						<span class="topic__sum">Mn-Zn and Ni-Zn ferrites and ferrite/metal nanocomposites for higher saturation flux density.</span>
+						<span class="topic__sum">Mn-Zn and Ni-Zn ferrites and ferrite/metal nanocomposites for higher saturation flux density and lower loss.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="research/amorphous-nanocrystalline.html">
+						<span class="topic__axis">Materials</span>
+						<span class="topic__name">Amorphous &amp; Nanocrystalline Alloys</span>
+						<span class="topic__sum">Alloy development, crystallization and oxidation behaviour, and operation at extreme temperature.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="research/permanent-magnets.html">
+						<span class="topic__axis">Materials</span>
+						<span class="topic__name">Permanent Magnets</span>
+						<span class="topic__sum">Hexaferrite-based permanent magnets as a route away from rare-earth content.</span>
 					</a>
 				</li>
 				<li class="topic">
 					<a href="research/processing.html">
 						<span class="topic__axis">Processing</span>
 						<span class="topic__name">Processing: Field, Strain &amp; Additive</span>
-						<span class="topic__sum">Electromagnetic field annealing, strain annealing, and additive manufacturing of soft magnetic components.</span>
+						<span class="topic__sum">Electromagnetic field annealing, strain and tension annealing, flash annealing and additive routes.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="research/magnetic-characterization.html">
+						<span class="topic__axis">Methods</span>
+						<span class="topic__name">Magnetic Characterization</span>
+						<span class="topic__sum">Saturation flux density, core loss, Curie temperature, anisotropy and high frequency properties.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="research/power-components.html">
+						<span class="topic__axis">Applications</span>
+						<span class="topic__name">Transformers, Inductors &amp; Motors</span>
+						<span class="topic__sum">Medium and high frequency magnetics for distribution transformers, inductors, motors and grid equipment.</span>
 					</a>
 				</li>
 				<li class="topic">
 					<a href="research/magnetics-computation.html">
 						<span class="topic__axis">Computation</span>
 						<span class="topic__name">Computation, AI &amp; Edge Intelligence</span>
-						<span class="topic__sum">Thermodynamic and micromagnetic modelling, first principles calculation, and multiphysics analysis of magnetic components.</span>
+						<span class="topic__sum">Thermodynamic and micromagnetic modelling, first principles calculation, and multiphysics analysis.</span>
 					</a>
 				</li>
 		</ul>
-			<!-- STILL TO BE WRITTEN UP. Uncomment a block once the research page
-			     update form comes back for it, and create research/<name>.html.
-			<li class="topic"><a href="research/amorphous-nanocrystalline.html"><span class="topic__axis">Materials</span><span class="topic__name">Amorphous &amp; Nanocrystalline Alloys</span><span class="topic__sum">Composition design, crystallization and oxidation behaviour, and extreme temperature operation.</span></a></li>
-			<li class="topic"><a href="research/magnetic-characterization.html"><span class="topic__axis">Methods</span><span class="topic__name">Magnetic Characterization</span><span class="topic__sum">Saturation flux density, core loss, Curie temperature and high frequency electromagnetic properties.</span></a></li>
-			<li class="topic"><a href="research/power-components.html"><span class="topic__axis">Applications</span><span class="topic__name">Transformers, Inductors &amp; Motors</span><span class="topic__sum">Medium and high frequency magnetics for solid state transformers, motors, HVDC and EMI mitigation.</span></a></li>
-			-->
 	</div>
 </section>
 
@@ -258,17 +280,31 @@
 		</div>
 		<ul class="topics">
 				<li class="topic">
+					<a href="research/optical-thin-films.html">
+						<span class="topic__axis">Materials</span>
+						<span class="topic__name">Optical Thin Films for Fiber Sensors</span>
+						<span class="topic__sum">Plasmonic, polymer and nanoparticle coatings that give an optical fiber its sensitivity.</span>
+					</a>
+				</li>
+				<li class="topic">
 					<a href="research/single-crystal-fibers.html">
 						<span class="topic__axis">Materials</span>
 						<span class="topic__name">Single Crystal Fibers &amp; LHPG Growth</span>
-						<span class="topic__sum">Laser heated pedestal growth of sapphire and garnet fibers for harsh environment and magneto-optical use.</span>
+						<span class="topic__sum">Laser heated pedestal growth of sapphire and garnet fibers for harsh environment and magneto-optic use.</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="research/quantum-sensing.html">
+						<span class="topic__axis">Devices</span>
+						<span class="topic__name">Quantum Sensing</span>
+						<span class="topic__sum">Optically detected magnetic resonance in diamond for magnetic field and temperature measurement.</span>
 					</a>
 				</li>
 				<li class="topic">
 					<a href="research/energy-asset-monitoring.html">
 						<span class="topic__axis">Applications</span>
 						<span class="topic__name">Energy Asset Monitoring</span>
-						<span class="topic__sum">Transformer and battery monitoring through fiber-optic acoustic, temperature and gas sensing.</span>
+						<span class="topic__sum">Transformer and battery monitoring through fiber-optic acoustic, temperature, gas and field sensing.</span>
 					</a>
 				</li>
 				<li class="topic">
@@ -282,19 +318,22 @@
 					<a href="research/photonics-computation.html">
 						<span class="topic__axis">Computation</span>
 						<span class="topic__name">Computation, AI &amp; Edge Intelligence</span>
-						<span class="topic__sum">Physics-informed AI for distributed sensing data, optical and device modelling, and analytics that run at the edge.</span>
+						<span class="topic__sum">Physics-informed AI for distributed sensing, optical and device modelling, and analytics at the edge.</span>
 					</a>
 				</li>
 		</ul>
-			<!-- STILL TO BE WRITTEN UP. Uncomment a block once the research page
-			     update form comes back for it, and create research/<name>.html.
-			<li class="topic"><a href="research/optical-thin-films.html"><span class="topic__axis">Materials</span><span class="topic__name">Optical Thin Films for Fiber Sensors</span><span class="topic__sum">Plasmonic nanocomposite and chemically selective coatings that give an optical fiber its sensitivity.</span></a></li>
-			<li class="topic"><a href="research/quantum-sensing.html"><span class="topic__axis">Devices</span><span class="topic__name">Quantum Sensing</span><span class="topic__sum">Optically detected magnetic resonance for electromagnetic field measurement.</span></a></li>
-			<li class="topic"><a href="research/interrogators.html"><span class="topic__axis">Devices</span><span class="topic__name">Interrogator &amp; Instrumentation Development</span><span class="topic__sum">Low-cost interrogation units, fiber attachment and packaging, and signal processing.</span></a></li>
+			<!-- NO PROJECTS YET. Uncomment a block once a research page update
+			     form comes back for it.
+			<li class="topic">
+				<a href="research/interrogators.html">
+					<span class="topic__axis">Devices</span>
+					<span class="topic__name">Interrogator &amp; Instrumentation Development</span>
+					<span class="topic__sum">Low-cost interrogation units, fiber attachment and packaging, and signal processing.</span>
+				</a>
+			</li>
 			-->
 	</div>
 </section>
-
 
 <footer class="footer">
 	<div class="wrap">
@@ -327,6 +366,6 @@
 	</div>
 </footer>
 
-<script src="assets/js/lab.js?v=15" defer></script>
+<script src="assets/js/lab.js?v=17" defer></script>
 </body>
 </html>

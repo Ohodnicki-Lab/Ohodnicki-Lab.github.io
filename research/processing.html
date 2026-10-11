@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="../assets/css/lab.css?v=15" />
+	<link rel="stylesheet" href="../assets/css/lab.css?v=18" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="../index.html#T1">News</a></li>
 		<li>
-			<a href="../research.html">Research</a>
+			<a class="is-active" href="../research.html">Research</a>
 			<ul class="nav__sub">
 				<li><a href="../research.html">Research Overview</a></li>
 				<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a></li>
@@ -81,7 +81,7 @@
 	<div class="wrap">
 		<p class="eyebrow">Processing</p>
 		<h1>Processing: Field, Strain &amp; Additive</h1>
-		<p class="page-hero__lede">Electromagnetic field annealing, strain annealing, and additive manufacturing of soft magnetic components.</p>
+		<p class="page-hero__lede">Electromagnetic field annealing, strain and tension annealing, flash annealing and additive routes.</p>
 	</div>
 	<img class="page-hero__mark" src="../images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
@@ -94,13 +94,19 @@
 					<li><a href="../research.html#magnetics">Magnetic Materials &amp; Power Conversion</a>
 						<ul class="side__sub">
 							<li><a href="ferrites-nanocomposites.html">Ferrite &amp; Metal-Ferrite Nanocomposites</a></li>
+							<li><a href="amorphous-nanocrystalline.html">Amorphous &amp; Nanocrystalline Alloys</a></li>
+							<li><a href="permanent-magnets.html">Permanent Magnets</a></li>
 							<li><a class="is-here" href="processing.html">Processing: Field, Strain &amp; Additive</a></li>
+							<li><a href="magnetic-characterization.html">Magnetic Characterization</a></li>
+							<li><a href="power-components.html">Transformers, Inductors &amp; Motors</a></li>
 							<li><a href="magnetics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
 						</ul>
 					</li>
 					<li><a href="../research.html#photonics">Photonic Materials &amp; Fiber Optic Sensing</a>
 						<ul class="side__sub">
+							<li><a href="optical-thin-films.html">Optical Thin Films for Fiber Sensors</a></li>
 							<li><a href="single-crystal-fibers.html">Single Crystal Fibers &amp; LHPG Growth</a></li>
+							<li><a href="quantum-sensing.html">Quantum Sensing</a></li>
 							<li><a href="energy-asset-monitoring.html">Energy Asset Monitoring</a></li>
 							<li><a href="infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
 							<li><a href="photonics-computation.html">Computation, AI &amp; Edge Intelligence</a></li>
@@ -110,15 +116,39 @@
 				<p class="person-page__back"><a href="../research.html">All research</a></p>
 			</nav>
 			<div>
-				<section class="section reveal">
-					<h2 class="section__title">Thermal Processing and Characterization of Soft Magnetic Nanocomposites</h2>
-					<p class="section__meta">Primary Researcher: Dr. Ahmed Talaat</p>
-					<figure class="figure">
-						<img src="../images/MANC-A01.jpg" alt="" loading="lazy" />
-					</figure>
-					<p>Controllable and fast heating profiles provide unique capabilities to realize enhanced soft magnetic properties of amorphous and nanocrystalline materials in conventional nanocrystalline alloys, as well as alloy chemistries for which carefully controlled annealing processes play a critical role in realizing desired properties tailored within a large degree of flexibility.</p>
-					<p>We perform fundamental research pursuing innovative strategies to develop unique electromagnetic (EM) thermal processing enabling ultrafast phase transformations of metal amorphous nanocomposite (MANC) alloys. Traditional MANC alloys are usually obtained by a two-stage synthesis route: first, by processing of an amorphous alloy through rapid solidification, followed by isothermal treatment promoting partial crystallization which limits the ultimate saturation magnetization attainable. Novel EM processing can achieve desired microstructures and properties with reduced glass former content thereby increasing the saturation magnetization, which allows for dramatically higher power density and reduced cost for application in end-use components such as motors, transformers, and inductors relevant for vehicle / aircraft electrification and power electronics.</p>
-				</section>
+				<div class="head">
+					<p class="prose">Electromagnetic field annealing, strain and tension annealing, flash annealing and additive routes.</p>
+				</div>
+				<ul class="topics">
+				<li class="topic">
+					<a href="projects/advanced-co-based-nanocrystalline-soft-magnetics-for-extreme.html">
+						<span class="topic__axis">Completed</span>
+						<span class="topic__name">Advanced Co-Based Nanocrystalline Soft Magnetics for Extreme Temperature Inductor Applications</span>
+						<span class="topic__sum">New class of Co-based alloys developed that can operate at elevated temperatures for extended periods while microstructure and magnetic properties remain stable</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/metal-amorphous-nanocomposite-manc-alloys-and-in-line-manufa.html">
+						<span class="topic__axis">Completed</span>
+						<span class="topic__name">Metal Amorphous Nanocomposite (MANC) Alloys and In-Line Manufacturing</span>
+						<span class="topic__sum">Property tailoring through high heating rates and annealing times</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/study-on-annealing-effect-of-ultrathin-electrical-steel-with.html">
+						<span class="topic__axis">Completed</span>
+						<span class="topic__name">Study on Annealing Effect of Ultrathin Electrical Steel with Control of Strip Tension</span>
+						<span class="topic__sum">Tension annealing of thin electrical steels allows for greater tailoring of grain size and crystal texture, improving magnetic properties</span>
+					</a>
+				</li>
+				<li class="topic">
+					<a href="projects/thermal-processing-and-characterization-of-soft-magnetic-nan.html">
+						<span class="topic__axis">Project</span>
+						<span class="topic__name">Thermal Processing and Characterization of Soft Magnetic Nanocomposites</span>
+						<span class="topic__sum"></span>
+					</a>
+				</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -155,6 +185,6 @@
 	</div>
 </footer>
 
-<script src="../assets/js/lab.js?v=15" defer></script>
+<script src="../assets/js/lab.js?v=18" defer></script>
 </body>
 </html>
