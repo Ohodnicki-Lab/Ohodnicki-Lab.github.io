@@ -1,4 +1,4 @@
-/* VERSION: v18 — side column overflow fix. If you cannot find the text
+/* VERSION: v19 — publication explorer. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -911,6 +911,34 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
 .topic__name { display: block; margin-top: var(--xs); font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.25; letter-spacing: -0.01em; }
 .topic a:hover .topic__name { color: var(--blue); }
 .topic__sum { display: block; margin-top: var(--xs); font-size: 14.5px; line-height: 1.5; color: var(--slate); }
+
+/* ---------- Publication explorer ---------- */
+.pub-status { padding: var(--lg); background: var(--white); border: 1px dashed var(--hairline); border-radius: var(--r-md); color: var(--slate); }
+.pub-controls { display: flex; flex-wrap: wrap; gap: var(--md); margin-bottom: var(--lg); }
+.pub-field { display: flex; flex-direction: column; gap: 5px; }
+.pub-field--grow { flex: 1 1 260px; }
+.pub-field > span { font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); }
+.pub-field input, .pub-field select {
+  font-family: var(--body);
+  font-size: 15px;
+  padding: 10px var(--sm);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  background: var(--white);
+  color: var(--ink);
+  min-width: 170px;
+}
+.pub-field input:focus, .pub-field select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.pubitems { list-style: none; margin: 0; padding: 0; }
+.pubitem { padding: var(--lg) 0; border-top: 1px solid var(--hairline); }
+.pubitem:last-child { border-bottom: 1px solid var(--hairline); }
+.pubitem--empty { color: var(--slate); border-bottom: 0; }
+.pubitem__title { margin: 0; font-size: 17px; line-height: 1.45; font-weight: 600; }
+.pubitem__authors { margin: 4px 0 0; font-size: 14.5px; color: var(--slate); }
+.pubitem__meta { margin: 6px 0 0; font-family: var(--mono); font-size: 11.5px; letter-spacing: .5px; color: var(--slate); }
+.pubitem__venue { font-style: italic; }
+.pubitem__tags { display: flex; flex-wrap: wrap; gap: 5px; margin: var(--sm) 0 0; }
 
 /* --- Status badge in a project's title band --- */
 .page-hero__status { margin: var(--md) 0 0; }

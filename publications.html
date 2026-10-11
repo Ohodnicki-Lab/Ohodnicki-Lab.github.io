@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="assets/css/lab.css?v=16" />
+	<link rel="stylesheet" href="assets/css/lab.css?v=19" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -147,6 +147,52 @@
 	</div>
 </section>
 
+<!-- ALL PUBLICATIONS, from OpenAlex.
+     The list itself lives in assets/data/publications.json, refreshed each
+     month by .github/workflows/publications.yml. Nothing here needs editing
+     by hand; to change what is collected, edit tools/fetch_publications.py. -->
+<section class="band band--mist" id="explore">
+	<div class="wrap">
+		<div class="split">
+			<div class="split__label">
+				<h2>Explore Publications</h2>
+				<p class="split__note" data-pub-count>Loading&hellip;</p>
+				<p class="split__note" data-pub-meta></p>
+			</div>
+
+			<div id="pub-explorer">
+				<p class="pub-status" data-pub-status>Loading the publication list&hellip;</p>
+
+				<div class="pub-controls">
+					<label class="pub-field pub-field--grow">
+						<span>Search</span>
+						<input type="search" data-pub-search placeholder="Title, author, journal or year" />
+					</label>
+					<label class="pub-field">
+						<span>Research area</span>
+						<select data-pub-topic><option value="all">All areas</option></select>
+					</label>
+					<label class="pub-field">
+						<span>Type</span>
+						<select data-pub-type><option value="all">All types</option></select>
+					</label>
+					<label class="pub-field">
+						<span>Sort by</span>
+						<select data-pub-sort>
+							<option value="year">Newest first</option>
+							<option value="cited">Most cited</option>
+							<option value="title">Title</option>
+						</select>
+					</label>
+				</div>
+
+				<ul class="pubitems" data-pub-list></ul>
+				<p class="more"><button class="btn btn--outline" type="button" data-pub-more hidden></button></p>
+			</div>
+		</div>
+	</div>
+</section>
+
 <footer class="footer">
 	<div class="wrap">
 		<div class="footer__top">
@@ -178,6 +224,7 @@
 	</div>
 </footer>
 
-<script src="assets/js/lab.js?v=16" defer></script>
+<script src="assets/js/lab.js?v=19" defer></script>
+<script src="assets/js/pubs.js?v=1" defer></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+{
+ "generated": "2026-10-11",
+ "source": "OpenAlex",
+ "author": {
+  "name": "Paul R. Ohodnicki",
+  "works_count": 3
+ },
+ "count": 3,
+ "items": [
+  {
+   "id": "W1",
+   "title": "Soft magnetic ferrite nanocomposites for power electronics",
+   "authors": [
+    "A. Talaat",
+    "P. Ohodnicki"
+   ],
+   "venue": "J. Alloys Compd.",
+   "year": 2026,
+   "type": "article",
+   "doi": "https://doi.org/10.1/x",
+   "url": "https://doi.org/10.1/x",
+   "oa": true,
+   "oa_url": "https://example.org/x.pdf",
+   "cited_by": 12,
+   "topics": [
+    "ferrites-nanocomposites",
+    "power-components"
+   ]
+  },
+  {
+   "id": "W2",
+   "title": "Distributed acoustic sensing for pipeline corrosion detection",
+   "authors": [
+    "P. Zhang",
+    "P. Ohodnicki"
+   ],
+   "venue": "IEEE Sensors",
+   "year": 2025,
+   "type": "article",
+   "doi": "",
+   "url": "",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 40,
+   "topics": [
+    "infrastructure-monitoring"
+   ]
+  },
+  {
+   "id": "W3",
+   "title": "Review of optically detected magnetic resonance",
+   "authors": [
+    "J. Hong"
+   ],
+   "venue": "APL Photonics",
+   "year": 2024,
+   "type": "review",
+   "doi": "",
+   "url": "",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 3,
+   "topics": [
+    "quantum-sensing"
+   ]
+  }
+ ]
+}
