@@ -41,10 +41,12 @@
     topic: root.querySelector('[data-pub-topic]'),
     type: root.querySelector('[data-pub-type]'),
     sort: root.querySelector('[data-pub-sort]'),
-    count: root.querySelector('[data-pub-count]'),
+    // these two sit in the label column, which is a sibling of #pub-explorer,
+    // so they have to be looked up on the document rather than inside root
+    count: document.querySelector('[data-pub-count]'),
     list: root.querySelector('[data-pub-list]'),
     more: root.querySelector('[data-pub-more]'),
-    meta: root.querySelector('[data-pub-meta]')
+    meta: document.querySelector('[data-pub-meta]')
   };
 
   function esc(s) {
@@ -121,9 +123,11 @@
       '<li class="pubitem pubitem--empty">Nothing matches that. Try fewer words, ' +
       'or clear the filters.</li>';
 
-    els.count.textContent = hits.length === state.all.length
-      ? hits.length + ' publications'
-      : hits.length + ' of ' + state.all.length + ' publications';
+    if (els.count) {
+      els.count.textContent = hits.length === state.all.length
+        ? hits.length + ' publications'
+        : hits.length + ' of ' + state.all.length + ' publications';
+    }
 
     if (els.more) {
       var left = hits.length - shown.length;
