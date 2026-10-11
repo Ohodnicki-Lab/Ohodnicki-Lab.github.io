@@ -1,4 +1,4 @@
-/* VERSION: v19 — publication explorer. If you cannot find the text
+/* VERSION: v20 — hidden attribute fix. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -120,6 +120,11 @@ h3 { font-size: var(--size-h3);   line-height: 1.3; font-weight: 600; }
   gap: var(--sm);
 }
 .eyebrow::before { content: ""; width: 24px; height: 2px; background: var(--accent); flex: none; }
+
+/* The browser's own [hidden] rule is display:none at the lowest priority, so
+   any class that sets display (.btn, .card, .topic) overrides it and the
+   element stays visible. Make hidden mean hidden. */
+[hidden] { display: none !important; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 :focus:not(:focus-visible) { outline: none; }
