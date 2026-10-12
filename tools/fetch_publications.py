@@ -23,9 +23,16 @@ OUT = 'assets/data/publications.json'
 KEY = os.environ.get('OPENALEX_API_KEY', '').strip()
 MAILTO = os.environ.get('OPENALEX_MAILTO', '').strip()
 
-# Which of the research topics a paper belongs to, by keyword in its title.
-# Keys are the research/<slug>.html pages, so the explorer can link straight
-# to them. A paper can match several.
+# Which of the research topics a paper belongs to, judged from its title.
+# Keys match the research/<slug>.html pages where one exists, so the explorer
+# can link straight to them. A paper can match several topics.
+#
+# Each rule is either
+#   'a phrase'              -> matches if the title contains that phrase, or
+#   ['word', 'other word']  -> matches only if the title contains all of them.
+# The second form keeps broad words usable: ['temperature', 'fiber'] catches a
+# fiber temperature sensor without catching "extreme temperature stability" in
+# a magnetics paper.
 TOPIC_KEYWORDS = {
  'ferrites-nanocomposites': ['ferrite', 'mn-zn', 'ni-zn', 'nizn', 'mnzn', 'spinel',
                              'nanocomposite'],
@@ -61,6 +68,21 @@ TOPIC_KEYWORDS = {
                                'dry cask', 'distributed acoustic', 'dark fiber',
                                'structural health', 'non-destructive', 'guided wave',
                                'molten salt', 'infrastructure'],
+ # Sensing modalities. These cut across the application areas above: a paper
+ # on transformer monitoring may well be tagged both there and here.
+ 'chemical-sensing': ['dissolved gas', 'chemiresistive', 'evanescent', 'methane',
+                      ['gas', 'sens'], ['gas', 'detect'], ['gases', 'sensor'],
+                      ['chemical', 'sens'], ['chemical', 'detect'], ['chemical', 'vapor'],
+                      ['hydrogen', 'sens'], ['oxygen', 'sens'], ['co2', 'sens'],
+                      ['carbon dioxide', 'sens'], ['ph', 'sens'],
+                      ['refractive index', 'sens']],
+ 'temperature-sensing': ['distributed temperature', 'thermometry',
+                         ['temperature', 'sens'], ['temperature', 'monitor'],
+                         ['temperature', 'fiber'], ['temperature', 'probe'],
+                         ['thermal', 'sens']],
+ 'acoustic-sensing': ['acoustic', 'ultrasonic', 'ultrasound', 'guided wave',
+                      'lamb wave', ['vibration', 'sens'], ['vibration', 'monitor'],
+                      ['piezoelectric', 'sens']],
  'photonics-computation': ['deep learning', 'neural network', 'machine learning',
                            'digital twin', 'sim-to-real', 'artificial intelligence',
                            'physics-informed', 'data analytics'],
@@ -103,8 +125,14 @@ def author_id():
 
 def topics_for(title):
     low = (title or '').lower()
-    return [slug for slug, words in TOPIC_KEYWORDS.items()
-            if any(w in low for w in words)]
+
+    def hit(rule):
+        if isinstance(rule, (list, tuple)):          # every word must appear
+            return all(w in low for w in rule)
+        return rule in low                           # a single phrase
+
+    return [slug for slug, rules in TOPIC_KEYWORDS.items()
+            if any(hit(r) for r in rules)]
 
 
 def tidy(work):

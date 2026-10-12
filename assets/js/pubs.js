@@ -24,25 +24,32 @@
      placed in this sequence within their branch, so related areas end up as
      neighbouring clusters: the materials first, then how they are made and
      measured, then where they are used, then the modelling behind it. */
+  /* slug, label, band, and whether a research page exists for it. Areas with
+     no page still filter and cluster; their chips just are not links. */
   var TOPICS = [
-    ['ferrites-nanocomposites',   'Ferrites & Nanocomposites',          'magnetics'],
-    ['amorphous-nanocrystalline', 'Amorphous & Nanocrystalline Alloys', 'magnetics'],
-    ['permanent-magnets',         'Permanent Magnets',                  'magnetics'],
-    ['processing',                'Processing',                         'magnetics'],
-    ['magnetic-characterization', 'Magnetic Characterization',          'magnetics'],
-    ['power-components',          'Transformers, Inductors & Motors',   'magnetics'],
-    ['magnetics-computation',     'Modelling (Magnetics)',              'magnetics'],
-    ['optical-thin-films',        'Optical Thin Films',                 'photonics'],
-    ['single-crystal-fibers',     'Single Crystal Fibers',              'photonics'],
-    ['quantum-sensing',           'Quantum Sensing',                    'photonics'],
-    ['interrogators',             'Interrogators',                      'photonics'],
-    ['energy-asset-monitoring',   'Energy Asset Monitoring',            'photonics'],
-    ['infrastructure-monitoring', 'Infrastructure Monitoring',          'photonics'],
-    ['photonics-computation',     'AI & Data Analytics',                'photonics'],
-    ['other',                     '',                                   'other']
+    ['ferrites-nanocomposites',   'Ferrites & Nanocomposites',          'magnetics', 1],
+    ['amorphous-nanocrystalline', 'Amorphous & Nanocrystalline Alloys', 'magnetics', 1],
+    ['permanent-magnets',         'Permanent Magnets',                  'magnetics', 1],
+    ['processing',                'Processing',                         'magnetics', 1],
+    ['magnetic-characterization', 'Magnetic Characterization',          'magnetics', 1],
+    ['power-components',          'Transformers, Inductors & Motors',   'magnetics', 1],
+    ['magnetics-computation',     'Modelling (Magnetics)',              'magnetics', 1],
+    ['optical-thin-films',        'Optical Thin Films',                 'photonics', 1],
+    ['single-crystal-fibers',     'Single Crystal Fibers',              'photonics', 1],
+    ['quantum-sensing',           'Quantum Sensing',                    'photonics', 1],
+    ['interrogators',             'Interrogators',                      'photonics', 1],
+    ['energy-asset-monitoring',   'Energy Asset Monitoring',            'photonics', 1],
+    ['infrastructure-monitoring', 'Infrastructure Monitoring',          'photonics', 1],
+    ['chemical-sensing',          'Chemical & Gas Sensing',             'photonics', 0],
+    ['temperature-sensing',       'Temperature Sensing',                'photonics', 0],
+    ['acoustic-sensing',          'Acoustic & Ultrasonic Sensing',      'photonics', 0],
+    ['photonics-computation',     'AI & Data Analytics',                'photonics', 1],
+    ['other',                     '',                                   'other',     0]
   ];
-  var NAME = {}, BRANCH = {}, ORDER = {};
-  TOPICS.forEach(function (t, i) { NAME[t[0]] = t[1]; BRANCH[t[0]] = t[2]; ORDER[t[0]] = i; });
+  var NAME = {}, BRANCH = {}, ORDER = {}, HAS_PAGE = {};
+  TOPICS.forEach(function (t, i) {
+    NAME[t[0]] = t[1]; BRANCH[t[0]] = t[2]; ORDER[t[0]] = i; HAS_PAGE[t[0]] = !!t[3];
+  });
   // Bands run magnetics, then the unmatched papers, then photonics. They are
   // not captioned: the cluster labels already say what everything is.
   var BANDS = ['magnetics', 'other', 'photonics'];
@@ -132,7 +139,10 @@
     if (p.cited_by) bits.push('<span>' + p.cited_by + ' citation' + (p.cited_by === 1 ? '' : 's') + '</span>');
     if (p.oa && p.oa_url) bits.push('<a href="' + esc(p.oa_url) + '" target="_blank" rel="noopener">Open access</a>');
     var tags = (p.topics || []).map(function (t) {
-      return '<a class="tag tag--topic" href="research/' + t + '.html">' + esc(NAME[t] || t) + '</a>';
+      var label = esc(NAME[t] || t);
+      return HAS_PAGE[t]
+        ? '<a class="tag tag--topic" href="research/' + t + '.html">' + label + '</a>'
+        : '<span class="tag tag--topic">' + label + '</span>';
     }).join(' ');
     return '<li class="pubitem">' +
       '<p class="pubitem__title">' + title + '</p>' +
