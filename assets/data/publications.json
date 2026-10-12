@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-11",
+ "generated": "2026-10-12",
  "source": "OpenAlex",
  "author": {
   "name": "Paul Richard Ohodnicki",
   "orcid": "https://orcid.org/0000-0003-2115-0692",
   "openalex": "https://openalex.org/A5037367490",
   "works_count": 463,
-  "cited_by_count": 9914
+  "cited_by_count": 9915
  },
- "count": 463,
+ "count": 465,
  "items": [
   {
    "id": "W7133558840",
@@ -30,6 +30,48 @@
    "topics": [
     "single-crystal-fibers",
     "quantum-sensing"
+   ]
+  },
+  {
+   "id": "W7221106995",
+   "title": "Modeling and analysis of optical readout signals in polymer–MNP composite coated multimode-interference fiber sensors for AC magnetic field sensing",
+   "authors": [
+    "Jun Young Hong",
+    "Soren Henkle",
+    "Dolendra Karki",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Unconventional Imaging, Sensing, and Adaptive Optics",
+   "year": 2026,
+   "type": "conference-abstract",
+   "doi": "https://doi.org/10.1117/12.3113808",
+   "url": "https://doi.org/10.1117/12.3113808",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 0,
+   "topics": []
+  },
+  {
+   "id": "W7221176790",
+   "title": "Fiber optic pH sensing tailored for marine applications using dye immobilized modified silica",
+   "authors": [
+    "Devika Mohan",
+    "Tulika Khanikar",
+    "Alexander J. Shumski",
+    "Khurram Naeem",
+    "Ruishu Wright",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Unconventional Imaging, Sensing, and Adaptive Optics",
+   "year": 2026,
+   "type": "conference-abstract",
+   "doi": "https://doi.org/10.1117/12.3114190",
+   "url": "https://doi.org/10.1117/12.3114190",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 0,
+   "topics": [
+    "chemical-sensing"
    ]
   },
   {
@@ -75,7 +117,36 @@
    "cited_by": 0,
    "topics": [
     "ferrites-nanocomposites",
-    "amorphous-nanocrystalline"
+    "amorphous-nanocrystalline",
+    "chemical-sensing"
+   ]
+  },
+  {
+   "id": "W7164332310",
+   "title": "Distributed optical fiber sensing technology development and deployment for marine infrastructure and mobile marine platforms",
+   "authors": [
+    "Paul Richard Ohodnicki",
+    "Tulika Khanikar",
+    "K. Naeem",
+    "D. Mohan",
+    "J.M.Adeeb Salman Chowdhury",
+    "A. Shumski",
+    "J. Culp",
+    "N. Lalam",
+    "R. Wright",
+    "Tosca Lichtenheld",
+    "E. Shapiro"
+   ],
+   "venue": "",
+   "year": 2026,
+   "type": "conference-abstract",
+   "doi": "https://doi.org/10.1117/12.3095359",
+   "url": "https://doi.org/10.1117/12.3095359",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 0,
+   "topics": [
+    "infrastructure-monitoring"
    ]
   },
   {
@@ -195,8 +266,8 @@
    "type": "article",
    "doi": "https://doi.org/10.1016/j.ceramint.2026.03.024",
    "url": "https://doi.org/10.1016/j.ceramint.2026.03.024",
-   "oa": false,
-   "oa_url": "",
+   "oa": true,
+   "oa_url": "https://doi.org/10.2139/ssrn.5086973",
    "cited_by": 0,
    "topics": [
     "ferrites-nanocomposites",
@@ -219,7 +290,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W7131253879",
@@ -272,7 +345,8 @@
    "oa_url": "https://doi.org/10.2139/ssrn.6232709",
    "cited_by": 0,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -321,6 +395,7 @@
    "cited_by": 0,
    "topics": [
     "infrastructure-monitoring",
+    "acoustic-sensing",
     "photonics-computation"
    ]
   },
@@ -372,6 +447,8 @@
    "cited_by": 8,
    "topics": [
     "infrastructure-monitoring",
+    "chemical-sensing",
+    "temperature-sensing",
     "photonics-computation"
    ]
   },
@@ -446,7 +523,8 @@
    "oa_url": "",
    "cited_by": 2,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -468,13 +546,15 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W4409991635",
    "title": "Extreme Temperature Permeability Engineered Soft Magnetics",
    "authors": [
-    "Tyler W. Paplham",
+    "Tyler Paplham",
     "Alex Leary",
     "Paul Richard Ohodnicki"
    ],
@@ -512,28 +592,8 @@
    "oa_url": "",
    "cited_by": 1,
    "topics": [
-    "infrastructure-monitoring"
-   ]
-  },
-  {
-   "id": "W4413349291",
-   "title": "High-temperature stability of Co-based amorphous/nanocomposite alloys in terms of oxidation and secondary crystallization behavior",
-   "authors": [
-    "Yuankang Wang",
-    "Alex Leary",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "Journal of Alloys and Compounds",
-   "year": 2025,
-   "type": "article",
-   "doi": "https://doi.org/10.1016/j.jallcom.2025.183149",
-   "url": "https://doi.org/10.1016/j.jallcom.2025.183149",
-   "oa": true,
-   "oa_url": "https://doi.org/10.1016/j.jallcom.2025.183149",
-   "cited_by": 1,
-   "topics": [
-    "ferrites-nanocomposites",
-    "amorphous-nanocrystalline"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -558,7 +618,29 @@
    "oa_url": "",
    "cited_by": 1,
    "topics": [
+    "chemical-sensing",
     "photonics-computation"
+   ]
+  },
+  {
+   "id": "W4413349291",
+   "title": "High-Temperature Stability of Co-Based Amorphous/Nanocomposite Alloys in Terms of Oxidation and Secondary Crystallization Behavior",
+   "authors": [
+    "Yuankang Wang",
+    "Alex Leary",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Journal of Alloys and Compounds",
+   "year": 2025,
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.jallcom.2025.183149",
+   "url": "https://doi.org/10.1016/j.jallcom.2025.183149",
+   "oa": true,
+   "oa_url": "https://doi.org/10.1016/j.jallcom.2025.183149",
+   "cited_by": 1,
+   "topics": [
+    "ferrites-nanocomposites",
+    "amorphous-nanocrystalline"
    ]
   },
   {
@@ -596,8 +678,8 @@
    "type": "article",
    "doi": "https://doi.org/10.1016/j.jmmm.2025.173760",
    "url": "https://doi.org/10.1016/j.jmmm.2025.173760",
-   "oa": false,
-   "oa_url": "",
+   "oa": true,
+   "oa_url": "https://doi.org/10.2139/ssrn.5337601",
    "cited_by": 0,
    "topics": [
     "amorphous-nanocrystalline"
@@ -695,6 +777,7 @@
    "cited_by": 0,
    "topics": [
     "infrastructure-monitoring",
+    "acoustic-sensing",
     "photonics-computation"
    ]
   },
@@ -742,7 +825,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -920,7 +1004,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W4409990989",
@@ -1078,30 +1164,8 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
-  },
-  {
-   "id": "W4406153392",
-   "title": "Density Improvement of Binder Jet Printed Mnzn Ferrite Toroid Via Infiltration",
-   "authors": [
-    "Bishal Bhandari",
-    "Dipika Mandal",
-    "Chuyuan Zheng",
-    "Suraj Venkateshwaran Mullurkara",
-    "Chris Bracken",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "SSRN Electronic Journal",
-   "year": 2025,
-   "type": "preprint",
-   "doi": "https://doi.org/10.2139/ssrn.5086973",
-   "url": "https://doi.org/10.2139/ssrn.5086973",
-   "oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.5086973",
-   "cited_by": 0,
    "topics": [
-    "ferrites-nanocomposites",
-    "processing"
+    "chemical-sensing"
    ]
   },
   {
@@ -1127,6 +1191,7 @@
    "cited_by": 0,
    "topics": [
     "infrastructure-monitoring",
+    "acoustic-sensing",
     "photonics-computation"
    ]
   },
@@ -1153,48 +1218,6 @@
    ]
   },
   {
-   "id": "W4411572813",
-   "title": "High-Temperature Stability of Co-Based Amorphous/Nanocomposite Alloys in Terms of Oxidation and Secondary Crystallization Behavior",
-   "authors": [
-    "Yuankang Wang",
-    "Alex Leary",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "SSRN Electronic Journal",
-   "year": 2025,
-   "type": "preprint",
-   "doi": "https://doi.org/10.2139/ssrn.5317436",
-   "url": "https://doi.org/10.2139/ssrn.5317436",
-   "oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.5317436",
-   "cited_by": 0,
-   "topics": [
-    "ferrites-nanocomposites",
-    "amorphous-nanocrystalline"
-   ]
-  },
-  {
-   "id": "W4412007006",
-   "title": "Extreme Temperature Stability of Induced Magnetic Anisotropies in Co-Rich Soft Magnetic Nanocrystalline Ribbon",
-   "authors": [
-    "Tyler Paplham",
-    "Yuankang Wang",
-    "Alex Leary",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "SSRN Electronic Journal",
-   "year": 2025,
-   "type": "preprint",
-   "doi": "https://doi.org/10.2139/ssrn.5337601",
-   "url": "https://doi.org/10.2139/ssrn.5337601",
-   "oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.5337601",
-   "cited_by": 0,
-   "topics": [
-    "amorphous-nanocrystalline"
-   ]
-  },
-  {
    "id": "W4399863001",
    "title": "All-Around Electromagnetic Wave Absorber Based on Ni–Zn Ferrite",
    "authors": [
@@ -1210,7 +1233,7 @@
    "url": "https://doi.org/10.1021/acsami.4c06498",
    "oa": true,
    "oa_url": "https://doi.org/10.1021/acsami.4c06498",
-   "cited_by": 43,
+   "cited_by": 42,
    "topics": [
     "ferrites-nanocomposites"
    ]
@@ -1263,31 +1286,6 @@
    "topics": []
   },
   {
-   "id": "W4392980154",
-   "title": "Trade Study for Rare-Earth-Free Interior Permanent Magnet Synchronous Machine Using MnBi Permanent Magnets",
-   "authors": [
-    "Ryan Brody",
-    "Paul Richard Ohodnicki",
-    "Mohendro Kumar Ghosh",
-    "Cuauhtemoc Macias",
-    "Andrew J. Sherman",
-    "Ahmed Talaat",
-    "Jun Cui",
-    "Brandon M. Grainger"
-   ],
-   "venue": "IEEE Transactions on Industry Applications",
-   "year": 2024,
-   "type": "article",
-   "doi": "https://doi.org/10.1109/tia.2024.3379487",
-   "url": "https://doi.org/10.1109/tia.2024.3379487",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 14,
-   "topics": [
-    "permanent-magnets"
-   ]
-  },
-  {
    "id": "W4405942774",
    "title": "Multiparameter optical fiber sensing for energy infrastructure through nanoscale light–matter interactions: From hardware to software, science to commercial opportunities",
    "authors": [
@@ -1312,6 +1310,31 @@
    ]
   },
   {
+   "id": "W4392980154",
+   "title": "Trade Study for Rare-Earth-Free Interior Permanent Magnet Synchronous Machine Using MnBi Permanent Magnets",
+   "authors": [
+    "Ryan Brody",
+    "Paul Richard Ohodnicki",
+    "Mohendro Kumar Ghosh",
+    "Cuauhtemoc Macias",
+    "Andrew J. Sherman",
+    "Ahmed Talaat",
+    "Jun Cui",
+    "Brandon M. Grainger"
+   ],
+   "venue": "IEEE Transactions on Industry Applications",
+   "year": 2024,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tia.2024.3379487",
+   "url": "https://doi.org/10.1109/tia.2024.3379487",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 13,
+   "topics": [
+    "permanent-magnets"
+   ]
+  },
+  {
    "id": "W4402473728",
    "title": "Pd/PMMA Nanocomposite-Coated Optical Fiber Hydrogen Sensor Operating at Room Temperature With Humidity Tolerance",
    "authors": [
@@ -1332,7 +1355,9 @@
    "oa_url": "",
    "cited_by": 7,
    "topics": [
-    "ferrites-nanocomposites"
+    "ferrites-nanocomposites",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -1375,7 +1400,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/2339521",
    "cited_by": 6,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -1401,7 +1427,8 @@
    "oa_url": "",
    "cited_by": 5,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -1434,7 +1461,7 @@
    "authors": [
     "Pengdi Zhang",
     "Khurram Naeem",
-    "Enrico Sarcineli",
+    "Enrico Sarcinelli",
     "Abhishek Venketeswaran",
     "Sandeep Bukka",
     "Nageswara R. Lalam",
@@ -1450,7 +1477,8 @@
    "oa_url": "",
    "cited_by": 4,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -1544,7 +1572,8 @@
    "oa_url": "",
    "cited_by": 1,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -1607,7 +1636,8 @@
    "oa_url": "http://dx.doi.org/10.2172/2477273",
    "cited_by": 0,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -1629,7 +1659,8 @@
    "oa_url": "http://dx.doi.org/10.2172/2477348",
    "cited_by": 0,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -1763,7 +1794,8 @@
    "cited_by": 0,
    "topics": [
     "interrogators",
-    "energy-asset-monitoring"
+    "energy-asset-monitoring",
+    "temperature-sensing"
    ]
   },
   {
@@ -1943,7 +1975,8 @@
    "oa_url": "https://www.mdpi.com/1424-8220/23/12/5410/pdf?version=1686138515",
    "cited_by": 13,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -1964,7 +1997,8 @@
    "oa_url": "https://www.mdpi.com/1424-8220/23/8/4165/pdf?version=1682088780",
    "cited_by": 9,
    "topics": [
-    "interrogators"
+    "interrogators",
+    "temperature-sensing"
    ]
   },
   {
@@ -2011,7 +2045,8 @@
    "oa_url": "",
    "cited_by": 6,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -2065,7 +2100,7 @@
    "id": "W4388551362",
    "title": "Spatially Tuned Properties in a Bulk Fe–Co Soft Magnetic Alloy via Transverse Induction Annealing and Feasibility Study for Motor Applications",
    "authors": [
-    "Tyler W. Paplham",
+    "Tyler Paplham",
     "David W. Greve",
     "Mohendro Kumar Ghosh",
     "Lauren Wewer",
@@ -2347,7 +2382,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W4380449895",
@@ -2368,7 +2405,8 @@
    "oa_url": "",
    "cited_by": 2,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -2391,7 +2429,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W4380450105",
@@ -2415,7 +2455,9 @@
    "oa_url": "",
    "cited_by": 2,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing",
+    "acoustic-sensing"
    ]
   },
   {
@@ -2617,7 +2659,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1991794",
    "cited_by": 1,
    "topics": [
-    "interrogators"
+    "interrogators",
+    "acoustic-sensing"
    ]
   },
   {
@@ -2753,7 +2796,8 @@
    "cited_by": 0,
    "topics": [
     "ferrites-nanocomposites",
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -2790,7 +2834,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -2954,7 +2999,7 @@
    "url": "https://doi.org/10.1063/9.0000314",
    "oa": true,
    "oa_url": "https://doi.org/10.1063/9.0000314",
-   "cited_by": 11,
+   "cited_by": 10,
    "topics": [
     "amorphous-nanocrystalline"
    ]
@@ -2981,6 +3026,7 @@
    "cited_by": 8,
    "topics": [
     "infrastructure-monitoring",
+    "acoustic-sensing",
     "photonics-computation"
    ]
   },
@@ -3029,7 +3075,8 @@
    "cited_by": 7,
    "topics": [
     "optical-thin-films",
-    "interrogators"
+    "interrogators",
+    "temperature-sensing"
    ]
   },
   {
@@ -3052,7 +3099,8 @@
    "oa_url": "",
    "cited_by": 6,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -3072,7 +3120,8 @@
    "oa_url": "",
    "cited_by": 6,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -3150,7 +3199,7 @@
    "id": "W4313429854",
    "title": "Spatially tuned microstructure and properties in soft magnetic nanocrystalline alloy via transverse-oriented induction heating",
    "authors": [
-    "Tyler W. Paplham",
+    "Tyler Paplham",
     "Yuankang Wang",
     "David W. Greve",
     "Paul Richard Ohodnicki"
@@ -3187,7 +3236,8 @@
    "oa_url": "",
    "cited_by": 3,
    "topics": [
-    "power-components"
+    "power-components",
+    "acoustic-sensing"
    ]
   },
   {
@@ -3340,7 +3390,7 @@
    "url": "https://doi.org/10.1002/aisy.202100067",
    "oa": true,
    "oa_url": "https://doi.org/10.1002/aisy.202100067",
-   "cited_by": 253,
+   "cited_by": 252,
    "topics": [
     "photonics-computation"
    ]
@@ -3434,8 +3484,12 @@
    "url": "https://doi.org/10.1016/j.snb.2021.131229",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2021.131229",
-   "cited_by": 58,
-   "topics": []
+   "cited_by": 57,
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing",
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W3179989266",
@@ -3454,7 +3508,7 @@
    "url": "https://doi.org/10.1021/acsami.1c12000",
    "oa": false,
    "oa_url": "",
-   "cited_by": 54,
+   "cited_by": 53,
    "topics": [
     "optical-thin-films"
    ]
@@ -3477,7 +3531,9 @@
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2021.129853",
    "cited_by": 53,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W3182028900",
@@ -3514,7 +3570,7 @@
    "url": "https://doi.org/10.1021/acsami.0c20990",
    "oa": false,
    "oa_url": "",
-   "cited_by": 26,
+   "cited_by": 25,
    "topics": []
   },
   {
@@ -3709,7 +3765,8 @@
    "oa_url": "",
    "cited_by": 7,
    "topics": [
-    "power-components"
+    "power-components",
+    "temperature-sensing"
    ]
   },
   {
@@ -3796,7 +3853,8 @@
    "oa_url": "",
    "cited_by": 4,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -3841,7 +3899,9 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1845986",
    "cited_by": 3,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -3866,7 +3926,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1870132",
    "cited_by": 2,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -3932,7 +3993,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1969532",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W4214537404",
@@ -4058,7 +4121,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W3156233298",
@@ -4078,7 +4143,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W3161822437",
@@ -4164,7 +4232,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1870128",
    "cited_by": 0,
    "topics": [
-    "amorphous-nanocrystalline"
+    "amorphous-nanocrystalline",
+    "temperature-sensing"
    ]
   },
   {
@@ -4201,8 +4270,10 @@
    "url": "https://doi.org/10.1039/d0tc01939a",
    "oa": false,
    "oa_url": "",
-   "cited_by": 158,
-   "topics": []
+   "cited_by": 154,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W3003478432",
@@ -4222,8 +4293,10 @@
    "url": "https://doi.org/10.1016/j.trac.2020.115820",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.trac.2020.115820",
-   "cited_by": 91,
-   "topics": []
+   "cited_by": 90,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W3045545676",
@@ -4248,7 +4321,8 @@
    "oa_url": "https://doi.org/10.1016/j.snb.2020.128627",
    "cited_by": 83,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -4271,7 +4345,8 @@
    "oa_url": "",
    "cited_by": 77,
    "topics": [
-    "power-components"
+    "power-components",
+    "temperature-sensing"
    ]
   },
   {
@@ -4321,7 +4396,10 @@
    "oa": true,
    "oa_url": "https://arxiv.org/pdf/2002.00705",
    "cited_by": 52,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W3048520587",
@@ -4339,7 +4417,7 @@
    "url": "https://doi.org/10.1016/j.jallcom.2020.156480",
    "oa": false,
    "oa_url": "",
-   "cited_by": 50,
+   "cited_by": 49,
    "topics": [
     "amorphous-nanocrystalline",
     "processing"
@@ -4414,7 +4492,9 @@
    "oa": true,
    "oa_url": "https://doi.org/10.1364/oe.395382",
    "cited_by": 42,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W3116022467",
@@ -4434,7 +4514,8 @@
    "oa_url": "",
    "cited_by": 36,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -4458,7 +4539,7 @@
    "url": "https://doi.org/10.1016/j.jallcom.2020.155038",
    "oa": true,
    "oa_url": "https://www.sciencedirect.com/science/article/am/pii/S0925838820314018?via%3Dihub",
-   "cited_by": 31,
+   "cited_by": 29,
    "topics": [
     "ferrites-nanocomposites",
     "amorphous-nanocrystalline"
@@ -4507,7 +4588,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1768716",
    "cited_by": 22,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "temperature-sensing"
    ]
   },
   {
@@ -4533,7 +4615,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 21,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W3040348093",
@@ -4672,7 +4756,8 @@
    "oa_url": "",
    "cited_by": 10,
    "topics": [
-    "power-components"
+    "power-components",
+    "temperature-sensing"
    ]
   },
   {
@@ -4740,7 +4825,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1768720",
    "cited_by": 5,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W3017835147",
@@ -4853,7 +4940,11 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing",
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W3020755651",
@@ -4872,7 +4963,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W3020267869",
@@ -4894,7 +4988,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W3016216675",
@@ -4962,7 +5058,8 @@
    "cited_by": 1,
    "topics": [
     "optical-thin-films",
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "temperature-sensing"
    ]
   },
   {
@@ -4981,7 +5078,9 @@
    "oa_url": "",
    "cited_by": 1,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -5115,7 +5214,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "single-crystal-fibers"
+    "single-crystal-fibers",
+    "chemical-sensing"
    ]
   },
   {
@@ -5163,7 +5263,7 @@
    "url": "https://doi.org/10.1063/1.5113955",
    "oa": false,
    "oa_url": "",
-   "cited_by": 857,
+   "cited_by": 849,
    "topics": []
   },
   {
@@ -5184,9 +5284,10 @@
    "url": "https://doi.org/10.3390/s19183964",
    "oa": true,
    "oa_url": "https://www.mdpi.com/1424-8220/19/18/3964/pdf?version=1568621295",
-   "cited_by": 174,
+   "cited_by": 171,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -5215,7 +5316,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1582381",
    "cited_by": 67,
    "topics": [
-    "power-components"
+    "power-components",
+    "temperature-sensing"
    ]
   },
   {
@@ -5238,7 +5340,7 @@
    "url": "https://doi.org/10.1039/c9cp03883c",
    "oa": false,
    "oa_url": "",
-   "cited_by": 66,
+   "cited_by": 65,
    "topics": []
   },
   {
@@ -5261,7 +5363,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 43,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2951883546",
@@ -5281,7 +5385,7 @@
    "url": "https://doi.org/10.1039/c9mh00589g",
    "oa": false,
    "oa_url": "",
-   "cited_by": 42,
+   "cited_by": 41,
    "topics": []
   },
   {
@@ -5302,8 +5406,10 @@
    "url": "https://doi.org/10.1021/acssensors.9b01000",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1811486",
-   "cited_by": 32,
-   "topics": []
+   "cited_by": 31,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2945322994",
@@ -5347,7 +5453,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1969526",
    "cited_by": 27,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2991568570",
@@ -5589,7 +5697,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1780566",
    "cited_by": 9,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -5655,7 +5764,8 @@
    "cited_by": 6,
    "topics": [
     "optical-thin-films",
-    "single-crystal-fibers"
+    "single-crystal-fibers",
+    "temperature-sensing"
    ]
   },
   {
@@ -5720,7 +5830,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1778181",
    "cited_by": 6,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2918951872",
@@ -5742,7 +5854,10 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1774266",
    "cited_by": 5,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2989994044",
@@ -5827,7 +5942,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1864961",
    "cited_by": 3,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2990799751",
@@ -5936,7 +6053,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2920462789",
@@ -5955,7 +6074,9 @@
    "oa_url": "",
    "cited_by": 2,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -5994,7 +6115,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/biblio/1595602",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W4244318635",
@@ -6054,7 +6177,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "single-crystal-fibers"
+    "single-crystal-fibers",
+    "chemical-sensing"
    ]
   },
   {
@@ -6099,7 +6223,9 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing",
+    "acoustic-sensing"
    ]
   },
   {
@@ -6121,8 +6247,38 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1780567",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
+  },
+  {
+   "id": "W7132645464",
+   "title": "In-pile applications of fiber Bragg grating sensors and distributed fiber sensors enabled by ultrafast laser fabrications",
+   "authors": [
+    "M. Zaghloul",
+    "S. Y. Huang",
+    "M. Wang",
+    "K. W. Chen",
+    "Paul Richard Ohodnicki",
+    "M. Buric",
+    "S. Lee",
+    "Cyril Hnatovsky",
+    "Dan M. Grobnic",
+    "Stephen J. Mihailov",
+    "M.-J. Li",
+    "D. Carpenter",
+    "L.-W. Hu",
+    "J. Daw"
+   ],
+   "venue": "NPARC",
+   "year": 2019,
+   "type": "article",
+   "doi": "",
+   "url": "https://openalex.org/W7132645464",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 0,
+   "topics": []
   },
   {
    "id": "W4236052954",
@@ -6164,9 +6320,10 @@
    "url": "https://doi.org/10.1021/acssensors.7b00808",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1455424",
-   "cited_by": 210,
+   "cited_by": 207,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -6187,9 +6344,10 @@
    "url": "https://doi.org/10.1063/1.5010184",
    "oa": false,
    "oa_url": "",
-   "cited_by": 135,
+   "cited_by": 134,
    "topics": [
-    "single-crystal-fibers"
+    "single-crystal-fibers",
+    "chemical-sensing"
    ]
   },
   {
@@ -6210,8 +6368,12 @@
    "url": "https://doi.org/10.1039/c7nr09536h",
    "oa": true,
    "oa_url": "https://arxiv.org/pdf/1712.08468",
-   "cited_by": 119,
-   "topics": []
+   "cited_by": 115,
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing",
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W2892241349",
@@ -6262,7 +6424,7 @@
    "url": "https://doi.org/10.1016/j.jpowsour.2018.03.025",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.jpowsour.2018.03.025",
-   "cited_by": 57,
+   "cited_by": 55,
    "topics": []
   },
   {
@@ -6307,7 +6469,9 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1509701",
    "cited_by": 34,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -6404,7 +6568,7 @@
    "url": "https://doi.org/10.1002/adom.201700829",
    "oa": false,
    "oa_url": "",
-   "cited_by": 24,
+   "cited_by": 23,
    "topics": [
     "amorphous-nanocrystalline"
    ]
@@ -6454,7 +6618,9 @@
    "oa_url": "",
    "cited_by": 17,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing",
+    "acoustic-sensing"
    ]
   },
   {
@@ -6477,7 +6643,7 @@
    "url": "https://doi.org/10.1088/1361-6528/aad671",
    "oa": true,
    "oa_url": "https://iopscience.iop.org/article/10.1088/1361-6528/aad671/pdf",
-   "cited_by": 15,
+   "cited_by": 14,
    "topics": []
   },
   {
@@ -6576,7 +6742,8 @@
    "oa_url": "",
    "cited_by": 11,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -6650,7 +6817,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 9,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2801141548",
@@ -6673,7 +6843,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1870137",
    "cited_by": 9,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -6775,7 +6946,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 7,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2804475624",
@@ -6844,7 +7017,8 @@
    "oa_url": "",
    "cited_by": 3,
    "topics": [
-    "power-components"
+    "power-components",
+    "temperature-sensing"
    ]
   },
   {
@@ -6889,7 +7063,8 @@
    "oa_url": "",
    "cited_by": 3,
    "topics": [
-    "processing"
+    "processing",
+    "temperature-sensing"
    ]
   },
   {
@@ -6928,7 +7103,8 @@
    "oa_url": "",
    "cited_by": 2,
    "topics": [
-    "infrastructure-monitoring"
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -6949,7 +7125,8 @@
    "oa_url": "",
    "cited_by": 1,
    "topics": [
-    "single-crystal-fibers"
+    "single-crystal-fibers",
+    "chemical-sensing"
    ]
   },
   {
@@ -6987,7 +7164,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "power-components"
+    "power-components",
+    "temperature-sensing"
    ]
   },
   {
@@ -7008,7 +7186,11 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing",
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W2792178052",
@@ -7030,7 +7212,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2803017190",
@@ -7053,7 +7237,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -7073,7 +7258,10 @@
    "oa": true,
    "oa_url": "https://www.ama-science.org/proceedings/getFile/ZmNlAt==",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W2605881415",
@@ -7090,8 +7278,10 @@
    "url": "https://doi.org/10.3390/s17040801",
    "oa": true,
    "oa_url": "https://www.mdpi.com/1424-8220/17/4/801/pdf?version=1492760531",
-   "cited_by": 282,
-   "topics": []
+   "cited_by": 280,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2743632650",
@@ -7108,9 +7298,10 @@
    "url": "https://doi.org/10.1109/jsen.2017.2735193",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1479646",
-   "cited_by": 156,
+   "cited_by": 153,
    "topics": [
-    "power-components"
+    "power-components",
+    "chemical-sensing"
    ]
   },
   {
@@ -7179,7 +7370,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 75,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2760254758",
@@ -7224,7 +7417,10 @@
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2017.08.026",
    "cited_by": 42,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2738226569",
@@ -7293,7 +7489,8 @@
    "oa_url": "https://iopscience.iop.org/article/10.1088/1361-6528/aa7433/pdf",
    "cited_by": 26,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -7376,7 +7573,9 @@
    "oa_url": "",
    "cited_by": 14,
    "topics": [
-    "ferrites-nanocomposites"
+    "ferrites-nanocomposites",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -7495,7 +7694,8 @@
    "oa_url": "https://iopscience.iop.org/article/10.1149/2.1451704jes/pdf",
    "cited_by": 7,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -7560,7 +7760,10 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1870139",
    "cited_by": 4,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2613930520",
@@ -7831,7 +8034,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -7956,7 +8160,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -7979,7 +8184,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2337853887",
@@ -8000,9 +8207,10 @@
    "url": "https://doi.org/10.1021/acsami.6b01709",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1328390",
-   "cited_by": 89,
+   "cited_by": 87,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "temperature-sensing"
    ]
   },
   {
@@ -8024,8 +8232,10 @@
    "url": "https://doi.org/10.1016/j.snb.2016.03.135",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2016.03.135",
-   "cited_by": 85,
-   "topics": []
+   "cited_by": 84,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2527763971",
@@ -8095,7 +8305,9 @@
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.yofte.2016.01.004",
    "cited_by": 27,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2559846928",
@@ -8114,7 +8326,7 @@
    "url": "https://doi.org/10.1021/acssensors.6b00583",
    "oa": false,
    "oa_url": "",
-   "cited_by": 26,
+   "cited_by": 25,
    "topics": []
   },
   {
@@ -8134,7 +8346,8 @@
    "cited_by": 21,
    "topics": [
     "ferrites-nanocomposites",
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -8178,7 +8391,9 @@
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1546971",
    "cited_by": 15,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2278137044",
@@ -8195,7 +8410,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 8,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2357921149",
@@ -8281,7 +8498,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 3,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2552795028",
@@ -8302,7 +8521,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 3,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2529464316",
@@ -8369,7 +8590,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2808288781",
@@ -8488,7 +8711,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -8510,7 +8734,7 @@
    "url": "https://doi.org/10.1021/acsami.5b04393",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1240139",
-   "cited_by": 238,
+   "cited_by": 236,
    "topics": []
   },
   {
@@ -8532,7 +8756,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 66,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W1975553027",
@@ -8549,7 +8775,7 @@
    "url": "https://doi.org/10.1016/j.snb.2015.02.076",
    "oa": false,
    "oa_url": "",
-   "cited_by": 62,
+   "cited_by": 61,
    "topics": [
     "ferrites-nanocomposites"
    ]
@@ -8573,7 +8799,10 @@
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2015.07.046",
    "cited_by": 56,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W1850897277",
@@ -8616,7 +8845,7 @@
    "url": "https://doi.org/10.1039/c4tc02846e",
    "oa": false,
    "oa_url": "",
-   "cited_by": 47,
+   "cited_by": 46,
    "topics": [
     "optical-thin-films"
    ]
@@ -8637,7 +8866,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 40,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2180325169",
@@ -8659,7 +8891,9 @@
    "oa_url": "",
    "cited_by": 33,
    "topics": [
-    "single-crystal-fibers"
+    "single-crystal-fibers",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -8701,7 +8935,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 5,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W1493767311",
@@ -8721,7 +8957,9 @@
    "oa": true,
    "oa_url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9467/94671M/High-temperature-harsh-environment-sensors-for-advanced-power-generation-systems/10.1117/12.2178016.pdf",
    "cited_by": 4,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2195478516",
@@ -8759,7 +8997,9 @@
    "oa": true,
    "oa_url": "https://arxiv.org/pdf/1508.00854",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W1878893976",
@@ -8802,7 +9042,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 2,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W234573737",
@@ -8823,7 +9065,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W295876169",
@@ -8843,7 +9088,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W4247406027",
@@ -8865,7 +9112,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W1734877434",
@@ -8886,7 +9135,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "interrogators"
+    "interrogators",
+    "chemical-sensing"
    ]
   },
   {
@@ -8932,7 +9182,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 0,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2171836843",
@@ -8977,7 +9229,9 @@
    "oa_url": "",
    "cited_by": 55,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -9016,7 +9270,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 39,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2013910829",
@@ -9037,7 +9293,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 33,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2049488469",
@@ -9079,7 +9338,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 17,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2008496839",
@@ -9123,7 +9385,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 12,
-   "topics": []
+   "topics": [
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2086370822",
@@ -9170,7 +9434,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 7,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2048761294",
@@ -9189,7 +9455,8 @@
    "cited_by": 7,
    "topics": [
     "ferrites-nanocomposites",
-    "optical-thin-films"
+    "optical-thin-films",
+    "temperature-sensing"
    ]
   },
   {
@@ -9208,7 +9475,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 4,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2314179342",
@@ -9228,7 +9497,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 1,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2316072096",
@@ -9311,7 +9582,7 @@
    "url": "https://doi.org/10.1007/s11244-013-0111-5",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1127211",
-   "cited_by": 92,
+   "cited_by": 90,
    "topics": []
   },
   {
@@ -9333,10 +9604,12 @@
    "url": "https://doi.org/10.1039/c3nr02891g",
    "oa": false,
    "oa_url": "",
-   "cited_by": 89,
+   "cited_by": 88,
    "topics": [
     "ferrites-nanocomposites",
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -9357,8 +9630,10 @@
    "url": "https://doi.org/10.3390/s130606910",
    "oa": true,
    "oa_url": "https://www.mdpi.com/1424-8220/13/6/6910/pdf?version=1403327835",
-   "cited_by": 87,
-   "topics": []
+   "cited_by": 85,
+   "topics": [
+    "acoustic-sensing"
+   ]
   },
   {
    "id": "W2052344460",
@@ -9418,7 +9693,10 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 11,
-   "topics": []
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W1994693971",
@@ -9488,7 +9766,7 @@
    "url": "https://doi.org/10.1021/cs300008g",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1140006",
-   "cited_by": 427,
+   "cited_by": 423,
    "topics": []
   },
   {
@@ -9506,7 +9784,7 @@
    "url": "https://doi.org/10.1007/s11837-012-0350-0",
    "oa": false,
    "oa_url": "",
-   "cited_by": 214,
+   "cited_by": 211,
    "topics": [
     "power-components"
    ]
@@ -9530,7 +9808,9 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1144982",
    "cited_by": 68,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -9581,7 +9861,9 @@
    "oa_url": "",
    "cited_by": 36,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -9688,7 +9970,30 @@
    "oa_url": "",
    "cited_by": 9,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
+  },
+  {
+   "id": "W2084617701",
+   "title": "Optical fiber evanescent absorption sensors for high-temperature gas sensing in advanced coal-fired power plants",
+   "authors": [
+    "Michael Buric",
+    "Paul Richard Ohodnicki",
+    "Janice Duy"
+   ],
+   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+   "year": 2012,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.930015",
+   "url": "https://doi.org/10.1117/12.930015",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 7,
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
    ]
   },
   {
@@ -9729,7 +10034,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 3,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2291396993",
@@ -9749,7 +10056,8 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1061489",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -9786,7 +10094,8 @@
    "oa_url": "",
    "cited_by": 0,
    "topics": [
-    "optical-thin-films"
+    "optical-thin-films",
+    "chemical-sensing"
    ]
   },
   {
@@ -9807,7 +10116,9 @@
    "oa": false,
    "oa_url": "",
    "cited_by": 212,
-   "topics": []
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2090916278",
@@ -10250,7 +10561,7 @@
     "Michael Edward McHenry",
     "Zhen Cai",
     "Katherine S. Ziemer",
-    "Hadis MORKOÇ",
+    "Hadis Morkoç",
     "Necmi Bıyıklı",
     "Z. Chen",
     "C. Vittoria",
