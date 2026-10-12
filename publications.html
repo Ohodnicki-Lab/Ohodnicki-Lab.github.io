@@ -24,7 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" />
-	<link rel="stylesheet" href="assets/css/lab.css?v=21" />
+	<link rel="stylesheet" href="assets/css/lab.css?v=22" />
 	<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -81,7 +81,12 @@
 	<div class="wrap">
 		<p class="eyebrow">Publications</p>
 		<h1>Highlighted Publications</h1>
-		<p class="page-hero__lede"><a href="https://scholar.google.com/citations?user=ArzyBs8AAAAJ&hl=en" target="_blank" rel="noopener">Full Publication List at Google Scholar</a></p>
+		<p class="page-hero__lede">A selection of the group’s work. The full list of every paper,
+		searchable and mapped by research area, is on its own page.</p>
+		<div class="page-hero__cta">
+			<a class="btn btn--gold" href="explore.html">Explore all publications</a>
+			<a class="btn btn--outline" href="explore.html?view=map">Open the map</a>
+		</div>
 	</div>
 	<img class="page-hero__mark" src="images/ohodnicki-mark-reversed.svg" alt="" />
 </header>
@@ -92,6 +97,7 @@
 			<div class="split__label">
 				<h2>Highlighted Publications</h2>
 				<p class="split__note">12 selected papers</p>
+				<p class="split__note"><a href="https://scholar.google.com/citations?user=ArzyBs8AAAAJ&hl=en" target="_blank" rel="noopener">Full list at Google Scholar</a></p>
 			</div>
 			<div>
 				<div class="pub reveal">
@@ -147,65 +153,6 @@
 	</div>
 </section>
 
-<!-- ALL PUBLICATIONS, from OpenAlex.
-     The list itself lives in assets/data/publications.json, refreshed each
-     month by .github/workflows/publications.yml. Nothing here needs editing
-     by hand; to change what is collected, edit tools/fetch_publications.py. -->
-<section class="band band--mist" id="explore">
-	<div class="wrap">
-		<div class="split">
-			<div class="split__label">
-				<h2>Explore Publications</h2>
-				<p class="split__note" data-pub-count>Loading&hellip;</p>
-				<p class="split__note" data-pub-meta></p>
-			</div>
-
-			<div id="pub-explorer">
-				<p class="pub-status" data-pub-status>Loading the publication list&hellip;</p>
-
-				<div class="pub-controls">
-					<label class="pub-field pub-field--grow">
-						<span>Search</span>
-						<input type="search" data-pub-search placeholder="Title, author, journal or year" />
-					</label>
-					<label class="pub-field">
-						<span>Research area</span>
-						<select data-pub-topic><option value="all">All areas</option></select>
-					</label>
-					<label class="pub-field">
-						<span>Type</span>
-						<select data-pub-type><option value="all">All types</option></select>
-					</label>
-					<div class="pub-field">
-						<span>View</span>
-						<div class="pub-views">
-							<button type="button" class="pub-view is-on" data-pub-view="list" aria-pressed="true">List</button>
-							<button type="button" class="pub-view" data-pub-view="map" aria-pressed="false">Map</button>
-						</div>
-					</div>
-					<label class="pub-field">
-						<span>Sort by</span>
-						<select data-pub-sort>
-							<option value="year">Newest first</option>
-							<option value="cited">Most cited</option>
-							<option value="title">Title</option>
-						</select>
-					</label>
-				</div>
-
-				<div data-pub-listwrap>
-					<ul class="pubitems" data-pub-list></ul>
-					<p class="more"><button class="btn btn--outline" type="button" data-pub-more hidden></button></p>
-				</div>
-
-				<!-- BUBBLE MAP. Grouped by research area, colour by year, size by
-				     citations. Everything is drawn by assets/js/pubs.js. -->
-				<div class="pubmap" data-pub-map hidden></div>
-				<div class="pubmap__tip" data-pub-tip hidden></div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <footer class="footer">
 	<div class="wrap">
@@ -238,7 +185,6 @@
 	</div>
 </footer>
 
-<script src="assets/js/lab.js?v=19" defer></script>
-<script src="assets/js/pubs.js?v=3" defer></script>
+<script src="assets/js/lab.js?v=22" defer></script>
 </body>
 </html>

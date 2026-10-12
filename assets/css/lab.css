@@ -1,4 +1,4 @@
-/* VERSION: v21 — publication bubble map. If you cannot find the text
+/* VERSION: v25 — no band captions, solid menu in map view. If you cannot find the text
    `subgroup-title` in this file, it is the wrong copy. */
 /* ============================================================
    OHODNICKI LAB — SITE STYLES
@@ -215,13 +215,16 @@ h3 { font-size: var(--size-h3);   line-height: 1.3; font-weight: 600; }
    text onto the gold fill and make the label vanish. */
 .band--blue a.btn--gold, .hero a.btn--gold, .page-hero a.btn--gold,
 .band--blue a.btn--gold:hover, .hero a.btn--gold:hover { color: #0A1633; }
-.band--blue a.btn--outline, .hero a.btn--outline { color: var(--on-blue); }
+.band--blue a.btn--outline, .hero a.btn--outline,
+.page-hero a.btn--outline { color: var(--on-blue); }
 
 /* Secondary: navy outline on light, white outline on dark */
 .btn--outline { background: transparent; border-color: var(--blue); color: var(--blue); }
 .btn--outline:hover { background: var(--blue); color: var(--white); }
-.band--blue .btn--outline, .hero .btn--outline { border-color: var(--on-blue); color: var(--on-blue); }
-.band--blue .btn--outline:hover, .hero .btn--outline:hover { background: rgba(255,255,255,.14); color: var(--on-blue); }
+.band--blue .btn--outline, .hero .btn--outline,
+.page-hero .btn--outline { border-color: var(--on-blue); color: var(--on-blue); }
+.band--blue .btn--outline:hover, .hero .btn--outline:hover,
+.page-hero .btn--outline:hover { background: rgba(255,255,255,.14); color: var(--on-blue); }
 
 
 /* ============================================================
@@ -945,6 +948,45 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
 .pubitem__venue { font-style: italic; }
 .pubitem__tags { display: flex; flex-wrap: wrap; gap: 5px; margin: var(--sm) 0 0; }
 
+/* ---------- Explore page: full-width list and full-page map ---------- */
+.page-hero--slim { padding: calc(var(--nav-h) + 44px) 0 44px; }
+.page-hero__sub { display: block; font-family: var(--mono); font-size: 12.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--on-blue-mute); margin-top: 6px; }
+.explore { padding: var(--huge) 0 var(--mega); background: var(--mist); }
+.explore .pub-controls { margin-bottom: var(--xl); }
+
+/* In map view the map fills what is left of the window and the page itself
+   stops scrolling, so the bubbles behave like a canvas rather than a figure. */
+/* The title band and the footer step aside, the controls stick below the menu,
+   and the map takes whatever is left of the window. Previously the map sat
+   below a 330px title band with scrolling locked, so its lower half could not
+   be reached at all. */
+body.is-mapmode { overflow: hidden; }
+/* The menu is transparent until lab.js adds .is-scrolled, which needs a scroll
+   event. Map view locks scrolling, so that never fires and white menu text was
+   sitting on the pale explore background. Force the solid state here. */
+body.is-mapmode .nav {
+  background: rgba(0, 39, 102, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--hair-on-blue);
+}
+body.is-mapmode .footer,
+body.is-mapmode .page-hero--slim { display: none; }
+body.is-mapmode .explore { padding: var(--nav-h) 0 0; }
+body.is-mapmode .pub-controls { margin-bottom: var(--md); }
+body.is-mapmode .pubmap { height: calc(100vh - var(--nav-h) - 104px); border-radius: 0; }
+/* the running total moves into the control bar once the title band is gone */
+.pub-tally { display: none; }
+body.is-mapmode .pub-tally {
+  display: block;
+  align-self: flex-end;
+  margin: 0 0 11px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
 /* ---------- Publication bubble map ---------- */
 .pub-views { display: flex; gap: 2px; }
 .pub-view {
@@ -962,11 +1004,43 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
 .pub-view.is-on { background: var(--blue); border-color: var(--blue); color: #fff; }
 
 .pubmap { position: relative; background: var(--blue-deep); border-radius: var(--r-md); padding: var(--md); overflow: hidden; }
-.pubmap__svg { width: 100%; height: auto; display: block; }
-.pubmap .bub circle { stroke: rgba(0,0,0,.35); stroke-width: .6; transition: opacity .2s var(--ease); }
-.pubmap .bub { cursor: pointer; }
-.pubmap .bub:hover circle, .pubmap .bub:focus circle { stroke: #fff; stroke-width: 2; }
-.pubmap .bub.is-dim circle { opacity: .12; }
+.pubmap__svg { width: 100%; height: 100%; display: block; }
+.pubmap__svg { touch-action: none; cursor: grab; }
+.pubmap__svg.is-dragging { cursor: grabbing; }
+.pubmap .bub { stroke: rgba(0,0,0,.35); stroke-width: .6; cursor: pointer; }
+.pubmap .bub:hover, .pubmap .bub:focus { stroke: #fff; stroke-width: 2; }
+.pubmap .bub.is-dim { opacity: .12; }
+
+/* zoom controls, bottom left of the map */
+.pubmap__zoom { position: absolute; left: var(--md); bottom: var(--md); display: flex; gap: 2px; }
+.pubmap__zoom button {
+  min-width: 36px; height: 36px;
+  border: 1px solid var(--hair-on-blue);
+  background: rgba(0,15,45,.72);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.pubmap__zoom button:first-child { border-radius: var(--r-md) 0 0 var(--r-md); }
+.pubmap__zoom button:last-child { border-radius: 0 var(--r-md) var(--r-md) 0; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+.pubmap__zoom button:hover { background: var(--blue-bright); border-color: var(--accent); }
+
+.pubmap__hint {
+  position: absolute;
+  left: 50%; bottom: var(--md);
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--on-blue-mute);
+  opacity: .75;
+  pointer-events: none;
+  white-space: nowrap;
+}
 .pubmap .bublabel {
   font-family: var(--display);
   font-size: 15px;
@@ -979,26 +1053,50 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
   pointer-events: none;
 }
 
-.pubmap__legend { display: flex; flex-wrap: wrap; gap: var(--xl); margin-bottom: var(--sm); }
+.pubmap__legend {
+  position: absolute;
+  top: var(--md); right: var(--md);
+  display: flex; flex-wrap: wrap; gap: var(--lg);
+  padding: var(--sm) var(--md);
+  background: rgba(0,15,45,.72);
+  border: 1px solid var(--hair-on-blue);
+  border-radius: var(--r-md);
+}
 .pubmap__key { display: flex; align-items: center; gap: var(--xs); font-family: var(--mono); font-size: 10.5px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--on-blue-mute); }
 .pubmap__key circle { fill: none; stroke: var(--on-blue-mute); }
 .pubmap__ends { display: inline-flex; align-items: center; gap: 4px; }
 .pubmap__ends i { display: inline-block; width: 14px; height: 1px; background: var(--hair-on-blue); }
 
-.pubmap__tip {
-  position: sticky;
-  bottom: var(--md);
-  margin-top: var(--sm);
-  padding: var(--md);
+/* --- The card for whichever bubble was clicked --- */
+.pubpanel {
+  position: fixed;
+  right: var(--lg); bottom: var(--lg);
+  width: min(400px, calc(100vw - 2 * var(--lg)));
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 60;
+  padding: var(--lg);
   background: var(--white);
   border: 1px solid var(--hairline);
-  border-left: 3px solid var(--accent);
+  border-top: 3px solid var(--accent);
   border-radius: var(--r-md);
-  font-size: 14.5px;
-  line-height: 1.5;
+  box-shadow: 0 18px 50px rgba(0,20,60,.28);
 }
-.pubmap__tip strong { display: block; font-weight: 600; }
-.pubmap__tip span { display: block; color: var(--slate); font-size: 13px; }
+.pubpanel__head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--md); }
+.pubpanel__head .eyebrow { color: var(--slate); margin: 0; }
+.pubpanel__head .eyebrow::before { display: none; }
+.pubpanel__close {
+  border: 0; background: transparent; cursor: pointer;
+  font-size: 24px; line-height: 1; color: var(--slate); padding: 0 4px;
+}
+.pubpanel__close:hover { color: var(--blue); }
+.pubpanel__title { margin: var(--sm) 0 0; font-family: var(--display); font-size: 19px; line-height: 1.3; letter-spacing: -0.01em; }
+.pubpanel__meta { margin: var(--xs) 0 0; font-family: var(--mono); font-size: 11.5px; letter-spacing: .6px; color: var(--slate); }
+.pubpanel__authors { margin: var(--sm) 0 0; font-size: 14px; color: var(--slate); line-height: 1.5; }
+.pubpanel__actions { display: flex; flex-wrap: wrap; gap: var(--xs); margin-top: var(--lg); }
+.pubpanel__actions .btn { padding: 9px var(--md); font-size: 12px; }
+.pubpanel__note { margin: var(--sm) 0 0; font-family: var(--mono); font-size: 11.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); }
+.pubmap .bub.is-picked { stroke: #fff; stroke-width: 3; }
 
 /* --- Status badge in a project's title band --- */
 .page-hero__status { margin: var(--md) 0 0; }
@@ -1245,6 +1343,11 @@ nav.side .side__sub a:hover::before { background: var(--accent); width: 12px; le
   .pi__photo { max-width: 240px; }
   .roster { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--md); }
   .matrix th, .matrix td { padding: var(--sm) var(--xs); font-size: 14px; }
+  .pubmap .bublabel { font-size: 22px; }
+  .pubmap__hint { display: none; }
+    .pubmap__legend { position: static; margin-bottom: var(--sm); }
+  body.is-mapmode .pubmap { height: calc(100vh - var(--nav-h) - 190px); }
+  .pubpanel { right: 0; left: 0; bottom: 0; width: auto; border-radius: var(--r-md) var(--r-md) 0 0; max-height: 58vh; }
   .matrix th[scope="row"] { width: auto; white-space: normal; }
   .posting a { grid-template-columns: auto 1fr; row-gap: var(--xs); }
   .posting__go { display: none; }
