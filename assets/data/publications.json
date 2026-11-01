@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-12",
+ "generated": "2026-11-01",
  "source": "OpenAlex",
  "author": {
   "name": "Paul Richard Ohodnicki",
   "orcid": "https://orcid.org/0000-0003-2115-0692",
   "openalex": "https://openalex.org/A5037367490",
-  "works_count": 463,
-  "cited_by_count": 9915
+  "works_count": 467,
+  "cited_by_count": 9971
  },
  "count": 465,
  "items": [
@@ -26,10 +26,34 @@
    "url": "https://doi.org/10.1021/acs.cgd.5c01776",
    "oa": true,
    "oa_url": "https://doi.org/10.1021/acs.cgd.5c01776",
-   "cited_by": 1,
+   "cited_by": 2,
    "topics": [
     "single-crystal-fibers",
     "quantum-sensing"
+   ]
+  },
+  {
+   "id": "W7138234150",
+   "title": "Density improvement of binder jet printed MnZn ferrite toroid via infiltration",
+   "authors": [
+    "Bishal Bhandari",
+    "Dipika Mandal",
+    "Chris Bracken",
+    "Chuyuan Zheng",
+    "Suraj Venkateshwaran Mullurkara",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Ceramics International",
+   "year": 2026,
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.ceramint.2026.03.024",
+   "url": "https://doi.org/10.1016/j.ceramint.2026.03.024",
+   "oa": true,
+   "oa_url": "https://doi.org/10.2139/ssrn.5086973",
+   "cited_by": 1,
+   "topics": [
+    "ferrites-nanocomposites",
+    "processing"
    ]
   },
   {
@@ -137,9 +161,9 @@
     "Tosca Lichtenheld",
     "E. Shapiro"
    ],
-   "venue": "",
+   "venue": "SPIE Ocean Sensing and Monitoring",
    "year": 2026,
-   "type": "conference-abstract",
+   "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3095359",
    "url": "https://doi.org/10.1117/12.3095359",
    "oa": false,
@@ -154,8 +178,8 @@
    "title": "Engineering Core-Clad Structures in Single-Crystal Sapphire Fibers via Dopant Segregation",
    "authors": [
     "Dolendra Karki",
-    "USDOE Office of Fossil Energy and Carbon Management (FECM)",
-    "Office of Carbon Management (FE-20) USDOE Office of Fossil Energy and Carbon Management (FECM)",
+    "USDOE Office of Fossil Energy (FE)",
+    "USDOE Office of Fossil Energy (FE)",
     "Gary R. Lander",
     "Jun Hong",
     "Paul Richard Ohodnicki",
@@ -178,8 +202,8 @@
    "title": "AI/ML-Enabled Advanced Distributed Optical Fiber Sensors",
    "authors": [
     "Nageswara R. Lalam",
-    "USDOE Office of Fossil Energy and Carbon Management (FECM)",
-    "Office of Resource Sustainability (FE-30) USDOE Office of Fossil Energy and Carbon Management (FECM)",
+    "USDOE Office of Fossil Energy (FE)",
+    "USDOE Office of Fossil Energy (FE)",
     "Hari Datta Bhatta",
     "Sandeep Bukka",
     "Matthew M. Brister",
@@ -208,7 +232,7 @@
     "Brandon M. Grainger",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2026,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec51134.2026.11516853",
@@ -226,7 +250,7 @@
     "Kevin Byerly",
     "Brett Riale",
     "Samuel J. Kernion",
-    "Tyler Paplham",
+    "Tyler W. Paplham",
     "Alex Leary",
     "Baljit Riar",
     "Jeffrey Ewanchuk",
@@ -237,7 +261,7 @@
     "Yuankang Wang",
     "Ronald D. Noebe"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2026,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec51134.2026.11517055",
@@ -251,30 +275,6 @@
    ]
   },
   {
-   "id": "W7138234150",
-   "title": "Density improvement of binder jet printed MnZn ferrite toroid via infiltration",
-   "authors": [
-    "Bishal Bhandari",
-    "Dipika Mandal",
-    "Chris Bracken",
-    "Chuyuan Zheng",
-    "Suraj Venkateshwaran Mullurkara",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "Ceramics International",
-   "year": 2026,
-   "type": "article",
-   "doi": "https://doi.org/10.1016/j.ceramint.2026.03.024",
-   "url": "https://doi.org/10.1016/j.ceramint.2026.03.024",
-   "oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.5086973",
-   "cited_by": 0,
-   "topics": [
-    "ferrites-nanocomposites",
-    "processing"
-   ]
-  },
-  {
    "id": "W7133912363",
    "title": "Amine-based polymer coated fiber optic sensors for ppm level CO2 detection in humid conditions",
    "authors": [
@@ -282,7 +282,7 @@
     "Yang‐Duan Su",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Fibers and Sensors for Medical Diagnostics, Treatment, and Environmental Applications",
    "year": 2026,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3080871",
@@ -416,7 +416,7 @@
    "url": "https://doi.org/10.1038/s41524-025-01598-2",
    "oa": true,
    "oa_url": "https://www.nature.com/articles/s41524-025-01598-2.pdf",
-   "cited_by": 17,
+   "cited_by": 19,
    "topics": [
     "ferrites-nanocomposites",
     "magnetic-characterization",
@@ -444,7 +444,7 @@
    "url": "https://doi.org/10.1109/tim.2025.3547114",
    "oa": true,
    "oa_url": "https://doi.org/10.1109/tim.2025.3547114",
-   "cited_by": 8,
+   "cited_by": 9,
    "topics": [
     "infrastructure-monitoring",
     "chemical-sensing",
@@ -470,7 +470,7 @@
    "url": "https://doi.org/10.1016/j.jallcom.2025.182487",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.jallcom.2025.182487",
-   "cited_by": 4,
+   "cited_by": 5,
    "topics": [
     "ferrites-nanocomposites",
     "magnetic-characterization"
@@ -538,7 +538,7 @@
     "Ryan M. Meyer",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3054665",
@@ -554,11 +554,11 @@
    "id": "W4409991635",
    "title": "Extreme Temperature Permeability Engineered Soft Magnetics",
    "authors": [
-    "Tyler Paplham",
+    "Tyler W. Paplham",
     "Alex Leary",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec48143.2025.10977541",
@@ -568,6 +568,27 @@
    "cited_by": 2,
    "topics": [
     "magnetic-characterization"
+   ]
+  },
+  {
+   "id": "W7116881320",
+   "title": "First principles based investigation of magnetic dilution effect on spin ordering in spinel Ni1−xZnxFe2O4 crystal",
+   "authors": [
+    "Ying Fang",
+    "Paul Richard Ohodnicki",
+    "Guofeng Wang"
+   ],
+   "venue": "Acta Materialia",
+   "year": 2025,
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.actamat.2025.121862",
+   "url": "https://doi.org/10.1016/j.actamat.2025.121862",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 1,
+   "topics": [
+    "ferrites-nanocomposites",
+    "magnetics-computation"
    ]
   },
   {
@@ -609,7 +630,7 @@
     "Michael Buric",
     "Ruishu Feng Wright"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3053671",
@@ -620,6 +641,27 @@
    "topics": [
     "chemical-sensing",
     "photonics-computation"
+   ]
+  },
+  {
+   "id": "W4408681558",
+   "title": "Pd-polymer composite coated fiber optic hydrogen sensor with humidity resistance",
+   "authors": [
+    "Tulika Khanikar",
+    "Dolendra Karki",
+    "Yang‐Duan Su",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Optical Fibers and Sensors for Medical Diagnostics, Treatment, and Environmental Applications",
+   "year": 2025,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.3043856",
+   "url": "https://doi.org/10.1117/12.3043856",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 1,
+   "topics": [
+    "chemical-sensing"
    ]
   },
   {
@@ -644,31 +686,10 @@
    ]
   },
   {
-   "id": "W7116881320",
-   "title": "First principles based investigation of magnetic dilution effect on spin ordering in spinel Ni1−xZnxFe2O4 crystal",
-   "authors": [
-    "Ying Fang",
-    "Paul Richard Ohodnicki",
-    "Guofeng Wang"
-   ],
-   "venue": "Acta Materialia",
-   "year": 2025,
-   "type": "article",
-   "doi": "https://doi.org/10.1016/j.actamat.2025.121862",
-   "url": "https://doi.org/10.1016/j.actamat.2025.121862",
-   "oa": true,
-   "oa_url": "https://doi.org/10.1016/j.actamat.2025.121862",
-   "cited_by": 0,
-   "topics": [
-    "ferrites-nanocomposites",
-    "magnetics-computation"
-   ]
-  },
-  {
    "id": "W4417333436",
    "title": "Extreme temperature stability of induced magnetic anisotropies in Co-rich soft magnetic nanocrystalline ribbon",
    "authors": [
-    "Tyler Paplham",
+    "Tyler W. Paplham",
     "Yuankang Wang",
     "Alex Leary",
     "Paul Richard Ohodnicki"
@@ -694,10 +715,10 @@
     "A. P. S. Baghel",
     "Jun Cui",
     "Chaochao Pan",
-    "Ikenna Cajetan Nlebedim",
+    "Cajetan Ikenna Nlebedim",
     "Brandon M. Grainger"
    ],
-   "venue": "",
+   "venue": "IEEE Energy Conversion Congress and Exposition (ECCE)",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/ecce58356.2025.11260371",
@@ -742,7 +763,7 @@
     "Paul Richard Ohodnicki",
     "Michael Buric"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3054087",
@@ -767,7 +788,7 @@
     "Ruishu Feng Wright",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3053828",
@@ -787,12 +808,12 @@
    "authors": [
     "Heather M. Phillips",
     "Yang‐Duan Su",
-    "Jacob L. Jones",
+    "Jacob Jones",
     "Jeffrey Wuenschell",
     "Brandon M. Grainger",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-abstract",
    "doi": "https://doi.org/10.1117/12.3053537",
@@ -816,7 +837,7 @@
     "Nageswara R. Lalam",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3053798",
@@ -838,7 +859,7 @@
     "Tulika Khanikar",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3053920",
@@ -861,7 +882,7 @@
     "Ruishu Feng Wright",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3055131",
@@ -902,9 +923,9 @@
    "title": "From Quantum to Classical: Sensing Materials, Methods, and Platforms for Energy",
    "authors": [
     "Scott E. Crawford",
-    "USDOE Office of Fossil Energy and Carbon Management (FECM)",
-    "USDOE Office of Fossil Energy and Carbon Management (FECM), Office of Carbon Management (FE-20)",
-    "USDOE Office of Fossil Energy and Carbon Management (FECM), Office of Resource Sustainability (FE-30)",
+    "USDOE Office of Fossil Energy (FE)",
+    "USDOE Office of Fossil Energy (FE)",
+    "USDOE Office of Fossil Energy (FE)",
     "Hari P. Paudel",
     "Gary R. Lander",
     "Madhava Syamlal",
@@ -958,7 +979,7 @@
    "doi": "https://doi.org/10.2172/2557470",
    "url": "https://doi.org/10.2172/2557470",
    "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/2557470",
+   "oa_url": "https://doi.org/10.2172/2557470",
    "cited_by": 0,
    "topics": [
     "single-crystal-fibers"
@@ -981,31 +1002,10 @@
    "doi": "https://doi.org/10.2172/2560481",
    "url": "https://doi.org/10.2172/2560481",
    "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/2557446",
+   "oa_url": "https://doi.org/10.2172/2560481",
    "cited_by": 0,
    "topics": [
     "infrastructure-monitoring"
-   ]
-  },
-  {
-   "id": "W4408681558",
-   "title": "Pd-polymer composite coated fiber optic hydrogen sensor with humidity resistance",
-   "authors": [
-    "Tulika Khanikar",
-    "Dolendra Karki",
-    "Yang‐Duan Su",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2025,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.3043856",
-   "url": "https://doi.org/10.1117/12.3043856",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 0,
-   "topics": [
-    "chemical-sensing"
    ]
   },
   {
@@ -1018,7 +1018,7 @@
     "Bharadwaj Reddy Andapally",
     "Jose Gato"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec48143.2025.10977398",
@@ -1040,7 +1040,7 @@
     "Christopher Bracken",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec48143.2025.10977459",
@@ -1064,7 +1064,7 @@
     "Bogdan S. Borowy",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec48143.2025.10977160",
@@ -1084,7 +1084,7 @@
     "Paul Richard Ohodnicki",
     "Subhashish Bhattacharya"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec48143.2025.10977290",
@@ -1131,7 +1131,7 @@
     "Todd Monson",
     "Nicholas S. Gurule"
    ],
-   "venue": "",
+   "venue": "IEEE PES Grid Edge Technologies Conference & Exposition (Grid Edge)",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/gridedge61154.2025.10887438",
@@ -1156,7 +1156,7 @@
     "Heather M. Phillips",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "IEEE PES Grid Edge Technologies Conference & Exposition (Grid Edge)",
    "year": 2025,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/gridedge61154.2025.10887413",
@@ -1233,7 +1233,7 @@
    "url": "https://doi.org/10.1021/acsami.4c06498",
    "oa": true,
    "oa_url": "https://doi.org/10.1021/acsami.4c06498",
-   "cited_by": 42,
+   "cited_by": 45,
    "topics": [
     "ferrites-nanocomposites"
    ]
@@ -1256,7 +1256,7 @@
    "url": "https://doi.org/10.1038/s44172-024-00274-5",
    "oa": true,
    "oa_url": "https://doi.org/10.1038/s44172-024-00274-5",
-   "cited_by": 25,
+   "cited_by": 27,
    "topics": [
     "photonics-computation"
    ]
@@ -1286,6 +1286,31 @@
    "topics": []
   },
   {
+   "id": "W4392980154",
+   "title": "Trade Study for Rare-Earth-Free Interior Permanent Magnet Synchronous Machine Using MnBi Permanent Magnets",
+   "authors": [
+    "Ryan Brody",
+    "Paul Richard Ohodnicki",
+    "Mohendro Kumar Ghosh",
+    "Cuauhtemoc Macias",
+    "Andrew J. Sherman",
+    "Ahmed Talaat",
+    "Jun Cui",
+    "Brandon M. Grainger"
+   ],
+   "venue": "IEEE Transactions on Industry Applications",
+   "year": 2024,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tia.2024.3379487",
+   "url": "https://doi.org/10.1109/tia.2024.3379487",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 14,
+   "topics": [
+    "permanent-magnets"
+   ]
+  },
+  {
    "id": "W4405942774",
    "title": "Multiparameter optical fiber sensing for energy infrastructure through nanoscale light–matter interactions: From hardware to software, science to commercial opportunities",
    "authors": [
@@ -1310,31 +1335,6 @@
    ]
   },
   {
-   "id": "W4392980154",
-   "title": "Trade Study for Rare-Earth-Free Interior Permanent Magnet Synchronous Machine Using MnBi Permanent Magnets",
-   "authors": [
-    "Ryan Brody",
-    "Paul Richard Ohodnicki",
-    "Mohendro Kumar Ghosh",
-    "Cuauhtemoc Macias",
-    "Andrew J. Sherman",
-    "Ahmed Talaat",
-    "Jun Cui",
-    "Brandon M. Grainger"
-   ],
-   "venue": "IEEE Transactions on Industry Applications",
-   "year": 2024,
-   "type": "article",
-   "doi": "https://doi.org/10.1109/tia.2024.3379487",
-   "url": "https://doi.org/10.1109/tia.2024.3379487",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 13,
-   "topics": [
-    "permanent-magnets"
-   ]
-  },
-  {
    "id": "W4402473728",
    "title": "Pd/PMMA Nanocomposite-Coated Optical Fiber Hydrogen Sensor Operating at Room Temperature With Humidity Tolerance",
    "authors": [
@@ -1353,7 +1353,7 @@
    "url": "https://doi.org/10.1109/jsen.2024.3454569",
    "oa": false,
    "oa_url": "",
-   "cited_by": 7,
+   "cited_by": 8,
    "topics": [
     "ferrites-nanocomposites",
     "chemical-sensing",
@@ -1391,7 +1391,7 @@
     "Paul Richard Ohodnicki",
     "Ruishu Feng Wright"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3012866",
@@ -1418,7 +1418,7 @@
     "Ruishu Feng Wright",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3013838",
@@ -1456,32 +1456,6 @@
    ]
   },
   {
-   "id": "W4399490057",
-   "title": "Investigation of data augmentation techniques for ultrasonic acoustic fiber sensing signals in guided wave-based pipeline damage detection",
-   "authors": [
-    "Pengdi Zhang",
-    "Khurram Naeem",
-    "Enrico Sarcinelli",
-    "Abhishek Venketeswaran",
-    "Sandeep Bukka",
-    "Nageswara R. Lalam",
-    "Ruishu Feng Wright",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2024,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.3013996",
-   "url": "https://doi.org/10.1117/12.3013996",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 4,
-   "topics": [
-    "infrastructure-monitoring",
-    "acoustic-sensing"
-   ]
-  },
-  {
    "id": "W4403465878",
    "title": "Binder jet 3D printing of Mn–Zn ferrite soft magnet toroidal cores",
    "authors": [
@@ -1500,10 +1474,36 @@
    "url": "https://doi.org/10.1016/j.apmt.2024.102475",
    "oa": false,
    "oa_url": "",
-   "cited_by": 3,
+   "cited_by": 4,
    "topics": [
     "ferrites-nanocomposites",
     "processing"
+   ]
+  },
+  {
+   "id": "W4399490057",
+   "title": "Investigation of data augmentation techniques for ultrasonic acoustic fiber sensing signals in guided wave-based pipeline damage detection",
+   "authors": [
+    "Pengdi Zhang",
+    "Khurram Naeem",
+    "Enrico Sarcinelli",
+    "Abhishek Venketeswaran",
+    "Sandeep Bukka",
+    "Nageswara R. Lalam",
+    "Ruishu Feng Wright",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Optical Waveguide and Laser Sensors",
+   "year": 2024,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.3013996",
+   "url": "https://doi.org/10.1117/12.3013996",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 4,
+   "topics": [
+    "infrastructure-monitoring",
+    "acoustic-sensing"
    ]
   },
   {
@@ -1586,7 +1586,7 @@
     "Khurram Naeem",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3022011",
@@ -1607,7 +1607,7 @@
     "Jun Young Hong",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3013823",
@@ -1633,7 +1633,7 @@
    "doi": "https://doi.org/10.2172/2477273",
    "url": "https://doi.org/10.2172/2477273",
    "oa": true,
-   "oa_url": "http://dx.doi.org/10.2172/2477273",
+   "oa_url": "https://doi.org/10.2172/2477273",
    "cited_by": 0,
    "topics": [
     "infrastructure-monitoring",
@@ -1740,7 +1740,7 @@
     "Nageswara R. Lalam",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3013782",
@@ -1762,7 +1762,7 @@
     "Paul Richard Ohodnicki",
     "Michael Buric"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3013980",
@@ -1784,7 +1784,7 @@
     "Heather M. Phillips",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.3013275",
@@ -1871,7 +1871,7 @@
     "Nageswara R. Lalam",
     "Ruishu Feng Wright"
    ],
-   "venue": "Advanced Photonics Congress",
+   "venue": "OSA Advanced Photonics Congress",
    "year": 2024,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1364/bgpp.2024.bm4a.6",
@@ -1903,7 +1903,7 @@
    "url": "https://doi.org/10.1038/s41598-023-41338-4",
    "oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-023-41338-4.pdf",
-   "cited_by": 39,
+   "cited_by": 40,
    "topics": [
     "infrastructure-monitoring"
    ]
@@ -1952,7 +1952,7 @@
    "url": "https://doi.org/10.1002/qute.202300096",
    "oa": true,
    "oa_url": "https://doi.org/10.1002/qute.202300096",
-   "cited_by": 13,
+   "cited_by": 14,
    "topics": []
   },
   {
@@ -2013,16 +2013,40 @@
     "Andrew J. Sherman",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Transportation Electrification Conference & Expo (ITEC)",
+   "venue": "IEEE Transportation Electrification Conference and Expo",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/itec55900.2023.10186907",
    "url": "https://doi.org/10.1109/itec55900.2023.10186907",
    "oa": false,
    "oa_url": "",
-   "cited_by": 7,
+   "cited_by": 8,
    "topics": [
     "permanent-magnets"
+   ]
+  },
+  {
+   "id": "W4388551362",
+   "title": "Spatially Tuned Properties in a Bulk Fe–Co Soft Magnetic Alloy via Transverse Induction Annealing and Feasibility Study for Motor Applications",
+   "authors": [
+    "Tyler W. Paplham",
+    "David W. Greve",
+    "Mohendro Kumar Ghosh",
+    "Lauren Wewer",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Advanced Engineering Materials",
+   "year": 2023,
+   "type": "article",
+   "doi": "https://doi.org/10.1002/adem.202301363",
+   "url": "https://doi.org/10.1002/adem.202301363",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 6,
+   "topics": [
+    "amorphous-nanocrystalline",
+    "processing",
+    "power-components"
    ]
   },
   {
@@ -2050,6 +2074,28 @@
    ]
   },
   {
+   "id": "W4380449914",
+   "title": "Optimization of the fourth self-imaging spectral response in magnetic fluid cladded-MMI fiber optic sensor for magnetometry",
+   "authors": [
+    "Dolendra Karki",
+    "Tulika Khanikar",
+    "Khurram Naeem",
+    "Nageswara R. Lalam",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Optical Waveguide and Laser Sensors",
+   "year": 2023,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2664107",
+   "url": "https://doi.org/10.1117/12.2664107",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 6,
+   "topics": [
+    "magnetic-characterization"
+   ]
+  },
+  {
    "id": "W4380450062",
    "title": "Development and pilot-scale demonstration of optical frequency domain reflectometry (OFDR) for gas pipeline monitoring",
    "authors": [
@@ -2059,7 +2105,7 @@
     "Paul Richard Ohodnicki",
     "Ruishu Feng Wright"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2665077",
@@ -2083,7 +2129,7 @@
     "Ruishu Feng Wright",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-abstract",
    "doi": "https://doi.org/10.1117/12.2663225",
@@ -2094,30 +2140,6 @@
    "topics": [
     "infrastructure-monitoring",
     "photonics-computation"
-   ]
-  },
-  {
-   "id": "W4388551362",
-   "title": "Spatially Tuned Properties in a Bulk Fe–Co Soft Magnetic Alloy via Transverse Induction Annealing and Feasibility Study for Motor Applications",
-   "authors": [
-    "Tyler Paplham",
-    "David W. Greve",
-    "Mohendro Kumar Ghosh",
-    "Lauren Wewer",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "Advanced Engineering Materials",
-   "year": 2023,
-   "type": "article",
-   "doi": "https://doi.org/10.1002/adem.202301363",
-   "url": "https://doi.org/10.1002/adem.202301363",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 5,
-   "topics": [
-    "amorphous-nanocrystalline",
-    "processing",
-    "power-components"
    ]
   },
   {
@@ -2167,7 +2189,7 @@
     "Paul Richard Ohodnicki",
     "Brandon M. Grainger"
    ],
-   "venue": "IEEE Transportation Electrification Conference & Expo (ITEC)",
+   "venue": "IEEE Transportation Electrification Conference and Expo",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/itec55900.2023.10187044",
@@ -2182,28 +2204,6 @@
    ]
   },
   {
-   "id": "W4380449914",
-   "title": "Optimization of the fourth self-imaging spectral response in magnetic fluid cladded-MMI fiber optic sensor for magnetometry",
-   "authors": [
-    "Dolendra Karki",
-    "Tulika Khanikar",
-    "Khurram Naeem",
-    "Nageswara R. Lalam",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2023,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2664107",
-   "url": "https://doi.org/10.1117/12.2664107",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 5,
-   "topics": [
-    "magnetic-characterization"
-   ]
-  },
-  {
    "id": "W4380450019",
    "title": "Bimetallic nanoparticle-based localized surface plasmon resonance for enhanced sensitivity of reflective fiber optic H2 sensing",
    "authors": [
@@ -2211,7 +2211,7 @@
     "Jeffrey Wuenschell",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2663845",
@@ -2221,6 +2221,33 @@
    "cited_by": 4,
    "topics": [
     "optical-thin-films"
+   ]
+  },
+  {
+   "id": "W4380450249",
+   "title": "High-sensitivity distributed pipelines infrastructure monitoring with internal deployed fibers and Rayleigh enhancement",
+   "authors": [
+    "Khurram Naeem",
+    "Nageswara R. Lalam",
+    "Dolendra Karki",
+    "Tulika Khanikar",
+    "Ruishu Feng Wright",
+    "Andy Gillooly",
+    "Kent Weisenberg",
+    "Ping Lu",
+    "Paul S. Westbrook",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Optical Waveguide and Laser Sensors",
+   "year": 2023,
+   "type": "conference-abstract",
+   "doi": "https://doi.org/10.1117/12.2665058",
+   "url": "https://doi.org/10.1117/12.2665058",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 4,
+   "topics": [
+    "infrastructure-monitoring"
    ]
   },
   {
@@ -2244,33 +2271,6 @@
    "topics": [
     "ferrites-nanocomposites",
     "power-components"
-   ]
-  },
-  {
-   "id": "W4380450249",
-   "title": "High-sensitivity distributed pipelines infrastructure monitoring with internal deployed fibers and Rayleigh enhancement",
-   "authors": [
-    "Khurram Naeem",
-    "Nageswara R. Lalam",
-    "Dolendra Karki",
-    "Tulika Khanikar",
-    "Ruishu Feng Wright",
-    "Andy Gillooly",
-    "Kent Weisenberg",
-    "Ping Lu",
-    "Paul S. Westbrook",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2023,
-   "type": "conference-abstract",
-   "doi": "https://doi.org/10.1117/12.2665058",
-   "url": "https://doi.org/10.1117/12.2665058",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 3,
-   "topics": [
-    "infrastructure-monitoring"
    ]
   },
   {
@@ -2354,7 +2354,7 @@
     "Brandon M. Grainger",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Transportation Electrification Conference & Expo (ITEC)",
+   "venue": "IEEE Transportation Electrification Conference and Expo",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/itec55900.2023.10187015",
@@ -2374,7 +2374,7 @@
     "Paul Richard Ohodnicki",
     "Ruishu Feng Wright"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2663620",
@@ -2396,7 +2396,7 @@
     "Michael Buric",
     "Ruishu Feng Wright"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2663289",
@@ -2421,7 +2421,7 @@
     "Hessam Babaee",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2664135",
@@ -2446,7 +2446,7 @@
     "Nageswara R. Lalam",
     "Ruishu Feng Wright"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2665084",
@@ -2650,7 +2650,7 @@
     "Paul Richard Ohodnicki",
     "Ruishu Feng Wright"
    ],
-   "venue": "IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)",
+   "venue": "Digest - IEEE Antennas and Propagation Society. International Symposium",
    "year": 2023,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/usnc-ursi52151.2023.10237417",
@@ -2909,7 +2909,7 @@
    "url": "https://doi.org/10.1021/acsengineeringau.1c00033",
    "oa": true,
    "oa_url": "https://doi.org/10.1021/acsengineeringau.1c00033",
-   "cited_by": 124,
+   "cited_by": 125,
    "topics": []
   },
   {
@@ -2952,7 +2952,7 @@
    "url": "https://doi.org/10.1016/j.mtcomm.2022.104436",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.mtcomm.2022.104436",
-   "cited_by": 19,
+   "cited_by": 20,
    "topics": [
     "ferrites-nanocomposites"
    ]
@@ -3056,6 +3056,27 @@
    ]
   },
   {
+   "id": "W4281704400",
+   "title": "Pipeline monitoring based on ultrasonic guided acoustic wave and fiber optic sensor fusion",
+   "authors": [
+    "Nageswara R. Lalam",
+    "Ruishu Feng Wright",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "",
+   "year": 2022,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2619042",
+   "url": "https://doi.org/10.1117/12.2619042",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 7,
+   "topics": [
+    "infrastructure-monitoring",
+    "acoustic-sensing"
+   ]
+  },
+  {
    "id": "W4281747513",
    "title": "Low-cost plasmonic fiber probe and wireless interrogation for electric power equipment temperature sensing",
    "authors": [
@@ -3077,6 +3098,31 @@
     "optical-thin-films",
     "interrogators",
     "temperature-sensing"
+   ]
+  },
+  {
+   "id": "W4280526076",
+   "title": "Radio‐Frequency Rapid Thermal Processing Enabling Spatial Phase Transformation and Nanocrystallization of Soft Magnetic Amorphous Alloys",
+   "authors": [
+    "Ahmed Talaat",
+    "David W. Greve",
+    "Shibo Tan",
+    "Tyler W. Paplham",
+    "Kevin Byerly",
+    "Michael Edward McHenry",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Advanced Engineering Materials",
+   "year": 2022,
+   "type": "article",
+   "doi": "https://doi.org/10.1002/adem.202200208",
+   "url": "https://doi.org/10.1002/adem.202200208",
+   "oa": true,
+   "oa_url": "https://www.osti.gov/servlets/purl/2418051",
+   "cited_by": 7,
+   "topics": [
+    "amorphous-nanocrystalline",
+    "processing"
    ]
   },
   {
@@ -3104,52 +3150,6 @@
    ]
   },
   {
-   "id": "W4281704400",
-   "title": "Pipeline monitoring based on ultrasonic guided acoustic wave and fiber optic sensor fusion",
-   "authors": [
-    "Nageswara R. Lalam",
-    "Ruishu Feng Wright",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2022,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2619042",
-   "url": "https://doi.org/10.1117/12.2619042",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 6,
-   "topics": [
-    "infrastructure-monitoring",
-    "acoustic-sensing"
-   ]
-  },
-  {
-   "id": "W4280526076",
-   "title": "Radio‐Frequency Rapid Thermal Processing Enabling Spatial Phase Transformation and Nanocrystallization of Soft Magnetic Amorphous Alloys",
-   "authors": [
-    "Ahmed Talaat",
-    "David W. Greve",
-    "Shibo Tan",
-    "Tyler Paplham",
-    "Kevin Byerly",
-    "Michael Edward McHenry",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "Advanced Engineering Materials",
-   "year": 2022,
-   "type": "article",
-   "doi": "https://doi.org/10.1002/adem.202200208",
-   "url": "https://doi.org/10.1002/adem.202200208",
-   "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/2418051",
-   "cited_by": 6,
-   "topics": [
-    "amorphous-nanocrystalline",
-    "processing"
-   ]
-  },
-  {
    "id": "W4281725515",
    "title": "Robotic fiber optic internal deployment tool for pipeline integrity monitoring",
    "authors": [
@@ -3167,9 +3167,33 @@
    "url": "https://doi.org/10.1117/12.2619045",
    "oa": false,
    "oa_url": "",
-   "cited_by": 4,
+   "cited_by": 5,
    "topics": [
     "infrastructure-monitoring"
+   ]
+  },
+  {
+   "id": "W4310450261",
+   "title": "Vibration Monitoring of Power Transformer based on Ultra-Sensitive Fiber Optic Sensors",
+   "authors": [
+    "Nageswara R. Lalam",
+    "Dolendra Karki",
+    "Khurram Naeem",
+    "Brandon M. Grainger",
+    "Ruishu Feng Wright",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "IEEE Energy Conversion Congress and Exposition (ECCE)",
+   "year": 2022,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1109/ecce50734.2022.9947420",
+   "url": "https://doi.org/10.1109/ecce50734.2022.9947420",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 4,
+   "topics": [
+    "power-components",
+    "acoustic-sensing"
    ]
   },
   {
@@ -3199,7 +3223,7 @@
    "id": "W4313429854",
    "title": "Spatially tuned microstructure and properties in soft magnetic nanocrystalline alloy via transverse-oriented induction heating",
    "authors": [
-    "Tyler Paplham",
+    "Tyler W. Paplham",
     "Yuankang Wang",
     "David W. Greve",
     "Paul Richard Ohodnicki"
@@ -3214,30 +3238,6 @@
    "cited_by": 3,
    "topics": [
     "amorphous-nanocrystalline"
-   ]
-  },
-  {
-   "id": "W4310450261",
-   "title": "Vibration Monitoring of Power Transformer based on Ultra-Sensitive Fiber Optic Sensors",
-   "authors": [
-    "Nageswara R. Lalam",
-    "Dolendra Karki",
-    "Khurram Naeem",
-    "Brandon M. Grainger",
-    "Ruishu Feng Wright",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "IEEE Energy Conversion Congress and Exposition (ECCE)",
-   "year": 2022,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1109/ecce50734.2022.9947420",
-   "url": "https://doi.org/10.1109/ecce50734.2022.9947420",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 3,
-   "topics": [
-    "power-components",
-    "acoustic-sensing"
    ]
   },
   {
@@ -3390,7 +3390,7 @@
    "url": "https://doi.org/10.1002/aisy.202100067",
    "oa": true,
    "oa_url": "https://doi.org/10.1002/aisy.202100067",
-   "cited_by": 252,
+   "cited_by": 256,
    "topics": [
     "photonics-computation"
    ]
@@ -3414,7 +3414,7 @@
    "url": "https://doi.org/10.1016/j.jallcom.2021.159500",
    "oa": false,
    "oa_url": "",
-   "cited_by": 149,
+   "cited_by": 152,
    "topics": [
     "ferrites-nanocomposites"
    ]
@@ -3440,7 +3440,7 @@
    "url": "https://doi.org/10.1002/qute.202100049",
    "oa": true,
    "oa_url": "https://doi.org/10.1002/qute.202100049",
-   "cited_by": 147,
+   "cited_by": 150,
    "topics": [
     "quantum-sensing"
    ]
@@ -3457,7 +3457,7 @@
    ],
    "venue": "Sensors",
    "year": 2021,
-   "type": "article",
+   "type": "review",
    "doi": "https://doi.org/10.3390/s21041397",
    "url": "https://doi.org/10.3390/s21041397",
    "oa": true,
@@ -3549,29 +3549,10 @@
    "url": "https://doi.org/10.1002/admt.202100125",
    "oa": false,
    "oa_url": "",
-   "cited_by": 47,
+   "cited_by": 48,
    "topics": [
     "single-crystal-fibers"
    ]
-  },
-  {
-   "id": "W3128233531",
-   "title": "Influence of the Anionic Zinc-Adeninate Metal–Organic Framework Structure on the Luminescent Detection of Rare Earth Ions in Aqueous Streams",
-   "authors": [
-    "Scott E. Crawford",
-    "James E. Ellis",
-    "Paul Richard Ohodnicki",
-    "John P. Baltrus"
-   ],
-   "venue": "ACS Applied Materials & Interfaces",
-   "year": 2021,
-   "type": "article",
-   "doi": "https://doi.org/10.1021/acsami.0c20990",
-   "url": "https://doi.org/10.1021/acsami.0c20990",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 25,
-   "topics": []
   },
   {
    "id": "W3132388964",
@@ -3594,7 +3575,26 @@
    "url": "https://doi.org/10.1016/j.apenergy.2021.116633",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.apenergy.2021.116633",
-   "cited_by": 23,
+   "cited_by": 25,
+   "topics": []
+  },
+  {
+   "id": "W3128233531",
+   "title": "Influence of the Anionic Zinc-Adeninate Metal–Organic Framework Structure on the Luminescent Detection of Rare Earth Ions in Aqueous Streams",
+   "authors": [
+    "Scott E. Crawford",
+    "James E. Ellis",
+    "Paul Richard Ohodnicki",
+    "John P. Baltrus"
+   ],
+   "venue": "ACS Applied Materials & Interfaces",
+   "year": 2021,
+   "type": "article",
+   "doi": "https://doi.org/10.1021/acsami.0c20990",
+   "url": "https://doi.org/10.1021/acsami.0c20990",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 25,
    "topics": []
   },
   {
@@ -3746,6 +3746,46 @@
    ]
   },
   {
+   "id": "W3153055421",
+   "title": "Fabrication and application of single crystal fiber via laser heated pedestal growth system",
+   "authors": [
+    "Bo Liu",
+    "Dolendra Karki",
+    "Subhabrata Bera",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "",
+   "year": 2021,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2586173",
+   "url": "https://doi.org/10.1117/12.2586173",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 8,
+   "topics": [
+    "single-crystal-fibers"
+   ]
+  },
+  {
+   "id": "W3204956757",
+   "title": "Soft Magnetic Materials",
+   "authors": [
+    "Michael Edward McHenry",
+    "Paul Richard Ohodnicki",
+    "Seung‐Ryul Moon",
+    "Yuval L. Krimer"
+   ],
+   "venue": "Springer eBooks",
+   "year": 2021,
+   "type": "book-chapter",
+   "doi": "https://doi.org/10.1007/978-3-030-70443-8_21",
+   "url": "https://doi.org/10.1007/978-3-030-70443-8_21",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 8,
+   "topics": []
+  },
+  {
    "id": "W3157018642",
    "title": "Low-cost optical fiber based temperature sensor for real-time health monitoring of power transformers",
    "authors": [
@@ -3770,46 +3810,6 @@
    ]
   },
   {
-   "id": "W3204956757",
-   "title": "Soft Magnetic Materials",
-   "authors": [
-    "Michael Edward McHenry",
-    "Paul Richard Ohodnicki",
-    "Seung‐Ryul Moon",
-    "Yuval L. Krimer"
-   ],
-   "venue": "Springer eBooks",
-   "year": 2021,
-   "type": "book-chapter",
-   "doi": "https://doi.org/10.1007/978-3-030-70443-8_21",
-   "url": "https://doi.org/10.1007/978-3-030-70443-8_21",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 7,
-   "topics": []
-  },
-  {
-   "id": "W3153055421",
-   "title": "Fabrication and application of single crystal fiber via laser heated pedestal growth system",
-   "authors": [
-    "Bo Liu",
-    "Dolendra Karki",
-    "Subhabrata Bera",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2021,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2586173",
-   "url": "https://doi.org/10.1117/12.2586173",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 6,
-   "topics": [
-    "single-crystal-fibers"
-   ]
-  },
-  {
    "id": "W3215905237",
    "title": "Permeability Engineered Soft Magnetics for Power Dense Energy Conversion",
    "authors": [
@@ -3828,7 +3828,7 @@
    "url": "https://doi.org/10.1109/ecce47101.2021.9594967",
    "oa": false,
    "oa_url": "",
-   "cited_by": 5,
+   "cited_by": 6,
    "topics": [
     "magnetic-characterization",
     "power-components"
@@ -3890,7 +3890,7 @@
     "Michael Buric",
     "Benjamin Chorpening"
    ],
-   "venue": "",
+   "venue": "Oxide-based Materials and Devices",
    "year": 2021,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2578459",
@@ -3917,7 +3917,7 @@
     "Paul Richard Ohodnicki",
     "Kevin P. Chen"
    ],
-   "venue": "",
+   "venue": "International Conference on Optical Fiber Sensors (OFS)",
    "year": 2021,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1364/ofs.2020.th4.32",
@@ -3985,7 +3985,7 @@
     "Paul Richard Ohodnicki",
     "Kevin P. Chen"
    ],
-   "venue": "",
+   "venue": "International Conference on Optical Fiber Sensors (OFS)",
    "year": 2021,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1364/ofs.2020.t3.10",
@@ -3995,6 +3995,25 @@
    "cited_by": 1,
    "topics": [
     "chemical-sensing"
+   ]
+  },
+  {
+   "id": "W3214192914",
+   "title": "Optical Fiber Sensors for Energy Infrastructure: Emerging Opportunities",
+   "authors": [
+    "Paul Richard Ohodnicki",
+    "Kevin P. Chen"
+   ],
+   "venue": "International Conference on Optical Fiber Sensors (OFS)",
+   "year": 2021,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1364/ofs.2020.t1.1",
+   "url": "https://doi.org/10.1364/ofs.2020.t1.1",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 1,
+   "topics": [
+    "infrastructure-monitoring"
    ]
   },
   {
@@ -4171,7 +4190,7 @@
    "id": "W3135940321",
    "title": "Effect of a cement cap on the bulk properties of cement cores embedded with optical fiber sensor prototypes",
    "authors": [
-    "Richard Spaulding",
+    "Richard E. Spaulding",
     "Patricia C. Cvetic",
     "Ruishu Feng Wright",
     "Dustin M. Crandall",
@@ -4199,7 +4218,7 @@
     "Paul Richard Ohodnicki",
     "Kevin P. Chen"
    ],
-   "venue": "",
+   "venue": "International Conference on Optical Fiber Sensors (OFS)",
    "year": 2021,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1364/ofs.2020.t3.51",
@@ -4223,7 +4242,7 @@
     "Bo Liu",
     "Kevin P. Chen"
    ],
-   "venue": "",
+   "venue": "International Conference on Optical Fiber Sensors (OFS)",
    "year": 2021,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1364/ofs.2020.w4.28",
@@ -4234,25 +4253,6 @@
    "topics": [
     "amorphous-nanocrystalline",
     "temperature-sensing"
-   ]
-  },
-  {
-   "id": "W3214192914",
-   "title": "Optical Fiber Sensors for Energy Infrastructure: Emerging Opportunities",
-   "authors": [
-    "Paul Richard Ohodnicki",
-    "Kevin P. Chen"
-   ],
-   "venue": "",
-   "year": 2021,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1364/ofs.2020.t1.1",
-   "url": "https://doi.org/10.1364/ofs.2020.t1.1",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 0,
-   "topics": [
-    "infrastructure-monitoring"
    ]
   },
   {
@@ -4270,7 +4270,7 @@
    "url": "https://doi.org/10.1039/d0tc01939a",
    "oa": false,
    "oa_url": "",
-   "cited_by": 154,
+   "cited_by": 157,
    "topics": [
     "chemical-sensing"
    ]
@@ -4319,7 +4319,7 @@
    "url": "https://doi.org/10.1016/j.snb.2020.128627",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2020.128627",
-   "cited_by": 83,
+   "cited_by": 84,
    "topics": [
     "optical-thin-films",
     "chemical-sensing"
@@ -4347,6 +4347,29 @@
    "topics": [
     "power-components",
     "temperature-sensing"
+   ]
+  },
+  {
+   "id": "W3021709543",
+   "title": "An 860 MHz Wireless Surface Acoustic Wave Sensor With a Metal-Organic Framework Sensing Layer for CO2 and CH4",
+   "authors": [
+    "Jagannath Devkota",
+    "David W. Greve",
+    "Tao Hong",
+    "Ki‐Joong Kim",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "IEEE Sensors Journal",
+   "year": 2020,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/jsen.2020.2990997",
+   "url": "https://doi.org/10.1109/jsen.2020.2990997",
+   "oa": true,
+   "oa_url": "https://arxiv.org/pdf/2002.00705",
+   "cited_by": 54,
+   "topics": [
+    "chemical-sensing",
+    "acoustic-sensing"
    ]
   },
   {
@@ -4379,29 +4402,6 @@
    ]
   },
   {
-   "id": "W3021709543",
-   "title": "An 860 MHz Wireless Surface Acoustic Wave Sensor With a Metal-Organic Framework Sensing Layer for CO2 and CH4",
-   "authors": [
-    "Jagannath Devkota",
-    "David W. Greve",
-    "Tao Hong",
-    "Ki‐Joong Kim",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "IEEE Sensors Journal",
-   "year": 2020,
-   "type": "article",
-   "doi": "https://doi.org/10.1109/jsen.2020.2990997",
-   "url": "https://doi.org/10.1109/jsen.2020.2990997",
-   "oa": true,
-   "oa_url": "https://arxiv.org/pdf/2002.00705",
-   "cited_by": 52,
-   "topics": [
-    "chemical-sensing",
-    "acoustic-sensing"
-   ]
-  },
-  {
    "id": "W3048520587",
    "title": "Electromagnetic assisted thermal processing of amorphous and nanocrystalline soft magnetic alloys: Fundamentals and advances",
    "authors": [
@@ -4417,7 +4417,7 @@
    "url": "https://doi.org/10.1016/j.jallcom.2020.156480",
    "oa": false,
    "oa_url": "",
-   "cited_by": 49,
+   "cited_by": 50,
    "topics": [
     "amorphous-nanocrystalline",
     "processing"
@@ -4439,7 +4439,7 @@
    "url": "https://doi.org/10.1109/jlt.2020.3007703",
    "oa": false,
    "oa_url": "",
-   "cited_by": 45,
+   "cited_by": 46,
    "topics": []
   },
   {
@@ -4564,7 +4564,7 @@
    "url": "https://doi.org/10.1016/j.jcrysgro.2020.125801",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.jcrysgro.2020.125801",
-   "cited_by": 24,
+   "cited_by": 25,
    "topics": [
     "single-crystal-fibers"
    ]
@@ -4678,7 +4678,7 @@
     "Richard Beddingfield",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Applied Power Electronics Conference and Exposition (APEC)",
+   "venue": "Conference proceedings/Conference proceedings - IEEE Applied Power Electronics Conference and Exposition",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apec39645.2020.9124538",
@@ -4747,7 +4747,7 @@
     "Kevin P. Chen",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2559000",
@@ -4795,7 +4795,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2558910",
@@ -4817,14 +4817,14 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Waveguide and Laser Sensors",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2558746",
    "url": "https://doi.org/10.1117/12.2558746",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1768720",
-   "cited_by": 5,
+   "cited_by": 6,
    "topics": [
     "temperature-sensing"
    ]
@@ -4839,7 +4839,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Autonomous Systems: Sensors, Processing, and Security for Ground, Air, Sea, and Space Vehicles and Infrastructure",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2558717",
@@ -4861,7 +4861,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Photonic Instrumentation Engineering",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2545089",
@@ -4879,14 +4879,14 @@
    "authors": [
     "Patricia C. Cvetic",
     "Ruishu Feng Wright",
-    "Richard Spaulding",
+    "Richard E. Spaulding",
     "Johnathan Moore",
     "Dustin M. Crandall",
     "Paul M. DiCarmine",
     "Aydin Babakhani",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Smart Structures and NDE for Industry 4.0, Smart Cities, and Energy Systems",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2557318",
@@ -4895,6 +4895,33 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1767006",
    "cited_by": 3,
    "topics": []
+  },
+  {
+   "id": "W3042313686",
+   "title": "Core Losses in Co-Rich Inductors with Tunable Permeability",
+   "authors": [
+    "Alex Leary",
+    "Vladimir Keylin",
+    "R.D. Noebe",
+    "Randy R. Bowman",
+    "G.E. Feichter",
+    "Kevin Byerly",
+    "Paul Richard Ohodnicki",
+    "Michael Edward McHenry"
+   ],
+   "venue": "NASA Technical Reports Server (NASA)",
+   "year": 2020,
+   "type": "article",
+   "doi": "",
+   "url": "https://openalex.org/W3042313686",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 3,
+   "topics": [
+    "amorphous-nanocrystalline",
+    "magnetic-characterization",
+    "power-components"
+   ]
   },
   {
    "id": "W4234523713",
@@ -4955,7 +4982,7 @@
     "Ping Lu",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Chemical, Biological, Radiological, Nuclear, and Explosives (CBRNE) Sensing",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2558088",
@@ -4980,7 +5007,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Micro- and Nanotechnology Sensors, Systems, and Applications",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2558809",
@@ -5069,7 +5096,7 @@
     "Jeffrey Wuenschell",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Oxide-based Materials and Devices",
    "year": 2020,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2543395",
@@ -5084,39 +5111,12 @@
    ]
   },
   {
-   "id": "W3042313686",
-   "title": "Core Losses in Co-Rich Inductors with Tunable Permeability",
-   "authors": [
-    "Alex Leary",
-    "Vladimir Keylin",
-    "R.D. Noebe",
-    "Randy R. Bowman",
-    "G.E. Feichter",
-    "Kevin Byerly",
-    "Paul Richard Ohodnicki",
-    "Michael Edward McHenry"
-   ],
-   "venue": "NASA Technical Reports Server (NASA)",
-   "year": 2020,
-   "type": "article",
-   "doi": "",
-   "url": "https://openalex.org/W3042313686",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 1,
-   "topics": [
-    "amorphous-nanocrystalline",
-    "magnetic-characterization",
-    "power-components"
-   ]
-  },
-  {
    "id": "W3091452886",
    "title": "In Situ characterization of the proton enhanced conductivity of 20nm TiO2 thin-films obtained on the surface of optical fiber",
    "authors": [
     "Poole, Jacob L.",
     "Paul Richard Ohodnicki",
-    "Yang Woo Yu",
+    "Yang Yu",
     "Jian Liu",
     "Bret Howard",
     "Sittichai Natesakhawat"
@@ -5263,7 +5263,7 @@
    "url": "https://doi.org/10.1063/1.5113955",
    "oa": false,
    "oa_url": "",
-   "cited_by": 849,
+   "cited_by": 863,
    "topics": []
   },
   {
@@ -5279,7 +5279,7 @@
    ],
    "venue": "Sensors",
    "year": 2019,
-   "type": "article",
+   "type": "review",
    "doi": "https://doi.org/10.3390/s19183964",
    "url": "https://doi.org/10.3390/s19183964",
    "oa": true,
@@ -5436,26 +5436,25 @@
    ]
   },
   {
-   "id": "W2983843921",
-   "title": "Functionalized PdAu Alloy on Nanocones Fabricated on Optical Fibers for Hydrogen Sensing",
+   "id": "W2946393179",
+   "title": "Fully distributed optical fiber sensor for water and humidity monitoring",
    "authors": [
-    "Rongtao Cao",
-    "Jingyu Wu",
-    "Guanquan Liang",
-    "Paul Richard Ohodnicki",
-    "Kevin P. Chen"
+    "Ruishu Feng Wright",
+    "Mudabbir Badar",
+    "James C. Egbu",
+    "Ping Lu",
+    "Michael Buric",
+    "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Sensors Journal",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2019,
-   "type": "article",
-   "doi": "https://doi.org/10.1109/jsen.2019.2950505",
-   "url": "https://doi.org/10.1109/jsen.2019.2950505",
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2519239",
+   "url": "https://doi.org/10.1117/12.2519239",
    "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/1969526",
-   "cited_by": 27,
-   "topics": [
-    "chemical-sensing"
-   ]
+   "oa_url": "https://www.osti.gov/servlets/purl/1785648",
+   "cited_by": 29,
+   "topics": []
   },
   {
    "id": "W2991568570",
@@ -5482,29 +5481,30 @@
    "url": "https://doi.org/10.1039/c9ta10135g",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1583111",
-   "cited_by": 27,
+   "cited_by": 28,
    "topics": []
   },
   {
-   "id": "W2946393179",
-   "title": "Fully distributed optical fiber sensor for water and humidity monitoring",
+   "id": "W2983843921",
+   "title": "Functionalized PdAu Alloy on Nanocones Fabricated on Optical Fibers for Hydrogen Sensing",
    "authors": [
-    "Ruishu Feng Wright",
-    "Mudabbir Badar",
-    "James C. Egbu",
-    "Ping Lu",
-    "Michael Buric",
-    "Paul Richard Ohodnicki"
+    "Rongtao Cao",
+    "Jingyu Wu",
+    "Guanquan Liang",
+    "Paul Richard Ohodnicki",
+    "Kevin P. Chen"
    ],
-   "venue": "",
+   "venue": "IEEE Sensors Journal",
    "year": 2019,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2519239",
-   "url": "https://doi.org/10.1117/12.2519239",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/jsen.2019.2950505",
+   "url": "https://doi.org/10.1109/jsen.2019.2950505",
    "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/1785648",
-   "cited_by": 26,
-   "topics": []
+   "oa_url": "https://www.osti.gov/servlets/purl/1969526",
+   "cited_by": 27,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2991508075",
@@ -5542,7 +5542,7 @@
    "url": "https://doi.org/10.1016/j.jallcom.2019.152294",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.jallcom.2019.152294",
-   "cited_by": 17,
+   "cited_by": 18,
    "topics": [
     "amorphous-nanocrystalline"
    ]
@@ -5588,6 +5588,53 @@
    "cited_by": 11,
    "topics": [
     "optical-thin-films"
+   ]
+  },
+  {
+   "id": "W3023935958",
+   "title": "Electrolessly Coated Optical Fibers for Distributed Corrosion Monitoring",
+   "authors": [
+    "Ruishu Feng Wright",
+    "Michael Buric",
+    "James C. Egbu",
+    "Margaret Ziomek‐Moroz",
+    "Ping Lu",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "NACE CORROSION Conference",
+   "year": 2019,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.5006/c2019-13499",
+   "url": "https://doi.org/10.5006/c2019-13499",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 11,
+   "topics": [
+    "infrastructure-monitoring"
+   ]
+  },
+  {
+   "id": "W2922349589",
+   "title": "Review on corrosion sensors for structural health monitoring of oil and natural gas infrastructure",
+   "authors": [
+    "Ruishu Feng Wright",
+    "Ping Lu",
+    "Jagannath Devkota",
+    "Fei Lu",
+    "Margaret Ziomek‐Moroz",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Smart Structures and NDE for Energy Systems and Industry 4.0",
+   "year": 2019,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2514398",
+   "url": "https://doi.org/10.1117/12.2514398",
+   "oa": true,
+   "oa_url": "https://www.osti.gov/servlets/purl/1780566",
+   "cited_by": 11,
+   "topics": [
+    "infrastructure-monitoring",
+    "chemical-sensing"
    ]
   },
   {
@@ -5655,53 +5702,6 @@
    "topics": []
   },
   {
-   "id": "W3023935958",
-   "title": "Electrolessly Coated Optical Fibers for Distributed Corrosion Monitoring",
-   "authors": [
-    "Ruishu Feng Wright",
-    "Michael Buric",
-    "James C. Egbu",
-    "Margaret Ziomek‐Moroz",
-    "Ping Lu",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "NACE CORROSION Conference",
-   "year": 2019,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.5006/c2019-13499",
-   "url": "https://doi.org/10.5006/c2019-13499",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 9,
-   "topics": [
-    "infrastructure-monitoring"
-   ]
-  },
-  {
-   "id": "W2922349589",
-   "title": "Review on corrosion sensors for structural health monitoring of oil and natural gas infrastructure",
-   "authors": [
-    "Ruishu Feng Wright",
-    "Ping Lu",
-    "Jagannath Devkota",
-    "Fei Lu",
-    "Margaret Ziomek‐Moroz",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2019,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2514398",
-   "url": "https://doi.org/10.1117/12.2514398",
-   "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/1780566",
-   "cited_by": 9,
-   "topics": [
-    "infrastructure-monitoring",
-    "chemical-sensing"
-   ]
-  },
-  {
    "id": "W2946666174",
    "title": "Self-correction of nonlinear sweep of tunable laser source in OFDR",
    "authors": [
@@ -5710,7 +5710,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2518394",
@@ -5731,16 +5731,38 @@
     "Benjamin Chorpening",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Optical Components and Materials",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2508755",
    "url": "https://doi.org/10.1117/12.2508755",
    "oa": false,
    "oa_url": "",
-   "cited_by": 7,
+   "cited_by": 8,
    "topics": [
     "single-crystal-fibers"
+   ]
+  },
+  {
+   "id": "W2978684251",
+   "title": "Designing a SAW Sensor Array with MOF Sensing Layers for Carbon Dioxide and Methane",
+   "authors": [
+    "Jagannath Devkota",
+    "Paul Richard Ohodnicki",
+    "Jenna A. Gustafson",
+    "Christopher E. Wilmer",
+    "David W. Greve"
+   ],
+   "venue": "Joint Conference of the European Frequency and Time Forum and IEEE International Frequency Control Symposium (EFTF/IFCS)",
+   "year": 2019,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1109/fcs.2019.8856088",
+   "url": "https://doi.org/10.1109/fcs.2019.8856088",
+   "oa": true,
+   "oa_url": "https://www.osti.gov/servlets/purl/1778181",
+   "cited_by": 7,
+   "topics": [
+    "chemical-sensing"
    ]
   },
   {
@@ -5774,7 +5796,7 @@
    "authors": [
     "Ritwik Chattopadhyay",
     "Srinivas Gulur",
-    "Viju Nair",
+    "Viju Nair R",
     "Subhashish Bhattacharya",
     "Paul Richard Ohodnicki"
    ],
@@ -5813,28 +5835,6 @@
    "topics": []
   },
   {
-   "id": "W2978684251",
-   "title": "Designing a SAW Sensor Array with MOF Sensing Layers for Carbon Dioxide and Methane",
-   "authors": [
-    "Jagannath Devkota",
-    "Paul Richard Ohodnicki",
-    "Jenna A. Gustafson",
-    "Christopher E. Wilmer",
-    "David W. Greve"
-   ],
-   "venue": "",
-   "year": 2019,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1109/fcs.2019.8856088",
-   "url": "https://doi.org/10.1109/fcs.2019.8856088",
-   "oa": true,
-   "oa_url": "https://www.osti.gov/servlets/purl/1778181",
-   "cited_by": 6,
-   "topics": [
-    "chemical-sensing"
-   ]
-  },
-  {
    "id": "W2918951872",
    "title": "High-temperature oxygen sensing behavior of perovskite films on the optical fiber platform",
    "authors": [
@@ -5846,7 +5846,7 @@
     "Jeffrey Wuenschell",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Oxide-based Materials and Devices",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2508648",
@@ -5865,7 +5865,7 @@
    "authors": [
     "Ritwik Chattopadhyay",
     "Srinivas Gulur",
-    "Viju Nair",
+    "Viju Nair R",
     "Subhashish Bhattacharya",
     "Paul Richard Ohodnicki"
    ],
@@ -5892,7 +5892,7 @@
     "Benjamin Chorpening",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2518924",
@@ -5913,7 +5913,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2518391",
@@ -5923,6 +5923,29 @@
    "cited_by": 4,
    "topics": [
     "amorphous-nanocrystalline"
+   ]
+  },
+  {
+   "id": "W2945461700",
+   "title": "Study of molten zone profile and defect formation during laser heated pedestal growth",
+   "authors": [
+    "Bo Liu",
+    "Yang Yu",
+    "Subhabrata Bera",
+    "Michael Buric",
+    "Benjamin Chorpening",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Micro- and Nanotechnology Sensors, Systems, and Applications",
+   "year": 2019,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2518935",
+   "url": "https://doi.org/10.1117/12.2518935",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 4,
+   "topics": [
+    "single-crystal-fibers"
    ]
   },
   {
@@ -5967,29 +5990,6 @@
    ]
   },
   {
-   "id": "W2945461700",
-   "title": "Study of molten zone profile and defect formation during laser heated pedestal growth",
-   "authors": [
-    "Bo Liu",
-    "Yang Yu",
-    "Subhabrata Bera",
-    "Michael Buric",
-    "Benjamin Chorpening",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2019,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2518935",
-   "url": "https://doi.org/10.1117/12.2518935",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 3,
-   "topics": [
-    "single-crystal-fibers"
-   ]
-  },
-  {
    "id": "W2919973040",
    "title": "Vector Brillouin optical time-domain analysis with Raman amplification and optical pulse coding",
    "authors": [
@@ -5999,7 +5999,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Photonic Instrumentation Engineering",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2510972",
@@ -6008,6 +6008,28 @@
    "oa_url": "",
    "cited_by": 3,
    "topics": []
+  },
+  {
+   "id": "W2920462789",
+   "title": "Optical gas sensing properties of gold-nanoparticle incorporated LSTO films at high temperature",
+   "authors": [
+    "Jeffrey Wuenschell",
+    "Youngseok Jee",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Oxide-based Materials and Devices",
+   "year": 2019,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2506782",
+   "url": "https://doi.org/10.1117/12.2506782",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 3,
+   "topics": [
+    "optical-thin-films",
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2946539048",
@@ -6023,7 +6045,7 @@
     "Benjamin Chorpening",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2518506",
@@ -6055,28 +6077,6 @@
    "cited_by": 2,
    "topics": [
     "chemical-sensing"
-   ]
-  },
-  {
-   "id": "W2920462789",
-   "title": "Optical gas sensing properties of gold-nanoparticle incorporated LSTO films at high temperature",
-   "authors": [
-    "Jeffrey Wuenschell",
-    "Youngseok Jee",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "",
-   "year": 2019,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2506782",
-   "url": "https://doi.org/10.1117/12.2506782",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 2,
-   "topics": [
-    "optical-thin-films",
-    "chemical-sensing",
-    "temperature-sensing"
    ]
   },
   {
@@ -6168,7 +6168,7 @@
     "Paul Richard Ohodnicki",
     "Henry Du"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2019,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2518770",
@@ -6257,8 +6257,8 @@
    "authors": [
     "M. Zaghloul",
     "S. Y. Huang",
-    "M. Wang",
-    "K. W. Chen",
+    "Wang, M.",
+    "Chen, K.",
     "Paul Richard Ohodnicki",
     "M. Buric",
     "S. Lee",
@@ -6266,7 +6266,7 @@
     "Dan M. Grobnic",
     "Stephen J. Mihailov",
     "M.-J. Li",
-    "D. Carpenter",
+    "David M. Carpenter",
     "L.-W. Hu",
     "J. Daw"
    ],
@@ -6320,7 +6320,7 @@
    "url": "https://doi.org/10.1021/acssensors.7b00808",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1455424",
-   "cited_by": 207,
+   "cited_by": 211,
    "topics": [
     "optical-thin-films",
     "chemical-sensing"
@@ -6415,7 +6415,7 @@
     "Anthony D. Rollett",
     "Marc De Graef",
     "Shawn Litster",
-    "A. Salvador"
+    "Paul A. Salvador"
    ],
    "venue": "Journal of Power Sources",
    "year": 2018,
@@ -6616,7 +6616,7 @@
    "url": "https://doi.org/10.1109/acp.2018.8595809",
    "oa": false,
    "oa_url": "",
-   "cited_by": 17,
+   "cited_by": 20,
    "topics": [
     "infrastructure-monitoring",
     "chemical-sensing",
@@ -6647,6 +6647,30 @@
    "topics": []
   },
   {
+   "id": "W2900009079",
+   "title": "A Multifunctional Fiber Optic Sensor for Internal Corrosion Monitoring in Natural Gas Transmission Pipelines",
+   "authors": [
+    "Ping Lu",
+    "Michael Buric",
+    "Ruishu Feng Wright",
+    "Paul H. Zandhuis",
+    "Margaret Ziomek‐Moroz",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "NACE CORROSION Conference",
+   "year": 2018,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.5006/c2018-11492",
+   "url": "https://doi.org/10.5006/c2018-11492",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 14,
+   "topics": [
+    "infrastructure-monitoring",
+    "chemical-sensing"
+   ]
+  },
+  {
    "id": "W2905813769",
    "title": "Large Scale Grid Integration of Photovoltaic and Energy Storage Systems Using Triple Port Dual Active Bridge Converter Modules",
    "authors": [
@@ -6659,7 +6683,7 @@
     "Ghanshyamsinh Gohil",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE Power & Energy Society General Meeting (PESGM)",
+   "venue": "IEEE Power Engineering Society General Meeting",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/pesgm.2018.8586158",
@@ -6723,30 +6747,6 @@
    ]
   },
   {
-   "id": "W2900009079",
-   "title": "A Multifunctional Fiber Optic Sensor for Internal Corrosion Monitoring in Natural Gas Transmission Pipelines",
-   "authors": [
-    "Ping Lu",
-    "Michael Buric",
-    "Ruishu Feng Wright",
-    "Paul H. Zandhuis",
-    "Margaret Ziomek‐Moroz",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "NACE CORROSION Conference",
-   "year": 2018,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.5006/c2018-11492",
-   "url": "https://doi.org/10.5006/c2018-11492",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 11,
-   "topics": [
-    "infrastructure-monitoring",
-    "chemical-sensing"
-   ]
-  },
-  {
    "id": "W2801326943",
    "title": "Ultrafast Laser Enhanced Rayleigh Backscattering on Silica Fiber for Distributed Sensing under Harsh Environment",
    "authors": [
@@ -6770,8 +6770,30 @@
    "url": "https://doi.org/10.1364/cleo_at.2018.ath3p.4",
    "oa": false,
    "oa_url": "",
-   "cited_by": 10,
+   "cited_by": 11,
    "topics": []
+  },
+  {
+   "id": "W2804422677",
+   "title": "Low-cost fiber optic sensor array for simultaneous detection of hydrogen and temperature",
+   "authors": [
+    "Chenhu Sun",
+    "Paul Richard Ohodnicki",
+    "Ping Lu",
+    "Ruishu Feng"
+   ],
+   "venue": "Fiber Optic Sensors and Applications",
+   "year": 2018,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2304633",
+   "url": "https://doi.org/10.1117/12.2304633",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 10,
+   "topics": [
+    "chemical-sensing",
+    "temperature-sensing"
+   ]
   },
   {
    "id": "W2897308829",
@@ -6801,25 +6823,24 @@
    ]
   },
   {
-   "id": "W2804422677",
-   "title": "Low-cost fiber optic sensor array for simultaneous detection of hydrogen and temperature",
+   "id": "W3154679792",
+   "title": "Fe Thin Film Coated Optics for Monitoring Internal Corrosion in Natural Gas Pipelines",
    "authors": [
-    "Chenhu Sun",
+    "Ruishu Feng Wright",
     "Paul Richard Ohodnicki",
-    "Ping Lu",
-    "Ruishu Feng"
+    "Margaret Ziomek‐Moroz"
    ],
-   "venue": "",
+   "venue": "NACE CORROSION Conference",
    "year": 2018,
    "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2304633",
-   "url": "https://doi.org/10.1117/12.2304633",
+   "doi": "https://doi.org/10.5006/c2018-10893",
+   "url": "https://doi.org/10.5006/c2018-10893",
    "oa": false,
    "oa_url": "",
    "cited_by": 9,
    "topics": [
-    "chemical-sensing",
-    "temperature-sensing"
+    "optical-thin-films",
+    "infrastructure-monitoring"
    ]
   },
   {
@@ -6858,25 +6879,25 @@
     "Kerstin Kleese van Dam",
     "Sayeef Salahuddin",
     "James Ang",
-    "Thomas M. Conte",
+    "Thomas Martin Conte",
     "Debdeep Jena",
     "Robert Kaplar",
-    "Harry Albert Atwater",
+    "Harry A. Atwater",
     "Rick L. Stevens",
     "Dushan Boroyevich",
     "William J. Chappell",
-    "Tsu‐Jae King Liu",
+    "Tsu‐Jae King",
     "Justin R. Rattner",
     "M. S. Witherell",
     "Khurram K. Afridi",
     "Simon S. Ang",
-    "Jon Bock",
+    "Jonathan Bock",
     "Srabanti Chowdhury",
     "Suman Datta",
     "K. R. Evans",
     "Jack Flicker",
     "M.A. Hollis",
-    "NOBLE M. JOHNSON",
+    "N. M. Johnson",
     "Ken Jones",
     "Peter Michael Kogge",
     "Sriram Krishnamoorthy",
@@ -6891,7 +6912,7 @@
     "Jerry A. Simmons",
     "Valerie Taylor",
     "Tom Theis",
-    "E. Colby",
+    "Eric Ralph Colby",
     "Robinson E. Pino",
     "Andy Schwartz",
     "Katie Runkles",
@@ -6908,27 +6929,6 @@
    "oa_url": "https://www.osti.gov/servlets/purl/1616249",
    "cited_by": 8,
    "topics": []
-  },
-  {
-   "id": "W3154679792",
-   "title": "Fe Thin Film Coated Optics for Monitoring Internal Corrosion in Natural Gas Pipelines",
-   "authors": [
-    "Ruishu Feng Wright",
-    "Paul Richard Ohodnicki",
-    "Margaret Ziomek‐Moroz"
-   ],
-   "venue": "NACE CORROSION Conference",
-   "year": 2018,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.5006/c2018-10893",
-   "url": "https://doi.org/10.5006/c2018-10893",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 8,
-   "topics": [
-    "optical-thin-films",
-    "infrastructure-monitoring"
-   ]
   },
   {
    "id": "W2906990538",
@@ -6959,7 +6959,7 @@
     "Paul Richard Ohodnicki",
     "Ben Chorpening"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2304442",
@@ -7008,7 +7008,7 @@
     "Kevin Byerly",
     "Ming-Jun Li"
    ],
-   "venue": "",
+   "venue": "Micro- and Nanotechnology Sensors, Systems, and Applications",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2304848",
@@ -7075,7 +7075,7 @@
     "David W. Greve",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)",
+   "venue": "Digest - IEEE Antennas and Propagation Society. International Symposium",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/apusncursinrsm.2018.8608896",
@@ -7116,7 +7116,7 @@
     "Paul Richard Ohodnicki",
     "Henry Du"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2305877",
@@ -7155,7 +7155,7 @@
     "Michael Buric",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Fiber Optic Sensors and Applications",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2305082",
@@ -7204,7 +7204,7 @@
     "Chih‐Hung Chang",
     "Alan X. Wang"
    ],
-   "venue": "",
+   "venue": "Smart Photonic and Optoelectronic Integrated Circuits",
    "year": 2018,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1117/12.2292283",
@@ -7273,12 +7273,12 @@
    ],
    "venue": "Sensors",
    "year": 2017,
-   "type": "article",
+   "type": "review",
    "doi": "https://doi.org/10.3390/s17040801",
    "url": "https://doi.org/10.3390/s17040801",
    "oa": true,
    "oa_url": "https://www.mdpi.com/1424-8220/17/4/801/pdf?version=1492760531",
-   "cited_by": 280,
+   "cited_by": 283,
    "topics": [
     "chemical-sensing"
    ]
@@ -7298,7 +7298,7 @@
    "url": "https://doi.org/10.1109/jsen.2017.2735193",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1479646",
-   "cited_by": 153,
+   "cited_by": 154,
    "topics": [
     "power-components",
     "chemical-sensing"
@@ -7369,7 +7369,7 @@
    "url": "https://doi.org/10.1021/acssensors.7b00891",
    "oa": false,
    "oa_url": "",
-   "cited_by": 75,
+   "cited_by": 76,
    "topics": [
     "chemical-sensing"
    ]
@@ -7661,7 +7661,7 @@
     "Chenhu Sun",
     "Alex Leary",
     "Richard Beddingfield",
-    "M. E. McHenry",
+    "Michael Edward McHenry",
     "Paul Richard Ohodnicki"
    ],
    "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
@@ -7992,7 +7992,7 @@
    "title": "The Electrochemical Performance of LSM with A-site Non-Stoichiometry under Cathodic Polarization",
    "authors": [
     "Jian Liu",
-    "Yang Fan Yu",
+    "Yang Yu",
     "Tao Yue Yang",
     "Ozcan Ozmen",
     "Harry O. Finklea",
@@ -8087,7 +8087,7 @@
    "title": "Probing the Hydrogen Enhanced Near-Field Emission of ITO without a Vacuum-Gap",
    "authors": [
     "Poole, Jacob L.",
-    "Yu, Yang",
+    "Yang Yu",
     "Paul Richard Ohodnicki"
    ],
    "venue": "arXiv (Cornell University)",
@@ -8207,7 +8207,7 @@
    "url": "https://doi.org/10.1021/acsami.6b01709",
    "oa": true,
    "oa_url": "https://www.osti.gov/servlets/purl/1328390",
-   "cited_by": 87,
+   "cited_by": 88,
    "topics": [
     "optical-thin-films",
     "temperature-sensing"
@@ -8232,7 +8232,7 @@
    "url": "https://doi.org/10.1016/j.snb.2016.03.135",
    "oa": true,
    "oa_url": "https://doi.org/10.1016/j.snb.2016.03.135",
-   "cited_by": 84,
+   "cited_by": 85,
    "topics": [
     "chemical-sensing"
    ]
@@ -8271,7 +8271,7 @@
     "Paul Richard Ohodnicki",
     "Subhashish Bhattacharya"
    ],
-   "venue": "Proceedings of the Annual Conference of the IEEE Industrial Electronics Society",
+   "venue": "Annual Conference of the IEEE Industrial Electronics Society (IECON)",
    "year": 2016,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/iecon.2016.7793593",
@@ -8343,7 +8343,7 @@
    "url": "https://doi.org/10.1063/1.4941103",
    "oa": false,
    "oa_url": "",
-   "cited_by": 21,
+   "cited_by": 22,
    "topics": [
     "ferrites-nanocomposites",
     "optical-thin-films",
@@ -8396,6 +8396,27 @@
    ]
   },
   {
+   "id": "W2357921149",
+   "title": "Laser heated pedestal growth system commissioning and fiber processing",
+   "authors": [
+    "Michael Buric",
+    "M. Joseph Yip",
+    "Ben Chorpening",
+    "Paul Richard Ohodnicki"
+   ],
+   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+   "year": 2016,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2224480",
+   "url": "https://doi.org/10.1117/12.2224480",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 8,
+   "topics": [
+    "single-crystal-fibers"
+   ]
+  },
+  {
    "id": "W2278137044",
    "title": "Thermal Emissivity‐Based Chemical Spectroscopy through Evanescent Tunneling",
    "authors": [
@@ -8412,27 +8433,6 @@
    "cited_by": 8,
    "topics": [
     "chemical-sensing"
-   ]
-  },
-  {
-   "id": "W2357921149",
-   "title": "Laser heated pedestal growth system commissioning and fiber processing",
-   "authors": [
-    "Michael Buric",
-    "M. Joseph Yip",
-    "Ben Chorpening",
-    "Paul Richard Ohodnicki"
-   ],
-   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
-   "year": 2016,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2224480",
-   "url": "https://doi.org/10.1117/12.2224480",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 7,
-   "topics": [
-    "single-crystal-fibers"
    ]
   },
   {
@@ -8479,6 +8479,29 @@
    ]
   },
   {
+   "id": "W2552795028",
+   "title": "Fiber Optical Methane Sensors Using Functional Metal Oxide Nanomaterials",
+   "authors": [
+    "Aidong Yan",
+    "Sheng Wei Huang",
+    "Shuo Li",
+    "Rongzhang Chen",
+    "Paul Richard Ohodnicki",
+    "Kevin Chen"
+   ],
+   "venue": "Third Asia Pacific Optical Sensors Conference",
+   "year": 2016,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1364/apos.2016.w4a.12",
+   "url": "https://doi.org/10.1364/apos.2016.w4a.12",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 4,
+   "topics": [
+    "chemical-sensing"
+   ]
+  },
+  {
    "id": "W2494403105",
    "title": "Ultra-Sensitive CO2 Fiber-Optic Sensors Enhanced by Metal-Organic Framework Film",
    "authors": [
@@ -8503,29 +8526,6 @@
    ]
   },
   {
-   "id": "W2552795028",
-   "title": "Fiber Optical Methane Sensors Using Functional Metal Oxide Nanomaterials",
-   "authors": [
-    "Aidong Yan",
-    "Sheng Wei Huang",
-    "Shuo Li",
-    "Rongzhang Chen",
-    "Paul Richard Ohodnicki",
-    "Kevin Chen"
-   ],
-   "venue": "Third Asia Pacific Optical Sensors Conference",
-   "year": 2016,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1364/apos.2016.w4a.12",
-   "url": "https://doi.org/10.1364/apos.2016.w4a.12",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 3,
-   "topics": [
-    "chemical-sensing"
-   ]
-  },
-  {
    "id": "W2529464316",
    "title": "Waveguide-based extraction of near-field electromagnetic radiation: a new method for thermal energy conversion?",
    "authors": [
@@ -8541,6 +8541,30 @@
    "oa_url": "https://arxiv.org/pdf/1610.00538",
    "cited_by": 2,
    "topics": []
+  },
+  {
+   "id": "W2293931746",
+   "title": "Ultra-sensitive near-infrared fiber-optic gas sensors enhanced by metal-organic frameworks",
+   "authors": [
+    "Xinyuan Chong",
+    "Ki‐Joong Kim",
+    "Erwen Li",
+    "Yujing Zhang",
+    "Paul Richard Ohodnicki",
+    "Chih‐Hung Chang",
+    "Alan X. Wang"
+   ],
+   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+   "year": 2016,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2214021",
+   "url": "https://doi.org/10.1117/12.2214021",
+   "oa": false,
+   "oa_url": "",
+   "cited_by": 2,
+   "topics": [
+    "chemical-sensing"
+   ]
   },
   {
    "id": "W2555064017",
@@ -8568,30 +8592,6 @@
    "cited_by": 2,
    "topics": [
     "processing"
-   ]
-  },
-  {
-   "id": "W2293931746",
-   "title": "Ultra-sensitive near-infrared fiber-optic gas sensors enhanced by metal-organic frameworks",
-   "authors": [
-    "Xinyuan Chong",
-    "Ki‐Joong Kim",
-    "Erwen Li",
-    "Yujing Zhang",
-    "Paul Richard Ohodnicki",
-    "Chih‐Hung Chang",
-    "Alan X. Wang"
-   ],
-   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
-   "year": 2016,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2214021",
-   "url": "https://doi.org/10.1117/12.2214021",
-   "oa": false,
-   "oa_url": "",
-   "cited_by": 1,
-   "topics": [
-    "chemical-sensing"
    ]
   },
   {
@@ -8678,7 +8678,7 @@
     "Paul Richard Ohodnicki",
     "Harry Abernathy",
     "Shawn Litster",
-    "A. Salvador"
+    "Paul A. Salvador"
    ],
    "venue": "ECS Meeting Abstracts",
    "year": 2016,
@@ -8919,6 +8919,28 @@
    ]
   },
   {
+   "id": "W1493767311",
+   "title": "High temperature, harsh environment sensors for advanced power generation systems",
+   "authors": [
+    "Paul Richard Ohodnicki",
+    "Sydni Credle",
+    "Michael Buric",
+    "Roger A. Lewis",
+    "Steve Seachman"
+   ],
+   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+   "year": 2015,
+   "type": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.2178016",
+   "url": "https://doi.org/10.1117/12.2178016",
+   "oa": true,
+   "oa_url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9467/94671M/High-temperature-harsh-environment-sensors-for-advanced-power-generation-systems/10.1117/12.2178016.pdf",
+   "cited_by": 5,
+   "topics": [
+    "temperature-sensing"
+   ]
+  },
+  {
    "id": "W208702584",
    "title": "Novel sensing materials for harsh environment subsurface pH sensing applications",
    "authors": [
@@ -8940,28 +8962,6 @@
    ]
   },
   {
-   "id": "W1493767311",
-   "title": "High temperature, harsh environment sensors for advanced power generation systems",
-   "authors": [
-    "Paul Richard Ohodnicki",
-    "Sydni Credle",
-    "Michael Buric",
-    "Roger A. Lewis",
-    "Steve Seachman"
-   ],
-   "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
-   "year": 2015,
-   "type": "conference-paper",
-   "doi": "https://doi.org/10.1117/12.2178016",
-   "url": "https://doi.org/10.1117/12.2178016",
-   "oa": true,
-   "oa_url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9467/94671M/High-temperature-harsh-environment-sensors-for-advanced-power-generation-systems/10.1117/12.2178016.pdf",
-   "cited_by": 4,
-   "topics": [
-    "temperature-sensing"
-   ]
-  },
-  {
    "id": "W2195478516",
    "title": "Correlated electron perovskite films for optical sensing applications",
    "authors": [
@@ -8976,7 +8976,7 @@
    "url": "https://doi.org/10.1117/12.2188924",
    "oa": false,
    "oa_url": "",
-   "cited_by": 2,
+   "cited_by": 3,
    "topics": []
   },
   {
@@ -9307,7 +9307,7 @@
     "Ashis Kumar Panda",
     "David W. Greve",
     "Paul Richard Ohodnicki",
-    "M. E. McHenry"
+    "Michael Edward McHenry"
    ],
    "venue": "Journal of Electronic Materials",
    "year": 2014,
@@ -9352,7 +9352,7 @@
     "Ashis Kumar Panda",
     "David W. Greve",
     "Paul Richard Ohodnicki",
-    "M. E. McHenry"
+    "Michael Edward McHenry"
    ],
    "venue": "Applied Physics Letters",
    "year": 2014,
@@ -9393,7 +9393,7 @@
    "id": "W2086370822",
    "title": "Induced anisotropy in FeCo-based nanocomposites: Early transition metal content dependence",
    "authors": [
-    "Shiyu Shen",
+    "Sheng Shen",
     "Vincent DeGeorge",
     "Paul Richard Ohodnicki",
     "Samuel J. Kernion",
@@ -9433,7 +9433,7 @@
    "url": "https://doi.org/10.1117/12.2062092",
    "oa": false,
    "oa_url": "",
-   "cited_by": 7,
+   "cited_by": 8,
    "topics": [
     "chemical-sensing"
    ]
@@ -9660,7 +9660,7 @@
    "title": "Multiphase Resistivity Model for Magnetic Nanocomposites Developed for High Frequency, High Power Transformation",
    "authors": [
     "Vincent DeGeorge",
-    "Shiyu Shen",
+    "Sheng Shen",
     "Paul Richard Ohodnicki",
     "Mark A. Andio",
     "Michael Edward McHenry"
@@ -9732,9 +9732,9 @@
     "John P. Baltrus",
     "Jeffrey B. Kortright",
     "Xiaobing Zuo",
-    "Shiyu Shen",
+    "Sheng Shen",
     "Vincent DeGeorge",
-    "M. E. McHenry",
+    "Michael Edward McHenry",
     "David E. Laughlin"
    ],
    "venue": "Journal of Electronic Materials",
@@ -9784,7 +9784,7 @@
    "url": "https://doi.org/10.1007/s11837-012-0350-0",
    "oa": false,
    "oa_url": "",
-   "cited_by": 211,
+   "cited_by": 213,
    "topics": [
     "power-components"
    ]
@@ -9870,10 +9870,10 @@
    "id": "W2091439505",
    "title": "Two-current model of the composition dependence of resistivity in amorphous (Fe100−xCox)89−yZr7B4Cuy alloys using a rigid-band assumption",
    "authors": [
-    "Shiyu Shen",
+    "Sheng Shen",
     "Paul Richard Ohodnicki",
     "Samuel J. Kernion",
-    "M. E. McHenry"
+    "Michael Edward McHenry"
    ],
    "venue": "Journal of Applied Physics",
    "year": 2012,
@@ -9961,7 +9961,7 @@
    "authors": [
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Future of Instrumentation International Workshop (FIIW)",
    "year": 2012,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1109/fiiw.2012.6378339",
@@ -10085,7 +10085,7 @@
     "Thomas Brown",
     "Paul Richard Ohodnicki"
    ],
-   "venue": "",
+   "venue": "Imaging and Applied Optics",
    "year": 2012,
    "type": "conference-paper",
    "doi": "https://doi.org/10.1364/sensors.2012.stu2f.4",
@@ -10200,7 +10200,7 @@
    "url": "https://doi.org/10.1016/j.actamat.2010.05.015",
    "oa": false,
    "oa_url": "",
-   "cited_by": 25,
+   "cited_by": 26,
    "topics": [
     "amorphous-nanocrystalline"
    ]
@@ -10441,7 +10441,7 @@
    "title": "Cr 23 C 6 およびMn 23 Th 6 原型の(Fe,Co,Ni) 23 B 6 および(Fe,Co,Ni) 23 Zr 6 構造の磁化および相安定性のab initio研究",
    "authors": [
     "Paul Richard Ohodnicki",
-    "N C Cates",
+    "Nichole C. Cates",
     "David E. Laughlin",
     "Michael Edward McHenry",
     "Michael Widom"
@@ -10511,7 +10511,7 @@
     "Jianguo Long",
     "Paul Richard Ohodnicki",
     "David E. Laughlin",
-    "M. E. McHenry",
+    "Michael Edward McHenry",
     "Tadakatsu Ohkubo",
     "K. Hono"
    ],
@@ -10559,7 +10559,7 @@
     "Yuranan Hanlumyuang",
     "Kyle J. Ramos",
     "Michael Edward McHenry",
-    "Zhen Cai",
+    "Zhuhua Cai",
     "Katherine S. Ziemer",
     "Hadis Morkoç",
     "Necmi Bıyıklı",
@@ -10585,7 +10585,7 @@
    "title": "Monte Carlo studies of directional pair ordering in disordered binary and ternary ferromagnetic BCC crystalline alloys",
    "authors": [
     "Paul Richard Ohodnicki",
-    "M. E. McHenry",
+    "Michael Edward McHenry",
     "David E. Laughlin"
    ],
    "venue": "Journal of Applied Physics",
@@ -10643,7 +10643,7 @@
     "Yuranan Hanlumyuang",
     "Paul Richard Ohodnicki",
     "David E. Laughlin",
-    "M. E. McHenry"
+    "Michael Edward McHenry"
    ],
    "venue": "Journal of Applied Physics",
    "year": 2006,
